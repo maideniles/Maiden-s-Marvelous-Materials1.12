@@ -3,23 +3,14 @@ import java.io.File;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.config.ConfigHandler;
-import com.maideniles.maidensmaterials.init.items.gui.BookSpawnEvent;
-import com.maideniles.maidensmaterials.init.items.potions.GathererEvents;
-import com.maideniles.maidensmaterials.init.items.potions.FloralFortuneEvent;
-import com.maideniles.maidensmaterials.init.items.potions.PotionGatherer;
 import com.maideniles.maidensmaterials.init.items.potions.PotionFloralFortune;
+import com.maideniles.maidensmaterials.init.items.potions.PotionGatherer;
 import com.maideniles.maidensmaterials.proxy.CommonProxy;
 import com.maideniles.maidensmaterials.tabs.MMBlocksTab;
 import com.maideniles.maidensmaterials.tabs.MMItemsTab;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemPotion;
-import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -27,11 +18,6 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class MaidensMaterials 
