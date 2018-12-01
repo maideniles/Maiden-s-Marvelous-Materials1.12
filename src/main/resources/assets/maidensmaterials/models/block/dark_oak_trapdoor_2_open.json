@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "maidensmaterials:blocks/dark_oak_trapdoor_4",
+		"particle": "maidensmaterials:blocks/glass"
+	},
+		"elements": [
+		{
+			"from": [0, 0, 13],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#1"},
+				"east": {"uv": [0, 0, 3, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#1"},
+				"west": {"uv": [13, 0, 16, 16], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [0, 13, 16, 16], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 3], "texture": "#1"}
+			}
+		}
+	]
+}

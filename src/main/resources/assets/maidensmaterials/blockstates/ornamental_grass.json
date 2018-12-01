@@ -1,0 +1,19 @@
+{
+  "variants": {
+   "snowy=false":  [{ "model": "maidensmaterials:ornamental_grass_normal" },
+	{ "model": "maidensmaterials:ornamental_grass_1" },
+	{ "model": "maidensmaterials:ornamental_grass_2" },
+	{ "model": "maidensmaterials:ornamental_grass_3" },
+	{ "model": "maidensmaterials:ornamental_grass_4" },
+	{ "model": "maidensmaterials:ornamental_grass_5" },
+	{ "model": "maidensmaterials:ornamental_grass_4" },
+	{ "model": "maidensmaterials:ornamental_grass_3" },
+	{ "model": "maidensmaterials:ornamental_grass_2" },
+	{ "model": "maidensmaterials:ornamental_grass_1" },
+	{ "model": "maidensmaterials:ornamental_grass_5" },
+	{ "model": "maidensmaterials:ornamental_grass_5" },
+	{ "model": "maidensmaterials:ornamental_grass_5" }],
+	
+"snowy=true":  { "model": "maidensmaterials:ornamental_grass_snow" }
+    }
+}

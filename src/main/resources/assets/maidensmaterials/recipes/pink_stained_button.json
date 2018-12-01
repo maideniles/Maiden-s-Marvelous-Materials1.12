@@ -1,0 +1,30 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"P"
+    ],
+    
+    "key":
+    {
+        
+		"P":
+		{
+			"item": "maidensmaterials:pink_stained_planks"
+		}
+		
+		
+	
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:pink_stained_button",
+        "count": 1
+    }
+}

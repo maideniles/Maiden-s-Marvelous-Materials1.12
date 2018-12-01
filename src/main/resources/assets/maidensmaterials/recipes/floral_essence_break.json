@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:floral_block"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:floral_essence",
+    "count": 9
+  }
+}

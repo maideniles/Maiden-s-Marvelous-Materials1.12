@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top_rh",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/door4_laburnum_bottom",
+        "top": "maidensmaterials:blocks/door4_laburnum_top"
+    }
+}

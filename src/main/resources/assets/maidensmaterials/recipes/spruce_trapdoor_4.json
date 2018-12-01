@@ -1,0 +1,32 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+       "PPP","PIP"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "minecraft:wooden_slab",
+			"data": 1
+        },
+		
+		"I":
+		{
+			"item": "maidensmaterials:dark_iron_inlay"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:spruce_trapdoor_4",
+       "count": 2
+    }
+}

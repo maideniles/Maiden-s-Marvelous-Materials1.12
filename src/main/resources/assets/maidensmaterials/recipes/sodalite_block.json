@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "maidensmaterials:sodalite_chunk"
+    }
+  },
+  "result": {
+    "item": "maidensmaterials:sodalite_block"
+  }
+}

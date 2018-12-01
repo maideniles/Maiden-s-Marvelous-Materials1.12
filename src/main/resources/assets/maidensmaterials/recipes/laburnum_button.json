@@ -1,0 +1,30 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"P"
+    ],
+    
+    "key":
+    {
+        
+		"P":
+		{
+			"item": "maidensmaterials:laburnum_planks"
+		}
+		
+		
+	
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:laburnum_button",
+        "count": 1
+    }
+}

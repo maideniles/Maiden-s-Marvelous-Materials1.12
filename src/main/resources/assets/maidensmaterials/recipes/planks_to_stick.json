@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "maidensmaterials:wisteria_planks"
+      },
+	  
+	  {
+        "item": "maidensmaterials:silverbell_planks"
+      },
+	  
+	  {
+        "item": "maidensmaterials:cedar_planks"
+      },
+	  
+      {
+        "item": "maidensmaterials:crabapple_planks"
+      },
+      {
+        "item": "maidensmaterials:dogwood_planks"
+      },
+      {
+        "item": "maidensmaterials:jacaranda_planks"
+      },
+      {
+        "item": "maidensmaterials:laburnum_planks"
+      },
+      {
+        "item": "maidensmaterials:paulownia_planks"
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:stick",
+    "count": 4
+  }
+}

@@ -1,0 +1,30 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"PP"
+    ],
+    
+    "key":
+    {
+        
+		"P":
+		{
+			"item": "maidensmaterials:crabapple_planks"
+		}
+		
+		
+	
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:crabapple_pressure_plate",
+        "count": 1
+    }
+}

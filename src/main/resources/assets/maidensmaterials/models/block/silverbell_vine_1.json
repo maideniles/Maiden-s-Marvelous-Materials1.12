@@ -1,0 +1,22 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "textures": {
+        "0": "maidensmaterials:blocks/silverbell_vine",
+		"particle": "maidensmaterials:blocks/silverbell_vine"
+    },
+    "elements": [
+        {
+            "name": "vines",
+            "from": [ 0.0, 0.0, 0.10000000149011612 ], 
+            "to": [ 16.0, 16.0, 0.10000000149011612 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#-1", "uv": [ 0.0, 0.0, 0.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#-1", "uv": [ 0.0, 0.0, 0.0, 16.0 ] },
+                "up": { "texture": "#-1", "uv": [ 0.0, 0.0, 16.0, 0.0 ] },
+                "down": { "texture": "#-1", "uv": [ 0.0, 0.0, 16.0, 0.0 ] }
+            }
+        }
+    ]
+}

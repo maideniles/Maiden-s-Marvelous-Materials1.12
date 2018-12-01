@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "variant=default": { "model": "maidensmaterials:pink_stained_block" }
+    }
+}

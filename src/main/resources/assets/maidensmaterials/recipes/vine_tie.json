@@ -1,0 +1,32 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+       "S","E"
+    ],
+    
+    "key":
+    {
+        "S":
+        {
+            "item": "minecraft:string"
+			
+        },
+		
+		"E":
+		{
+			"item": "maidensmaterials:floral_essence"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:vine_tie",
+       "count": 16
+    }
+}

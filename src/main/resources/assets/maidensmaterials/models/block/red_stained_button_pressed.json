@@ -1,0 +1,6 @@
+{
+    "parent": "block/button_pressed",
+    "textures": {
+        "texture": "maidensmaterials:blocks/red_stained_block"
+    }
+}

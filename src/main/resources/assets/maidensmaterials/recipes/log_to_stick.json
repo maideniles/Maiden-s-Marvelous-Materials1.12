@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "maidensmaterials:wisteria_log"
+      },
+	  
+	  {
+        "item": "maidensmaterials:silverbell_log"
+      },
+	  
+	  {
+        "item": "maidensmaterials:cedar_log"
+      },
+	  
+      {
+        "item": "maidensmaterials:crabapple_log"
+      },
+      {
+        "item": "maidensmaterials:dogwood_log"
+      },
+      {
+        "item": "maidensmaterials:jacaranda_log"
+      },
+      {
+        "item": "maidensmaterials:laburnum_log"
+      },
+      {
+        "item": "maidensmaterials:paulownia_log"
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:stick",
+    "count": 16
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/light_blue_large_brick",
+        "top": "maidensmaterials:blocks/light_blue_large_brick",
+        "side": "maidensmaterials:blocks/light_blue_large_brick"
+    }
+}

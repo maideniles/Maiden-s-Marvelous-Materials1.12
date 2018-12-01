@@ -1,0 +1,36 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PPP",
+		"PBP",
+		"PSP"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:pulverized_white"
+        },
+		
+		"B":
+		{
+			"item": "minecraft:water_bucket"
+		},
+		
+		"S":
+		{
+			"item": "minecraft:clay_ball"
+		}
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:whitewash",
+        "count": 1
+    }
+}

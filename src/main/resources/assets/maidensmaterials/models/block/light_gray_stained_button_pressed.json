@@ -1,0 +1,6 @@
+{
+    "parent": "block/button_pressed",
+    "textures": {
+        "texture": "maidensmaterials:blocks/light_gray_stained_block"
+    }
+}

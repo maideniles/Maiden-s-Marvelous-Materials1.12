@@ -1,0 +1,7 @@
+{
+   "parent": "block/cube_column",
+    "textures": {
+        "end": "maidensmaterials:blocks/dogwood_planks",
+        "side": "maidensmaterials:blocks/dogwood_bookshelf"
+    }
+}

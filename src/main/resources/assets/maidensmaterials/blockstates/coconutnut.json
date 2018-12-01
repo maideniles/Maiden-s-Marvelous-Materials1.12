@@ -1,0 +1,17 @@
+{
+"variants":
+			{
+			
+			"facing=north": { "model": "maidensmaterials:coconutnut" },
+			"facing=south": { "model": "maidensmaterials:coconutnut", "y": 180 },
+			"facing=east":  { "model": "maidensmaterials:coconutnut", "y": 90 },
+			"facing=west":  { "model": "maidensmaterials:coconutnut", "y": 270 }
+			
+			
+			
+			}
+
+
+
+
+}

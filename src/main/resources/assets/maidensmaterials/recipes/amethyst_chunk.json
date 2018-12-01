@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:amethyst_block"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:amethyst_chunk",
+    "count": 9
+  }
+}

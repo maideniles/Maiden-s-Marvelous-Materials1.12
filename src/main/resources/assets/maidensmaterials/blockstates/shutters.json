@@ -1,0 +1,23 @@
+{
+"variants":{
+
+"closed=true,facing=north":	{"model": "maidensmaterials:shutter_closed"},
+"closed=true,facing=east":	{"model": "maidensmaterials:shutter_closed","y": 90},
+"closed=true,facing=south":	{"model": "maidensmaterials:shutter_closed","y": 180},
+"closed=true,facing=west":	{"model": "maidensmaterials:shutter_closed","y": 270},
+"closed=false,facing=north":{"model": "maidensmaterials:shutter_open"},
+"closed=false,facing=east":	{"model": "maidensmaterials:shutter_open","y": 90},
+"closed=false,facing=south":{"model": "maidensmaterials:shutter_open","y": 180},
+"closed=false,facing=west":	{"model": "maidensmaterials:shutter_open","y":270},
+
+"closed=true,facing=north":	{"model": "maidensmaterials:shutter_closed"},
+"closed=true,facing=east":	{"model": "maidensmaterials:shutter_closed","y": 90},
+"closed=true,facing=south":	{"model": "maidensmaterials:shutter_closed","y": 180},
+"closed=true,facing=west":	{"model": "maidensmaterials:shutter_closed","y": 270},
+"closed=false,facing=north":{"model": "maidensmaterials:shutter_open"},
+"closed=false,facing=east":	{"model": "maidensmaterials:shutter_open","y": 90},
+"closed=false,facing=south":{"model": "maidensmaterials:shutter_open","y": 180},
+"closed=false,facing=west":	{"model": "maidensmaterials:shutter_open","y":270}
+
+			}
+}

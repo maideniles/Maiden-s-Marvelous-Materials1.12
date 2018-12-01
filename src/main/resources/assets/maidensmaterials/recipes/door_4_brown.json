@@ -1,0 +1,39 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PPI",
+		"PPI",
+		"PPB"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:brown_stained_planks"
+        },
+		
+		"I":
+        {
+            "item": "maidensmaterials:dark_iron_inlay"
+        },
+		
+		"B":
+		{
+				"type": "forge:ore_dict",
+			"ore": "door_plans_4"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:brown_stained_door_4",
+        "count": 1
+    }
+}

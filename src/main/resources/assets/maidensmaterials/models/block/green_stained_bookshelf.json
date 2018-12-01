@@ -1,0 +1,7 @@
+{
+   "parent": "block/cube_column",
+    "textures": {
+        "end": "maidensmaterials:blocks/green_stained_block",
+        "side": "maidensmaterials:blocks/green_stained_bookshelf"
+    }
+}

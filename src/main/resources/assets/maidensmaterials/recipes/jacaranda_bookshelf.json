@@ -1,0 +1,33 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"PPP", "BBB", "PPP"
+    ],
+    
+    "key":
+    {
+        
+		"P":
+		{
+			"item": "maidensmaterials:jacaranda_planks"
+		},
+		
+		"B":
+		{
+			"item": "minecraft:book"
+		}
+	
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:jacaranda_bookshelf",
+        "count": 1
+    }
+}

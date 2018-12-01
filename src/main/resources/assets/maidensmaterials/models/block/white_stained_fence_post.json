@@ -1,0 +1,6 @@
+{
+    "parent": "block/fence_post",
+    "textures": {
+        "texture": "maidensmaterials:blocks/white_stained_block"
+    }
+}

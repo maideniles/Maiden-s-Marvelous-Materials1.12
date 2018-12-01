@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:wisteria_log"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:wisteria_planks",
+    "count": 4
+  }
+}

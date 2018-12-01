@@ -1,0 +1,36 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "CCC",
+		"CSC",
+		"CCC"
+    ],
+    
+    "key":
+    {
+        
+		"C":
+		{
+			"item": "maidensmaterials:red_clay"
+		},
+		
+		"S":
+		{
+			"item": "minecraft:sand", "data": 0
+			 
+			
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:red_clay_mix",
+        "count": 8
+    }
+}

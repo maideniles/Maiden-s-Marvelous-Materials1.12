@@ -1,0 +1,29 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		"CC",
+		"CC"
+    ],
+    
+    "key":
+    {
+		
+		"C":
+		{
+			"item": "maidensmaterials:magenta_clay"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:magenta_brick",
+        "count": 4
+    }
+}

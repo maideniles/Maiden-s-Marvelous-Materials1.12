@@ -1,0 +1,35 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "maidensmaterials:blocks/shutter1",
+		"particle": "maidensmaterials:blocks/shutter1"
+	},
+	"elements": [
+		{
+			"name": "left shutter",
+			"from": [0, 0, 0],
+			"to": [8, 16, 1],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 8, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 8, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 8, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 8, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "right shutter",
+			"from": [8, 0, 0],
+			"to": [16, 16, 1],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 8, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 8, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 8, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 8, 16], "texture": "#0"}
+			}
+		}
+	]
+}

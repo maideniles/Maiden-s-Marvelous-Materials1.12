@@ -1,0 +1,33 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PPP",
+		"PSP",
+		"PPP"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:whitewashed_planks"
+        },
+		
+		"S":
+		{
+			"item": "maidensmaterials:stain_pink"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:pink_stained_planks",
+        "count": 8
+    }
+}

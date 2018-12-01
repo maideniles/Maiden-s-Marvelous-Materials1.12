@@ -1,0 +1,36 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PPP",
+		"PBP",
+		"PSP"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:pulverized_green"
+        },
+		
+		"B":
+		{
+			"item": "minecraft:water_bucket"
+		},
+		
+		"S":
+		{
+			"item": "minecraft:slime_ball"
+		}
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:dye_bath_green",
+        "count": 1
+    }
+}

@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:labradorite_block"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:labradorite_chunk",
+    "count": 9
+  }
+}

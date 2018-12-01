@@ -1,0 +1,6 @@
+{
+    "parent": "block/fence_gate_open",
+    "textures": {
+        "texture": "maidensmaterials:blocks/green_stained_block"
+    }
+}

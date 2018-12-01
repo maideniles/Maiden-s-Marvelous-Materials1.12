@@ -1,0 +1,27 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "CC", "CC"
+    ],
+    
+    "key":
+    {
+		
+		"C":
+		{
+			"item": "maidensmaterials:lime_brick"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:lime_brick_block",
+        "count": 4
+    }
+}

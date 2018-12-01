@@ -1,0 +1,34 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "III",
+		"IPI",
+		"III"
+    ],
+    
+    "key":
+    {
+        "I":
+        {
+            "item": "minecraft:dye",
+			"data": 0
+        },
+		
+		"P":
+		{
+			"item": "minecraft:paper"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:door_plans_5",
+        "count": 1
+    }
+}

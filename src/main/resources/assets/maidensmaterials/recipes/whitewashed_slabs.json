@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HHH",
+    "HBH",
+    "HHH"
+  ],
+  "key": {
+    "H": {
+      "type": "forge:ore_dict",
+      "ore": "slabWood"
+    },
+    "B": {
+      "item": "maidensmaterials:whitewash"
+    }
+  },
+  "result": {
+    "item": "maidensmaterials:whitewashed_slab_half",
+	"data": 0,
+    "count": 6
+	
+  }
+}

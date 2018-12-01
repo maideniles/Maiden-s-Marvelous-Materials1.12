@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "maidensmaterials:blocks/white_large_brick"
+    }
+}

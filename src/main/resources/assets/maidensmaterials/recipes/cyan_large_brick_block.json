@@ -1,0 +1,29 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "CC",
+		
+		"CC"
+    ],
+    
+    "key":
+    {
+        
+		"C":
+		{
+			"item": "maidensmaterials:cyan_clay_block"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:cyan_large_brick_block",
+        "count": 1
+    }
+}

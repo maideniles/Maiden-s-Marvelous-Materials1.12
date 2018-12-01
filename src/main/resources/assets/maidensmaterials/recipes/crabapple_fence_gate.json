@@ -1,0 +1,34 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"SPS", "SPS"
+    ],
+    
+    "key":
+    {
+        
+		"P":
+		{
+			"item": "maidensmaterials:crabapple_planks"
+		},
+		
+	 "S":	{
+      "item": "minecraft:stick"
+    }
+		
+		
+	
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:crabapple_fence_gate",
+        "count": 1
+    }
+}

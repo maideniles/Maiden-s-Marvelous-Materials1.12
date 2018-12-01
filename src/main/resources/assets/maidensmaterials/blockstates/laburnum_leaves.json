@@ -1,0 +1,12 @@
+{
+    "variants": 
+    {    
+		
+		"check_decay=true,decayable=true": { "model": "maidensmaterials:laburnum_leaves" },
+        "check_decay=true,decayable=false": { "model": "maidensmaterials:laburnum_leaves" },
+        "check_decay=false,decayable=true": { "model": "maidensmaterials:laburnum_leaves" },
+        "check_decay=false,decayable=false": { "model": "maidensmaterials:laburnum_leaves" }
+		
+	}
+	
+}

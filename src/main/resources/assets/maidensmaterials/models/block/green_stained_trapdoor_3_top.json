@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"26": "maidensmaterials:blocks/green_stained_trapdoor",
+		"particle": "maidensmaterials:blocks/green_stained_trapdoor"
+	},
+	"elements": [
+		{
+			"from": [0, 13, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 3], "texture": "#26"},
+				"east": {"uv": [0, 0, 16, 3], "texture": "#26"},
+				"south": {"uv": [0, 0, 16, 3], "texture": "#26"},
+				"west": {"uv": [0, 0, 16, 3], "texture": "#26"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#26"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#26"}
+			}
+		}
+	]
+}

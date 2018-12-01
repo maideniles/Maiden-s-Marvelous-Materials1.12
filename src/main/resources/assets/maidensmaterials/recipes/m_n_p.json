@@ -1,0 +1,36 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " Q ",
+		"QNQ",
+		"QQQ"
+    ],
+    
+    "key":
+    {
+        
+		
+		
+		"Q":
+		{
+			"item": "minecraft:iron_nugget"
+		},
+		
+		"N":
+		{
+			"item": "minecraft:iron_ingot"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:mortar_and_pestle",
+        "count": 1
+    }
+}

@@ -1,0 +1,40 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+       "FMF",
+	   " F ",
+       "FBF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "maidensmaterials:mica_fragments"
+        },
+		
+		"M":
+		{
+			
+			"type": "forge:ore_dict", "ore": "grout"
+		},
+		
+		"B":
+		{
+			"item": "minecraft:concrete",
+			"data": 0
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:mica_tile_4",
+        "count": 16
+    }
+}

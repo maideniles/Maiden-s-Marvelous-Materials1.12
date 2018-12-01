@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_gate_open",
+    "textures": {
+        "texture": "maidensmaterials:blocks/light_blue_stained_block"
+    }
+}

@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"6": "maidensmaterials:blocks/birch_trapdoor_4",
+		"particle": "maidensmaterials:blocks/glass"
+	},
+	"elements": [
+		{
+			"from": [0, 13, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 3], "texture": "#6"},
+				"east": {"uv": [0, 0, 16, 3], "texture": "#6"},
+				"south": {"uv": [0, 0, 16, 3], "texture": "#6"},
+				"west": {"uv": [0, 0, 16, 3], "texture": "#6"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#6"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#6"}
+			}
+		}
+	]
+}

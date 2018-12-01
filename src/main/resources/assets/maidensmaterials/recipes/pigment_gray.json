@@ -1,0 +1,41 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BFB",
+		"FMF",
+		"BFB"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "maidensmaterials:pulverized_black"
+			
+        },
+		
+		"F":
+        {
+            "item": "maidensmaterials:pulverized_white"
+        },
+		
+		
+		"M":
+		{
+			"type": "forge:ore_dict",
+			"ore": "mortar_and_pestle"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:pulverized_gray",
+        "count": 8
+    }
+}

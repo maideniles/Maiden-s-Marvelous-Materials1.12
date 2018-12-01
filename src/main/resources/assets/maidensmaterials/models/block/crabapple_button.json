@@ -1,0 +1,6 @@
+{
+    "parent": "block/button",
+    "textures": {
+        "texture": "maidensmaterials:blocks/crabapple_planks"
+    }
+}

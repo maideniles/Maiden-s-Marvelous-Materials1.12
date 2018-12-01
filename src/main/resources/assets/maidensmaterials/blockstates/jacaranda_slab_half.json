@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "half=bottom,variant=default": { "model": "maidensmaterials:jacaranda_slab_bottom" },
+        "half=top,variant=default": { "model": "maidensmaterials:jacaranda_slab_top" }
+    }
+}
+

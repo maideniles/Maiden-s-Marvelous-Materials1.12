@@ -1,0 +1,7 @@
+{
+   "parent": "block/cube_column",
+    "textures": {
+        "end": "maidensmaterials:blocks/silverbell_planks",
+        "side": "maidensmaterials:blocks/silverbell_bookshelf"
+    }
+}

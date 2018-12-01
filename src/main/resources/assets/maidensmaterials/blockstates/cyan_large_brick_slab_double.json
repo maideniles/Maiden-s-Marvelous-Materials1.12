@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "variant=default": { "model": "maidensmaterials:cyan_large_brick_block" }
+    }
+}

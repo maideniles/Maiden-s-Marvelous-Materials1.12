@@ -1,0 +1,6 @@
+{
+    "parent": "block/button",
+    "textures": {
+        "texture": "maidensmaterials:blocks/white_stained_block"
+    }
+}

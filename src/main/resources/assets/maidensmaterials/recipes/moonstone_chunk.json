@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:moonstone_block"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:moonstone_chunk",
+    "count": 9
+  }
+}

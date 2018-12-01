@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:aventurine_block"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:aventurine_chunk",
+    "count": 9
+  }
+}

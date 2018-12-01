@@ -1,0 +1,29 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "   ",
+		"C C",
+		"CCC"
+    ],
+    
+    "key":
+    {
+        
+		"C":
+		{
+			"item": "maidensmaterials:light_gray_clay"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:clay_vase_light_gray",
+        "count": 1
+    }
+}

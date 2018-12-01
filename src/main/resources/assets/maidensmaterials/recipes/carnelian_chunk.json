@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:carnelian_block"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:carnelian_chunk",
+    "count": 9
+  }
+}

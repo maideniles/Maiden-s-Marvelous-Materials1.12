@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:cedar_log"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:cedar_planks",
+    "count": 4
+  }
+}

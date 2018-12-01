@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y":  { "model": "maidensmaterials:silverbell_log" },
+        "axis=z":   { "model": "maidensmaterials:silverbell_log", "x": 90 },
+        "axis=x":   { "model": "maidensmaterials:silverbell_log", "x": 90, "y": 90 },
+        "axis=none": { "model": "maidensmaterials:silverbell_bark" }
+    }
+}

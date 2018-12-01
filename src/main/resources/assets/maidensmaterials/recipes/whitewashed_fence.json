@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XOX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "fenceWood"
+    },
+    "O": {
+      "item": "maidensmaterials:whitewash"
+    }
+  },
+  "result": {
+    "item": "maidensmaterials:whitewashed_fence",
+    "count": 1
+  }
+}

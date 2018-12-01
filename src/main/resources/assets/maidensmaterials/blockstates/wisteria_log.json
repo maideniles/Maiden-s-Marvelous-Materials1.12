@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y":  { "model": "maidensmaterials:wisteria_log" },
+        "axis=z":   { "model": "maidensmaterials:wisteria_log", "x": 90 },
+        "axis=x":   { "model": "maidensmaterials:wisteria_log", "x": 90, "y": 90 },
+        "axis=none": { "model": "maidensmaterials:wisteria_bark" }
+    }
+}

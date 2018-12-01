@@ -1,0 +1,34 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "F  ",
+		" M ",
+		"   "
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "maidensmaterials:chalcopyrite_chunk"
+        },
+		
+		"M":
+		{
+			"type": "forge:ore_dict",
+			"ore": "mortar_and_pestle"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:chalcopyrite_fragments",
+        "count": 8
+    }
+}

@@ -1,0 +1,40 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PPG",
+		"PPG",
+		"PPB"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:wisteria_planks"
+        },
+		
+		"G":
+        {
+            "item": "minecraft:stained_glass_pane",
+			"data": 0
+        },
+		
+		"B":
+		{
+				"type": "forge:ore_dict",
+			"ore": "door_plans_5"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:wisteria_door_5",
+        "count": 1
+    }
+}

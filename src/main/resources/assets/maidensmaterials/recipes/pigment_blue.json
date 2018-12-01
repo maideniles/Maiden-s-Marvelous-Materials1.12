@@ -1,0 +1,34 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "FFF",
+		"FMF",
+		"FFF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "maidensmaterials:wisteria_blossoms"
+        },
+		
+		"M":
+		{
+			"type": "forge:ore_dict",
+			"ore": "mortar_and_pestle"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:pulverized_blue",
+        "count": 8
+    }
+}

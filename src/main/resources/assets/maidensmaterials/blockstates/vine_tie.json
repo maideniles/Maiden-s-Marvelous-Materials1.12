@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "normal": { "model": "maidensmaterials:vine_tie" },
+        "facing=north": {"model": "maidensmaterials:vine_tie"},
+        "facing=south": {"model": "maidensmaterials:vine_tie", "y": 180},
+        "facing=west": {"model": "maidensmaterials:vine_tie", "y": 270  },
+        "facing=east": {"model": "maidensmaterials:vine_tie" , "y": 90 }
+        
+        
+   }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "maidensmaterials:earthen_essence"
+    }
+  },
+  "result": {
+    "item": "maidensmaterials:earthen_block"
+  }
+}

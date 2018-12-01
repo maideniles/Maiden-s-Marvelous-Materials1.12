@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/whitewashed_planks",
+        "top": "maidensmaterials:blocks/whitewashed_planks",
+        "side": "maidensmaterials:blocks/whitewashed_planks"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "stage=0,variant=tutorial": { "model": "maidensmaterials:sapling_tutorial" },
+        "stage=0,variant=aluminium": { "model": "maidensmaterials:sapling_aluminium"},
+		"stage=0,variant=jacaranda": { "model": "maidensmaterials:sapling_jacaranda"},
+		"stage=0,variant=wisteria": { "model": "maidensmaterials:sapling_wisteria"},
+		"stage=0,variant=bradford": { "model": "maidensmaterials:sapling_bradford"},
+		"stage=0,variant=crabapple": { "model": "maidensmaterials:sapling_crabapple"},
+		"stage=0,variant=dogwood": { "model": "maidensmaterials:sapling_dogwood"},
+		
+		
+        
+        "stage=1,variant=tutorial": { "model": "maidensmaterials:sapling_tutorial" },
+        "stage=1,variant=aluminium": { "model": "maidensmaterials:sapling_aluminium" },
+		"stage=1,variant=jacaranda": { "model": "maidensmaterials:sapling_jacaranda"},
+		"stage=1,variant=wisteria": { "model": "maidensmaterials:sapling_wisteria"},
+		"stage=1,variant=bradford": { "model": "maidensmaterials:sapling_bradford"},
+		"stage=1,variant=crabapple": { "model": "maidensmaterials:sapling_crabapple"},
+		"stage=1,variant=dogwood": { "model": "maidensmaterials:sapling_dogwood"}
+    }
+}

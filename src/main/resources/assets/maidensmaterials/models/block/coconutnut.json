@@ -1,0 +1,114 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "textures": {
+        "particle": "maidensmaterials:blocks/coconutnut",
+        "0": "maidensmaterials:blocks/coconutnut"
+    },
+    "elements": [
+        {
+            "name": "nut2",
+            "from": [ 0.0, 8.0, 0.0 ], 
+            "to": [ 7.0, 15.0, 7.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] }
+            }
+        },
+        {
+            "name": "nut3",
+            "from": [ 9.0, 8.0, 1.0 ], 
+            "to": [ 16.0, 15.0, 8.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] }
+            }
+        },
+        {
+            "name": "nut",
+            "from": [ 5.0, 0.0, 1.0 ], 
+            "to": [ 12.0, 7.0, 8.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 7.0, 7.0 ] }
+            }
+        },
+        {
+            "name": "nutstem1",
+            "from": [ 7.0, 7.0, 1.0 ], 
+            "to": [ 8.0, 9.0, 2.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 5.0, 5.0, 6.0, 7.0 ] },
+                "east": { "texture": "#0", "uv": [ 5.0, 4.0, 6.0, 6.0 ] },
+                "south": { "texture": "#0", "uv": [ 5.0, 4.0, 6.0, 6.0 ] },
+                "west": { "texture": "#0", "uv": [ 4.0, 4.0, 5.0, 6.0 ] },
+                "up": { "texture": "#0", "uv": [ 5.0, 4.0, 6.0, 5.0 ] },
+                "down": { "texture": "#0", "uv": [ 5.0, 4.0, 6.0, 5.0 ] }
+            }
+        },
+        {
+            "name": "nutstem1top",
+            "from": [ 8.0, 8.0, 0.0 ], 
+            "to": [ 9.0, 9.0, 1.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 2.0, 1.0, 3.0, 2.0 ] },
+                "east": { "texture": "#0", "uv": [ 2.0, 1.0, 3.0, 2.0 ] },
+                "south": { "texture": "#0", "uv": [ 1.0, 2.0, 2.0, 3.0 ] },
+                "west": { "texture": "#0", "uv": [ 1.0, 1.0, 2.0, 2.0 ] },
+                "up": { "texture": "#0", "uv": [ 1.0, 1.0, 2.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 1.0, 1.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "nut2stemtop",
+            "from": [ 12.0, 15.0, 0.0 ], 
+            "to": [ 13.0, 16.0, 2.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 1.0, 1.0, 2.0, 2.0 ] },
+                "east": { "texture": "#0", "uv": [ 2.0, 1.0, 3.0, 2.0 ] },
+                "south": { "texture": "#0", "uv": [ 2.0, 2.0, 3.0, 3.0 ] },
+                "west": { "texture": "#0", "uv": [ 2.0, 2.0, 3.0, 3.0 ] },
+                "up": { "texture": "#0", "uv": [ 2.0, 1.0, 3.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 1.0, 1.0, 2.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "nut3stemtop",
+            "from": [ 3.0, 15.0, 0.0 ], 
+            "to": [ 4.0, 16.0, 1.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 1.0, 1.0, 2.0, 2.0 ] },
+                "east": { "texture": "#0", "uv": [ 1.0, 1.0, 2.0, 2.0 ] },
+                "south": { "texture": "#0", "uv": [ 1.0, 1.0, 2.0, 2.0 ] },
+                "west": { "texture": "#0", "uv": [ 1.0, 2.0, 2.0, 3.0 ] },
+                "up": { "texture": "#0", "uv": [ 2.0, 1.0, 3.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 2.0, 1.0, 3.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 8.0, 9.0, 0.0 ], 
+            "to": [ 9.0, 10.0, 1.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 1.0, 1.0, 2.0, 2.0 ] },
+                "east": { "texture": "#0", "uv": [ 1.0, 1.0, 2.0, 2.0 ] },
+                "south": { "texture": "#0", "uv": [ 1.0, 2.0, 2.0, 3.0 ] },
+                "west": { "texture": "#0", "uv": [ 2.0, 1.0, 3.0, 2.0 ] },
+                "up": { "texture": "#0", "uv": [ 1.0, 1.0, 2.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 1.0, 1.0, 2.0, 2.0 ] }
+            }
+        }
+        
+    ]
+}

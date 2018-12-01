@@ -1,0 +1,35 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PP ",
+		"PP ",
+		"PPB"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "minecraft:planks",
+			"data": 5
+        },
+		
+		"B":
+		{
+		"type": "forge:ore_dict",
+			"ore": "door_plans_2"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:dark_oak_door_2",
+        "count": 1
+    }
+}

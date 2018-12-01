@@ -1,0 +1,40 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BFB",
+		"FMF",
+		"BFB"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "maidensmaterials:silverbell_blossoms"
+        },
+		
+		"F":
+        {
+            "item": "maidensmaterials:mica_powder"
+        },
+		
+		
+		"M":
+		{
+			"type": "forge:ore_dict",
+			"ore": "mortar_and_pestle"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:pulverized_white",
+        "count": 8
+    }
+}

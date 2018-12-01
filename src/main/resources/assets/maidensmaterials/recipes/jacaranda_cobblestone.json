@@ -1,0 +1,32 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+       "CV"
+    ],
+    
+    "key":
+    {
+        "C":
+        {
+            "item": "minecraft:cobblestone"
+			
+        },
+		
+		"V":
+		{
+			"item": "maidensmaterials:jacaranda_vine"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:jacaranda_cobblestone",
+       "count": 1
+    }
+}

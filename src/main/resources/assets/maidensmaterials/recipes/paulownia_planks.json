@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:paulownia_log"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:paulownia_planks",
+    "count": 4
+  }
+}

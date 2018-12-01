@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/wisteria_planks",
+        "top": "maidensmaterials:blocks/wisteria_planks",
+        "side": "maidensmaterials:blocks/wisteria_planks"
+    }
+}

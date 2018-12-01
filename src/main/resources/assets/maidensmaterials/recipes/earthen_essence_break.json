@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:earthen_block"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:earthen_essence",
+    "count": 9
+  }
+}

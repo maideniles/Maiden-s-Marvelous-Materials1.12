@@ -1,0 +1,34 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "F  ",
+		" M ",
+		"   "
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "maidensmaterials:mica_fragments"
+        },
+		
+		"M":
+		{
+			"type": "forge:ore_dict",
+			"ore": "mortar_and_pestle"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:mica_powder",
+        "count": 8
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/button",
+    "textures": {
+        "texture": "maidensmaterials:blocks/dark_oak_planks"
+    }
+}

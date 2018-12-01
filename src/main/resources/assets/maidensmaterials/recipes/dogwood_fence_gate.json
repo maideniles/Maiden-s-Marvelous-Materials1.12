@@ -1,0 +1,34 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"SPS", "SPS"
+    ],
+    
+    "key":
+    {
+        
+		"P":
+		{
+			"item": "maidensmaterials:dogwood_planks"
+		},
+		
+	 "S":	{
+      "item": "minecraft:stick"
+    }
+		
+		
+	
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:dogwood_fence_gate",
+        "count": 1
+    }
+}

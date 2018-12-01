@@ -1,0 +1,33 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "TTT",
+		"TST",
+		"TTT"
+    ],
+    
+    "key":
+    {
+        "S":
+        {
+            "item": "maidensmaterials:stain_blue"
+        },
+		
+		"T":
+		{
+			"item": "maidensmaterials:whitewashed_stairs"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:blue_stained_stairs",
+        "count": 4
+    }
+}

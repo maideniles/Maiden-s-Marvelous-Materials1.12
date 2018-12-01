@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:mica_block"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:mica_chunk",
+    "count": 9
+  }
+}

@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:citrine_block"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:citrine_chunk",
+    "count": 9
+  }
+}

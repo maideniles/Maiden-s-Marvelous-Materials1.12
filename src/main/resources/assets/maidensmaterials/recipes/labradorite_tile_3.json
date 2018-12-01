@@ -1,0 +1,40 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+      "FBF",
+      " F ",
+      "FMF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "maidensmaterials:labradorite_fragments"
+        },
+		
+		"M":
+		{
+			
+			"type": "forge:ore_dict", "ore": "grout"
+		},
+		
+		"B":
+		{
+			"item": "minecraft:concrete",
+			"data": 0
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:labradorite_tile_3",
+        "count": 16
+    }
+}

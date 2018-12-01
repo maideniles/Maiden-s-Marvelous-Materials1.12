@@ -1,0 +1,31 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+       "PPP","PGP"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:laburnum_slab_half", "data": 0
+        },
+		
+		"G":
+		{
+			"item": "minecraft:glass_pane"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:laburnum_trapdoor_2",
+       "count": 2
+    }
+}

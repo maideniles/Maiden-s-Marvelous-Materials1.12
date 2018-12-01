@@ -1,0 +1,33 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PPP",
+		"PSP",
+		"PPP"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:whitewashed_fence_gate"
+        },
+		
+		"S":
+		{
+			"item": "maidensmaterials:stain_light_gray"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:light_gray_stained_fence_gate",
+        "count": 8
+    }
+}

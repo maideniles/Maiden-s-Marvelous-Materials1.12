@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:sodalite_block"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:sodalite_chunk",
+    "count": 9
+  }
+}

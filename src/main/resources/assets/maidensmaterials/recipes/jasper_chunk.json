@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:jasper_block"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:jasper_chunk",
+    "count": 9
+  }
+}

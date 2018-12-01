@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/door3_wisteria_bottom",
+        "top": "maidensmaterials:blocks/door3_wisteria_top"
+    }
+}

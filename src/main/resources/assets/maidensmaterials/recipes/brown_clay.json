@@ -1,0 +1,37 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PCP",
+		"CMC",
+		"PCP"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:pulverized_brown"
+        },
+		
+		"M":
+		{
+			"type": "forge:ore_dict",
+			"ore": "mortar_and_pestle"
+		},
+		
+		"C":
+		{
+			"item": "minecraft:clay_ball"
+		}
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:brown_clay",
+        "count": 8
+    }
+}

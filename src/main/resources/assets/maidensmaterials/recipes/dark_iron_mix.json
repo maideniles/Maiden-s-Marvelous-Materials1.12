@@ -1,0 +1,33 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "NNN",
+		"NCN",
+		"NNN"
+    ],
+    
+    "key":
+    {
+        "N":
+        {
+            "item": "minecraft:iron_nugget"
+        },
+		
+				
+		"C":
+		{
+			"item": "minecraft:coal",
+			"data": 1
+		}
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:dark_iron_mix",
+        "count": 8
+    }
+}

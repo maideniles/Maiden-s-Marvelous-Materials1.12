@@ -1,0 +1,35 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "textures": {
+        "0": "maidensmaterials:blocks/crabapple_vine",
+		"particle": "maidensmaterials:blocks/crabapple_vine"
+    },
+    "elements": [
+        {
+            "name": "vines",
+            "from": [ 0.0, 0.0, 1.0 ], 
+            "to": [ 16.0, 16.0, 1.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#-1", "uv": [ 0.0, 0.0, 0.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#-1", "uv": [ 0.0, 0.0, 0.0, 16.0 ] },
+                "up": { "texture": "#-1", "uv": [ 0.0, 0.0, 16.0, 0.0 ] },
+                "down": { "texture": "#-1", "uv": [ 0.0, 0.0, 16.0, 0.0 ] }
+            }
+        },
+        {
+            "name": "vine corner side",
+            "from": [ 15.0, 0.0, 0.0 ], 
+            "to": [ 15.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#-1", "uv": [ 0.0, 0.0, 0.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#-1", "uv": [ 0.0, 0.0, 0.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#-1", "uv": [ 0.0, 0.0, 0.0, 16.0 ] },
+                "down": { "texture": "#-1", "uv": [ 0.0, 0.0, 0.0, 16.0 ] }
+            }
+        }
+    ]
+}

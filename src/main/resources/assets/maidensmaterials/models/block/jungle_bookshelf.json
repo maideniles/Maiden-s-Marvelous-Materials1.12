@@ -1,0 +1,7 @@
+{
+   "parent": "block/cube_column",
+    "textures": {
+        "end": "maidensmaterials:blocks/jungle_planks",
+        "side": "maidensmaterials:blocks/jungle_bookshelf"
+    }
+}

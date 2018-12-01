@@ -1,0 +1,34 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PP ",
+		"PP ",
+		"PPB"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:red_stained_planks"
+        },
+		
+		"B":
+		{
+			"type": "forge:ore_dict",
+			"ore": "door_plans_2"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:red_stained_door_2",
+        "count": 1
+    }
+}

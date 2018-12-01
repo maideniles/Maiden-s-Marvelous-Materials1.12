@@ -1,0 +1,34 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"PSP", "PSP"
+    ],
+    
+    "key":
+    {
+        
+		"P":
+		{
+			"item": "maidensmaterials:silverbell_planks"
+		},
+		
+	 "S":	{
+      "item": "minecraft:stick"
+    }
+		
+		
+	
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:silverbell_fence",
+        "count": 1
+    }
+}

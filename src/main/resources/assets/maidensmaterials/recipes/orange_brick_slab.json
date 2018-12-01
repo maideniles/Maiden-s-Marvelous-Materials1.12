@@ -1,0 +1,29 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BBB"
+    ],
+    
+    "key":
+    {
+        
+		"B":
+		{
+			"item": "maidensmaterials:orange_brick_block"
+		}
+		
+		
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:orange_brick_slab_half", "data": 0,
+		"count": 6
+    }
+}

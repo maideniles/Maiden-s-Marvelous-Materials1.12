@@ -1,0 +1,34 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PP ",
+		"PP ",
+		"PPB"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:dogwood_planks"
+        },
+		
+		"B":
+		{
+			"type": "forge:ore_dict",
+			"ore": "door_plans_3"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:dogwood_door_3",
+        "count": 1
+    }
+}

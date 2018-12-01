@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/laburnum_planks",
+        "top": "maidensmaterials:blocks/laburnum_planks",
+        "side": "maidensmaterials:blocks/laburnum_planks"
+    }
+}

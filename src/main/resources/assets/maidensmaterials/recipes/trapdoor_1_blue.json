@@ -1,0 +1,26 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+       "PPP","P P"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:blue_stained_slab_half", "data": 0
+        }
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:blue_stained_trapdoor_1",
+       "count": 2
+    }
+}

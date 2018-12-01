@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/white_large_brick",
+        "top": "maidensmaterials:blocks/white_large_brick",
+        "side": "maidensmaterials:blocks/white_large_brick"
+    }
+}

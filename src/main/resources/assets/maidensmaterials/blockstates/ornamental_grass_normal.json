@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "snowy=false": [
+            { "model": "maidensmaterials:ornamental_grass_normal" },
+            { "model": "maidensmaterials:ornamental_grass_normal", "y": 90 },
+            { "model": "maidensmaterials:ornamental_grass_normal", "y": 180 },
+            { "model": "maidensmaterials:ornamental_grass_normal", "y": 270 }
+        ],
+        "snowy=true":  { "model": "maidensmaterials:ornamental_grass_snow" }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/paulownia_planks",
+        "top": "maidensmaterials:blocks/paulownia_planks",
+        "side": "maidensmaterials:blocks/paulownia_planks"
+    }
+}

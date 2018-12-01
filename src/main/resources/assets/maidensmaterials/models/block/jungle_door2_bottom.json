@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/jungle_door2_bottom",
+        "top": "maidensmaterials:blocks/jungle_door2_top"
+    }
+}

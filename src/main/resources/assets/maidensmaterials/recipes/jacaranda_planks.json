@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:jacaranda_log"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:jacaranda_planks",
+    "count": 4
+  }
+}

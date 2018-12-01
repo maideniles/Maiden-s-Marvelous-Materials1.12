@@ -1,0 +1,72 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BCD",
+		"JXL",
+		"PGW"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+           "item": "maidensmaterials:silverbell_blossoms"
+		},
+		
+		"C":
+        {
+           "item": "maidensmaterials:crabapple_blossoms"
+		},
+		
+		"D":
+        {
+           "item": "maidensmaterials:dogwood_blossoms"
+		},
+		
+		"J":
+        {
+           "item": "maidensmaterials:jacaranda_blossoms"
+		},
+		
+		"L":
+        {
+           "item": "maidensmaterials:laburnum_blossoms"
+		},
+		
+		"P":
+        {
+           "item": "maidensmaterials:paulownia_blossoms"
+		},
+		
+		"W":
+        {
+           "item": "maidensmaterials:wisteria_blossoms"
+		},
+		
+		
+		"X":
+		{
+			"item": "minecraft:glass_bottle"
+			
+		},
+		
+		"G":
+		{
+			"item": "minecraft:gold_nugget"
+			
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:floral_essence",
+		
+        "count": 1
+    }
+}

@@ -1,0 +1,40 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+     "F F",
+     "FMF",
+     "FBF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "maidensmaterials:jade_fragments"
+        },
+		
+		"M":
+		{
+			
+			"type": "forge:ore_dict", "ore": "grout"
+		},
+		
+		"B":
+		{
+			"item": "minecraft:concrete",
+			"data": 0
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:jade_tile_2",
+        "count": 16
+    }
+}

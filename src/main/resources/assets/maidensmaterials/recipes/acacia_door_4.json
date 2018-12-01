@@ -1,0 +1,40 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PPI",
+		"PPI",
+		"PPB"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "minecraft:planks",
+			"data": 4
+        },
+		
+		"I":
+        {
+            "item": "maidensmaterials:dark_iron_inlay"
+        },
+		
+		"B":
+		{
+				"type": "forge:ore_dict",
+			"ore": "door_plans_4"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:acacia_door_4",
+        "count": 1
+    }
+}

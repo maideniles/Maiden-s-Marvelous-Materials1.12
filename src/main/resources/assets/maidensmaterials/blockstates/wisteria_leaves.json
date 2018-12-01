@@ -1,0 +1,23 @@
+{
+    "variants": 
+    {    
+		
+		"check_decay=true,decayable=true": [{ "model": "maidensmaterials:wisteria_leaves" }, {"model": "maidensmaterials:wisteria_leaves", "y": 90}, 
+		
+		{"model": "maidensmaterials:wisteria_leaves", "y": 180},	{"model": "maidensmaterials:wisteria_leaves", "y": 270}] ,
+        
+		
+		"check_decay=true,decayable=false": [{ "model": "maidensmaterials:wisteria_leaves" }, {"model": "maidensmaterials:wisteria_leaves", "y": 90}, 
+		{"model": "maidensmaterials:wisteria_leaves", "y": 180}, 	{"model": "maidensmaterials:wisteria_leaves", "y": 270}] ,
+        
+		
+		"check_decay=false,decayable=true": [{ "model": "maidensmaterials:wisteria_leaves" }, {"model": "maidensmaterials:wisteria_leaves", "y": 90}, 
+		{"model": "maidensmaterials:wisteria_leaves", "y": 180}, {"model": "maidensmaterials:wisteria_leaves", "y": 270}] ,
+        
+		
+		"check_decay=false,decayable=false": [{ "model": "maidensmaterials:wisteria_leaves" }, {"model": "maidensmaterials:wisteria_leaves", "y": 90}, 
+		{"model": "maidensmaterials:wisteria_leaves", "y": 180}, {"model": "maidensmaterials:wisteria_leaves", "y": 270}]
+		
+	}
+	
+}

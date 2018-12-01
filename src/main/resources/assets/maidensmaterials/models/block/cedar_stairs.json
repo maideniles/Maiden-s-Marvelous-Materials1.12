@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/planks_cedar",
+        "top": "maidensmaterials:blocks/planks_cedar",
+        "side": "maidensmaterials:blocks/planks_cedar"
+    }
+}

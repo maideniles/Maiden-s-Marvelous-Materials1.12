@@ -1,0 +1,31 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"B  ", "BB ", "BBB"
+    ],
+    
+    "key":
+    {
+        
+		"B":
+		{
+			"item": "maidensmaterials:red_brick_block"
+		}
+		
+		
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:red_brick_stairs",
+        "count": 6
+    }
+}

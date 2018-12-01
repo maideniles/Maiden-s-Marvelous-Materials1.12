@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:chalcopyrite_block"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:chalcopyrite_chunk",
+    "count": 9
+  }
+}

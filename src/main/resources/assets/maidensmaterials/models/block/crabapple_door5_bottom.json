@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/door5_crabapple_bottom",
+        "top": "maidensmaterials:blocks/door5_crabapple_top"
+    }
+}

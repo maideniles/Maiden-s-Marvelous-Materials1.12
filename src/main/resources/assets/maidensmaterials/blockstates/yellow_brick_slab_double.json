@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "variant=default": { "model": "maidensmaterials:yellow_brick_block" }
+    }
+}

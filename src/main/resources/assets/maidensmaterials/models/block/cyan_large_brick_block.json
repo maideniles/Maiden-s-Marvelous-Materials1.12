@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "maidensmaterials:blocks/cyan_large_brick"
+    }
+}

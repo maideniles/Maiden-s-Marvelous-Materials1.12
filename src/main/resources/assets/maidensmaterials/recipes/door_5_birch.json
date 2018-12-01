@@ -1,0 +1,41 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PPG",
+		"PPG",
+		"PPB"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+             "item": "minecraft:planks",
+			"data": 2
+        },
+		
+		"G":
+        {
+            "item": "minecraft:stained_glass_pane",
+			"data": 0
+        },
+		
+		"B":
+		{
+				"type": "forge:ore_dict",
+			"ore": "door_plans_5"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:birch_door_5",
+        "count": 1
+    }
+}

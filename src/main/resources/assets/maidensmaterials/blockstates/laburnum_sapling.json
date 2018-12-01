@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "stage=0": { "model": "maidensmaterials:laburnum_sapling" },
+        "stage=1": { "model": "maidensmaterials:laburnum_sapling" }
+    }
+}

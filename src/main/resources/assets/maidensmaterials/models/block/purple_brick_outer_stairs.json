@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/purple_brick",
+        "top": "maidensmaterials:blocks/purple_brick",
+        "side": "maidensmaterials:blocks/purple_brick"
+    }
+}

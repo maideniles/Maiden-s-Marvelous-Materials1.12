@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/pink_stained_block",
+        "top": "maidensmaterials:blocks/pink_stained_block",
+        "side": "maidensmaterials:blocks/pink_stained_block"
+    }
+}

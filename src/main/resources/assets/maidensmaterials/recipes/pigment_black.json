@@ -1,0 +1,35 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "FFF",
+		"FMF",
+		"FFF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "minecraft:coal",
+			"data": 1
+        },
+		
+		"M":
+		{
+			"type": "forge:ore_dict",
+			"ore": "mortar_and_pestle"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:pulverized_black",
+        "count": 8
+    }
+}

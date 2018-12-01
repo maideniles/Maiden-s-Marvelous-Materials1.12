@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"3": "maidensmaterials:blocks/fairy_glow_cup_1",
+		"particle": "maidensmaterials:blocks/fairy_glow_cup"
+	},
+	"elements": [
+		{
+			"from": [5.25, 0, 2.35],
+			"to": [5.25, 16, 18.35],
+			"rotation": {"angle": 45, "axis": "y", "origin": [5.25, 8, 10.35]},
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#3"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#3"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#3"},
+				"up": {"uv": [16, 0, 0, 16], "texture": "#3", "rotation": 90},
+				"down": {"uv": [16, 0, 0, 16], "texture": "#3", "rotation": 270}
+			}
+		},
+		{
+			"from": [9, 0, 2.07],
+			"to": [9, 16, 18.07],
+			"rotation": {"angle": -45, "axis": "y", "origin": [9.5, 8, 12.32]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#3"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#3"}
+			}
+		}
+	]
+}

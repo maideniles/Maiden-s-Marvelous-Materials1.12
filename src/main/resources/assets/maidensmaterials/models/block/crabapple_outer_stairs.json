@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "maidensmaterials:blocks/crabapple_planks",
+        "top": "maidensmaterials:blocks/crabapple_planks",
+        "side": "maidensmaterials:blocks/crabapple_planks"
+    }
+}

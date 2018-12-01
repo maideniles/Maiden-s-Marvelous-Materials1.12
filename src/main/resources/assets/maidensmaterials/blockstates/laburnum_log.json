@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y":  { "model": "maidensmaterials:laburnum_log" },
+        "axis=z":   { "model": "maidensmaterials:laburnum_log", "x": 90 },
+        "axis=x":   { "model": "maidensmaterials:laburnum_log", "x": 90, "y": 90 },
+        "axis=none": { "model": "maidensmaterials:laburnum_bark" }
+    }
+}

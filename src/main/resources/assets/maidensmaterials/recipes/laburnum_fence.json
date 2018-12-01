@@ -1,0 +1,34 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"PSP", "PSP"
+    ],
+    
+    "key":
+    {
+        
+		"P":
+		{
+			"item": "maidensmaterials:laburnum_planks"
+		},
+		
+	 "S":	{
+      "item": "minecraft:stick"
+    }
+		
+		
+	
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:laburnum_fence",
+        "count": 1
+    }
+}

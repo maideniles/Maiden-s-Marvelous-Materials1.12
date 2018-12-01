@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+       "bottom": "maidensmaterials:blocks/dark_oak_door5_bottom",
+        "top": "maidensmaterials:blocks/dark_oak_door5_top"
+    }
+}

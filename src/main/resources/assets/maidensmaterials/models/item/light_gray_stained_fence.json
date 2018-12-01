@@ -1,0 +1,5 @@
+{    "parent": "block/fence_inventory",
+    "textures": {
+        "texture": "maidensmaterials:blocks/light_gray_stained_block"
+    }
+}

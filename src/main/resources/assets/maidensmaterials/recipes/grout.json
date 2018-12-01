@@ -1,0 +1,37 @@
+  
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "SCS",
+		"CBC",
+		"SCS"
+    ],
+    
+    "key":
+    {
+        "S":
+        {
+            "item": "minecraft:sand",
+			"data": 0
+        },
+		
+		"B":
+		{
+			"item": "minecraft:water_bucket"
+		},
+		
+		"C":
+		{
+			"item": "minecraft:clay_ball"
+		}
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:grout",
+        "count": 1
+    }
+}

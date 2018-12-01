@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "stage=0": { "model": "maidensmaterials:dogwood_sapling_vines" },
+        "stage=1": { "model": "maidensmaterials:dogwood_sapling_vines" }
+    }
+}

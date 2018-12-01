@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "flower=0": { "model": "maidensmaterials:vase_black" },
+		"flower=1": { "model": "maidensmaterials:vase_black_flowers_red" },
+		"flower=2": { "model": "maidensmaterials:vase_black_flowers_pink" },
+		"flower=3": { "model": "maidensmaterials:vase_black_flowers_purple" },
+		"flower=4": { "model": "maidensmaterials:vase_black_flowers_yellow" },
+		"flower=5": { "model": "maidensmaterials:vase_black_flowers_blue" },
+		"flower=6": { "model": "maidensmaterials:vase_black_flowers_white"},
+		"flower=7": {"model":  "maidensmaterials:vase_black_flowers_violet"}
+		
+    }
+}

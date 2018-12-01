@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:silverbell_log"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:silverbell_planks",
+    "count": 4
+  }
+}

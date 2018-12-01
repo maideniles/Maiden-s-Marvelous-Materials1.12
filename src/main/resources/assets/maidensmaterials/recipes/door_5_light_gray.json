@@ -1,0 +1,40 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PPG",
+		"PPG",
+		"PPB"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:light_gray_stained_planks"
+        },
+		
+		"G":
+        {
+            "item": "minecraft:stained_glass_pane",
+			"data": 0
+        },
+		
+		"B":
+		{
+				"type": "forge:ore_dict",
+			"ore": "door_plans_5"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:light_gray_stained_door_5",
+        "count": 1
+    }
+}

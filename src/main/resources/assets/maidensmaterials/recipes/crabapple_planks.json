@@ -1,0 +1,13 @@
+
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "maidensmaterials:crabapple_log"
+	}
+  ],
+  "result": {
+    "item": "maidensmaterials:crabapple_planks",
+    "count": 4
+  }
+}

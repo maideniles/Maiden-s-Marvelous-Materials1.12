@@ -1,0 +1,49 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "maidensmaterials:blocks/lotuslilly",
+		"4": "maidensmaterials:blocks/lotus_large",
+		"particle": "maidensmaterials:blocks/lotuslilly"
+	},
+	"elements": [
+		{
+			"name": "lilypad",
+			"from": [0, 0.25, 0],
+			"to": [16, 0.25, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "lotus EW",
+			"from": [8, 0.25, 4],
+			"to": [8, 9.25, 15],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 9], "texture": "#missing"},
+				"east": {"uv": [3, 7, 14, 16], "texture": "#4"},
+				"south": {"uv": [0, 0, 0, 9], "texture": "#missing"},
+				"west": {"uv": [3, 7, 14, 16], "texture": "#4"},
+				"up": {"uv": [0, 0, 0, 12], "texture": "#missing"},
+				"down": {"uv": [0, 0, 0, 12], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "lotus NS",
+			"from": [2.5, 0.25, 9.5],
+			"to": [13.5, 7.25, 9.5],
+			"faces": {
+				"north": {"uv": [3, 9, 14, 16], "texture": "#4"},
+				"east": {"uv": [0, 0, 0, 7], "texture": "#missing"},
+				"south": {"uv": [3, 9, 14, 16], "texture": "#4"},
+				"west": {"uv": [0, 0, 0, 7], "texture": "#missing"},
+				"up": {"uv": [0, 0, 11, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 11, 0], "texture": "#missing"}
+			}
+		}
+	]
+}

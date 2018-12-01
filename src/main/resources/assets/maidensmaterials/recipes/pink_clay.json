@@ -1,0 +1,37 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PCP",
+		"CMC",
+		"PCP"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:pulverized_pink"
+        },
+		
+		"M":
+		{
+			"type": "forge:ore_dict",
+			"ore": "mortar_and_pestle"
+		},
+		
+		"C":
+		{
+			"item": "minecraft:clay_ball"
+		}
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:pink_clay",
+        "count": 8
+    }
+}

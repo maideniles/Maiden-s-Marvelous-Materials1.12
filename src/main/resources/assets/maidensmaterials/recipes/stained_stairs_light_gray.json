@@ -1,0 +1,33 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "TTT",
+		"TST",
+		"TTT"
+    ],
+    
+    "key":
+    {
+        "S":
+        {
+            "item": "maidensmaterials:stain_light_gray"
+        },
+		
+		"T":
+		{
+			"item": "maidensmaterials:whitewashed_stairs"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:light_gray_stained_stairs",
+        "count": 4
+    }
+}
