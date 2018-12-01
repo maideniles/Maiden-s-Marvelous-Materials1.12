@@ -1,4 +1,4 @@
-package com.maideniles.maidensmaterials.init.items.potions;
+package com.maideniles.maidensmaterials.event;
 
 import java.util.Random;
 
