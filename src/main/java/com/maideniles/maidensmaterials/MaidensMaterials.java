@@ -1,5 +1,6 @@
 package com.maideniles.maidensmaterials;
 
+import java.io.File;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.config.ConfigHandler;
@@ -24,6 +25,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class MaidensMaterials {
 
+	public static File config;
 	public static final Random RANDOM = new Random();
 	
 	public static final CreativeTabs blockstab = new CreativeTabs("blocks_tab") {
