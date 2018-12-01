@@ -130,43 +130,33 @@ public class BlockLaburnumLeaves extends BlockLeaves
     {
         return NonNullList.withSize(1, new ItemStack(this));
     }
-  
-   
     
-    @Override 
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
-    {    
-        ItemStack mainHandItemStack = playerIn.getHeldItemMainhand();
-        Item mainHandItem = playerIn.getHeldItemMainhand().getItem();
-        
-        if(mainHandItem == ItemInit.pruning_shears || playerIn.isPotionActive(MaidensMaterials.FLORAL_FORTUNE))
-        {
-            if(!worldIn.isRemote)
-            {
-                if(mainHandItem.getDamage(mainHandItemStack) < 48)
-                {
-                    if(!playerIn.isCreative()) {
-mainHandItem.setDamage(mainHandItemStack, mainHandItem.getDamage(mainHandItemStack) + 1);
-                    }
-                }
-                else
-                {
-                    mainHandItemStack.shrink(1);
-                }
-                EntityItem itemblossoms = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.laburnum_blossoms, 1));
-                itemblossoms.setPickupDelay(0);
-                worldIn.spawnEntity(itemblossoms); //To Spawn the Item
-                
-                if((new Random().nextInt(100) + 1) < 10) {
-                EntityItem itemessence = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.FLORAL_ESSENCE, 1));
-                itemessence.setPickupDelay(0);
-                worldIn.spawnEntity(itemessence);}//To Spawn the Item
-            }
-        }
-        return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
-           
-        }
-    
+	@Override
+	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+		ItemStack mainHandItemStack = playerIn.getHeldItemMainhand();
+		Item mainHandItem = playerIn.getHeldItemMainhand().getItem();
+
+		if (mainHandItem == ItemInit.pruning_shears || playerIn.isPotionActive(MaidensMaterials.FLORAL_FORTUNE)) {
+			if (!worldIn.isRemote) {
+				if (mainHandItem == ItemInit.pruning_shears && !playerIn.isPotionActive(MaidensMaterials.FLORAL_FORTUNE)) {
+					mainHandItemStack.damageItem(1, playerIn);
+				}
+
+				EntityItem itemblossoms = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(),new ItemStack(ItemInit.laburnum_blossoms, 1));
+				itemblossoms.setPickupDelay(0);
+				worldIn.spawnEntity(itemblossoms); // To Spawn the Item
+
+				if ((new Random().nextInt(100) + 1) < 10) {
+					EntityItem itemessence = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(),new ItemStack(ItemInit.FLORAL_ESSENCE, 1));
+					itemessence.setPickupDelay(0);
+					worldIn.spawnEntity(itemessence);
+				} // To Spawn the Item
+			}
+		}
+		return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
+
+	}
+
     @SideOnly(Side.CLIENT)
     public BlockRenderLayer getBlockLayer()
     {
