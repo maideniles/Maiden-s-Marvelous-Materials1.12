@@ -1,14 +1,10 @@
 package com.maideniles.maidensmaterials.init.items;
 
-import net.minecraft.item.Item;
-
-public class ItemPulverizedMaterials extends Item {
+public class ItemPulverizedMaterials extends ItemMaiden {
 
 	public ItemPulverizedMaterials(String name) {
-		setUnlocalizedName(name);
-		setRegistryName(name);
+		super(name);
 		setMaxStackSize(16);
-
 	}
 
 }

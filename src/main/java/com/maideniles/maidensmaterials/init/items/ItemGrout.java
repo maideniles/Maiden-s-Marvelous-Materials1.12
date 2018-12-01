@@ -3,18 +3,15 @@ package com.maideniles.maidensmaterials.init.items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class ItemGrout extends Item {
+public class ItemGrout extends ItemMaiden {
 
 	private Item containerItem;
 
 	public ItemGrout(String name) {
-
-		setUnlocalizedName(name);
-		setRegistryName(name);
+		super(name);
 		setMaxStackSize(1);
 		setMaxDamage(3);
 		setNoRepair();
-		
 	}
 
 	@Override

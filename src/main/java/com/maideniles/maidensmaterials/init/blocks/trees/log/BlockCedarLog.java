@@ -1,5 +1,8 @@
 package com.maideniles.maidensmaterials.init.blocks.trees.log;
 
+import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLog;
 import net.minecraft.block.material.Material;
@@ -7,6 +10,7 @@ import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
@@ -24,7 +28,9 @@ public class BlockCedarLog
     setUnlocalizedName(name);
     setRegistryName(name);
     setDefaultState(blockState.getBaseState().withProperty(LOG_AXIS, BlockLog.EnumAxis.Y));
-    }
+	BlockInit.BLOCKS.add(this);
+	MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));  
+  }
 
 
 

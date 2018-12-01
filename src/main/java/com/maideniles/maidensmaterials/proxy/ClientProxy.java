@@ -10,11 +10,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class ClientProxy extends CommonProxy
 {
-	@Override
-	public void registerModelResourceLocation(Item item) {
-	    ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
-	}
-	
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		super.preInit(event);

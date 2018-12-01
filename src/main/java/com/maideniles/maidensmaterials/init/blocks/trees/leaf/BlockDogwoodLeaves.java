@@ -5,7 +5,7 @@ import javax.annotation.Nullable;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.init.BlockInit;
-import com.maideniles.maidensmaterials.init.ItemInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockPlanks.EnumType;
@@ -17,6 +17,7 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
 import net.minecraft.tileentity.TileEntity;
@@ -38,6 +39,8 @@ public class BlockDogwoodLeaves extends BlockLeaves
     	setUnlocalizedName(name);
 		setRegistryName(name);
         setDefaultState(blockState.getBaseState().withProperty(CHECK_DECAY, Boolean.valueOf(true)).withProperty(DECAYABLE, Boolean.valueOf(true)));
+		BlockInit.BLOCKS.add(this);
+		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
     @Override
@@ -139,7 +142,7 @@ public class BlockDogwoodLeaves extends BlockLeaves
         ItemStack mainHandItemStack = playerIn.getHeldItemMainhand();
         Item mainHandItem = playerIn.getHeldItemMainhand().getItem();
         
-        if(mainHandItem == ItemInit.pruning_shears || playerIn.isPotionActive(MaidensMaterials.FLORAL_FORTUNE))
+        if(mainHandItem == MaidensItems.pruning_shears || playerIn.isPotionActive(MaidensMaterials.FLORAL_FORTUNE))
         {
             if(!worldIn.isRemote)
             {
@@ -153,12 +156,12 @@ mainHandItem.setDamage(mainHandItemStack, mainHandItem.getDamage(mainHandItemSta
                 {
                     mainHandItemStack.shrink(1);
                 }
-                EntityItem itemblossoms = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.dogwood_blossoms, 1));
+                EntityItem itemblossoms = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(MaidensItems.dogwood_blossoms, 1));
                 itemblossoms.setPickupDelay(0);
                 worldIn.spawnEntity(itemblossoms); //To Spawn the Item
                 
                 if((new Random().nextInt(100) + 1) < 10) {
-                EntityItem itemessence = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.FLORAL_ESSENCE, 1));
+                EntityItem itemessence = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(MaidensItems.FLORAL_ESSENCE, 1));
                 itemessence.setPickupDelay(0);
                 worldIn.spawnEntity(itemessence);}//To Spawn the Item
             }

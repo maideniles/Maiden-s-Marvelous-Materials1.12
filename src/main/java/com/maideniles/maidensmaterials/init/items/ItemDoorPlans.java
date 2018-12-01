@@ -3,10 +3,9 @@ package com.maideniles.maidensmaterials.init.items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class ItemDoorPlans extends Item {
+public class ItemDoorPlans extends ItemMaiden {
 	public ItemDoorPlans(String name) {
-		setUnlocalizedName(name);
-		setRegistryName(name);
+		super(name);
 		setMaxDamage(30);
 		setNoRepair();
 	}

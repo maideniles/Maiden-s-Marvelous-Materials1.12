@@ -1,7 +1,7 @@
 package com.maideniles.maidensmaterials.init.items.potions;
 import com.google.common.base.Predicate;
 import com.maideniles.maidensmaterials.MaidensMaterials;
-import com.maideniles.maidensmaterials.init.ItemInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.client.tutorial.Tutorial;
 import net.minecraft.init.Items;
@@ -28,7 +28,7 @@ public class PotionTypeRegistry {
 	 
 	      
 	      //---Recipes---//
-	        PotionHelper.addMix(PotionTypes.MUNDANE, ItemInit.EARTHEN_ESSENCE, GATHERER);
-	        PotionHelper.addMix(PotionTypes.MUNDANE, ItemInit.FLORAL_ESSENCE, FLORAL_FORTUNE);
+	        PotionHelper.addMix(PotionTypes.MUNDANE, MaidensItems.EARTHEN_ESSENCE, GATHERER);
+	        PotionHelper.addMix(PotionTypes.MUNDANE, MaidensItems.FLORAL_ESSENCE, FLORAL_FORTUNE);
 	}
 }

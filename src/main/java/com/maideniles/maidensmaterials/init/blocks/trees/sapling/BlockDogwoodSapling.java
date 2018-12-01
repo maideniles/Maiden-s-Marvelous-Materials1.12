@@ -4,6 +4,7 @@ package com.maideniles.maidensmaterials.init.blocks.trees.sapling;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 import com.maideniles.maidensmaterials.world.feature.tree.WorldGenDogwoodTree;
 
 import net.minecraft.block.BlockBush;
@@ -40,7 +41,8 @@ public class BlockDogwoodSapling
 	    setHardness(0.0F);
 	    setTickRandomly(true);
 	    setDefaultState(this.blockState.getBaseState().withProperty(STAGE, Integer.valueOf(0)));
-		
+		BlockInit.BLOCKS.add(this);
+		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
   
   public AxisAlignedBB func_185496_a(IBlockState state, IBlockAccess source, BlockPos pos)

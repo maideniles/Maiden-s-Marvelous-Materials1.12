@@ -1,6 +1,9 @@
 
     package com.maideniles.maidensmaterials.init.blocks.trees.log;
-    import net.minecraft.block.Block;
+    import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
+
+import net.minecraft.block.Block;
     import net.minecraft.block.BlockLog;
     import net.minecraft.block.SoundType;
     import net.minecraft.block.BlockLog.EnumAxis;
@@ -33,7 +36,8 @@ import net.minecraft.util.EnumFacing;
         setRegistryName(name);
         setDefaultState(blockState.getBaseState().withProperty(LOG_AXIS, BlockLog.EnumAxis.Y));
 
-        
+		BlockInit.BLOCKS.add(this);
+		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
        
       }
       

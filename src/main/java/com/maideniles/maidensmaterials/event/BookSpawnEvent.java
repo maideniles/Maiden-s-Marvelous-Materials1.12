@@ -1,7 +1,7 @@
 package com.maideniles.maidensmaterials.event;
 
 import com.maideniles.maidensmaterials.config.ConfigHandler;
-import com.maideniles.maidensmaterials.init.ItemInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -22,7 +22,7 @@ public class BookSpawnEvent {
 		NBTTagCompound playerData = event.player.getEntityData();
 		NBTTagCompound data = playerData != null ? playerData.getCompoundTag(EntityPlayer.PERSISTED_NBT_TAG) : new NBTTagCompound();
 		if (!data.getBoolean(TAG_PLAYER_HAS_BOOK) && (ConfigHandler.BOOK_SPAWN)) {
-			ItemHandlerHelper.giveItemToPlayer(event.player, new ItemStack(ItemInit.guide_book));
+			ItemHandlerHelper.giveItemToPlayer(event.player, new ItemStack(MaidensItems.guide_book));
 			data.setBoolean(TAG_PLAYER_HAS_BOOK, true);
 			playerData.setTag(EntityPlayer.PERSISTED_NBT_TAG, data);
 		}

@@ -2,6 +2,7 @@ package com.maideniles.maidensmaterials.init.blocks;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirt;
@@ -12,6 +13,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.NonNullList;
@@ -32,7 +34,8 @@ public class CustomBlockGrass extends BlockGrass
 		setSoundType(SoundType.GROUND);
 		BlockInit.GRASS.add(BlockInit.ornamental_grass);
 		
-		
+		BlockInit.BLOCKS.add(this);
+		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 	
 

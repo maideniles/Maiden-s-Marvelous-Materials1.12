@@ -1,19 +1,19 @@
 package com.maideniles.maidensmaterials.proxy;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.handlers.GuiHandler;
 import com.maideniles.maidensmaterials.handlers.RegistryHandler;
 import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
-import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -30,6 +30,8 @@ public class CommonProxy
 	
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		BlockInit.registerOreDictionary();
+//		MinecraftForge.EVENT_BUS.register(MaidensItems.class); 
 		RegistryHandler.Common();
 	}
 	
@@ -67,8 +69,4 @@ public class CommonProxy
 
 	}
 	
-	public void openMyGui() 
-	{
-		
-	}
 }

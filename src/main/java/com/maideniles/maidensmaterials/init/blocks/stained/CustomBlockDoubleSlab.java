@@ -5,11 +5,13 @@ import java.util.List;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.BlockSlab;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
@@ -20,6 +22,8 @@ public class CustomBlockDoubleSlab extends CustomBlockSlab
 	public CustomBlockDoubleSlab(String name, float hardness, float resistance) 
 	{
 		super(name, hardness, resistance);
+		BlockInit.BLOCKS.add(this);
+		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 	
 	@Override
