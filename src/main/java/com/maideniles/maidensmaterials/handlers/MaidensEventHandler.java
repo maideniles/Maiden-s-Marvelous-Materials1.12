@@ -25,7 +25,7 @@ public class MaidensEventHandler {
 	@SubscribeEvent
 	public static void onDropBlocksEvent(HarvestDropsEvent event) {
 		if (CommonProxy.validBlocks.contains(event.getState().getBlock())) {
-			if ((rand.nextInt(200) + 1) < 20) {
+			if ((rand.nextInt(200) + 1) < 1) {
 				event.getDrops().add(new ItemStack(ItemInit.EARTHEN_ESSENCE, 1));
 			}
 		}

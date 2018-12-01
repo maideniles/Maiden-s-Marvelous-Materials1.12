@@ -10,6 +10,7 @@ import com.maideniles.maidensmaterials.handlers.RegistryHandler;
 import com.maideniles.maidensmaterials.init.BlockInit;
 
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
@@ -44,9 +45,10 @@ public class CommonProxy
 	            if(ore.toLowerCase().contains("ore")) 
 	                oresIWant.add(ore);
 	            
-	        for(String ore : OreDictionary.getOreNames())
-	            if(ore.toLowerCase().contains("log")) 
-	        
+	        for(String ore2 : OreDictionary.getOreNames())
+	            if(ore2.toLowerCase().contains("log")) 
+	        oresIWant.add(ore2);
+	            	
 	        for(String dict : oresIWant) {
 	            NonNullList<ItemStack> blockz = OreDictionary.getOres(dict);
 	            for(ItemStack s : blockz) {
@@ -65,6 +67,8 @@ public class CommonProxy
 	        for(Item stack : gatheredOres)
 	        	validBlocks.add(Block.getBlockFromItem(stack));  
 
+	        validBlocks.add(Blocks.GLOWSTONE);
+	       
 	}
 	
 	public void openMyGui() 
