@@ -13,5 +13,4 @@ public class ItemPruningShears extends Item{
 		setMaxDamage(48);
 	}
 	
-	
 }
