@@ -62,8 +62,8 @@ public class CommonProxy
 	            }
 	        }
 	        
-	        for(ItemStack stack : gatheredOres)
-	        	validBlocks.add(Block.getBlockFromItem(stack.getItem()));  
+	        for(Item stack : gatheredOres)
+	        	validBlocks.add(Block.getBlockFromItem(stack));  
 
 	}
 	

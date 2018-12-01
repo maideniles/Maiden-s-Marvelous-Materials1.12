@@ -24,6 +24,7 @@ import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+@Mod.EventBusSubscriber(modid = Reference.MODID)
 public class GathererEvents {
 
 	
@@ -33,7 +34,7 @@ public class GathererEvents {
 	 EntityPlayer player = event.getPlayer();
 	 
 	 if(!player.capabilities.isCreativeMode && player.isPotionActive(MaidensMaterials.GATHERER)){
-	 	
+	 	System.out.println("A");
 	 
 	 if(CommonProxy.validBlocks.contains(event.getState().getBlock())){
 		 
@@ -43,6 +44,7 @@ public class GathererEvents {
          {
         	 item.setPickupDelay(40); //To Set a Small Pickup Delay
              event.getWorld().spawnEntity(item);
+            System.out.println("F");
          }
      }
  }

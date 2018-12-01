@@ -3,7 +3,6 @@ import java.io.File;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.config.ConfigHandler;
-import com.maideniles.maidensmaterials.init.blocks.trees.log.LogFurnaceEvents;
 import com.maideniles.maidensmaterials.init.items.gui.BookSpawnEvent;
 import com.maideniles.maidensmaterials.init.items.potions.GathererEvents;
 import com.maideniles.maidensmaterials.init.items.potions.FloralFortuneEvent;
@@ -60,13 +59,7 @@ public class MaidensMaterials
 	public static void preInit(FMLPreInitializationEvent event)
 	{
 		proxy.preInit(event);
-		
-		
-		
-		  MinecraftForge.EVENT_BUS.register(new GathererEvents());
-		  MinecraftForge.EVENT_BUS.register(new FloralFortuneEvent());
-		  MinecraftForge.EVENT_BUS.register(new BookSpawnEvent());
-		  MinecraftForge.EVENT_BUS.register(new LogFurnaceEvents());
+	 
 		}
 	
 	@EventHandler
