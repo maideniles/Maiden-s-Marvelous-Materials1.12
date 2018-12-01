@@ -141,18 +141,18 @@ public class BlockJacarandaLeaves extends BlockLeaves
 		ItemStack mainHandItemStack = playerIn.getHeldItemMainhand();
 		Item mainHandItem = playerIn.getHeldItemMainhand().getItem();
 
-		if (mainHandItem == ItemInit.pruning_shears || playerIn.isPotionActive(MaidensMaterials.FLORAL_FORTUNE)) {
+		if (mainHandItem == MaidensItems.pruning_shears || playerIn.isPotionActive(MaidensMaterials.FLORAL_FORTUNE)) {
 			if (!worldIn.isRemote) {
-				if (mainHandItem == ItemInit.pruning_shears && !playerIn.isPotionActive(MaidensMaterials.FLORAL_FORTUNE)) {
+				if (mainHandItem == MaidensItems.pruning_shears && !playerIn.isPotionActive(MaidensMaterials.FLORAL_FORTUNE)) {
 					mainHandItemStack.damageItem(1, playerIn);
 				}
 
-				EntityItem itemblossoms = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(),new ItemStack(ItemInit.jacaranda_blossoms, 1));
+				EntityItem itemblossoms = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(),new ItemStack(MaidensItems.jacaranda_blossoms, 1));
 				itemblossoms.setPickupDelay(0);
 				worldIn.spawnEntity(itemblossoms); // To Spawn the Item
 
 				if ((new Random().nextInt(100) + 1) < 10) {
-					EntityItem itemessence = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(),new ItemStack(ItemInit.FLORAL_ESSENCE, 1));
+					EntityItem itemessence = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(),new ItemStack(MaidensItems.FLORAL_ESSENCE, 1));
 					itemessence.setPickupDelay(0);
 					worldIn.spawnEntity(itemessence);
 				} // To Spawn the Item
