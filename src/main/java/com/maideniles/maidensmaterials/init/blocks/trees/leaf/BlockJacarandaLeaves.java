@@ -5,7 +5,7 @@ import javax.annotation.Nullable;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.init.BlockInit;
-import com.maideniles.maidensmaterials.init.ItemInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockPlanks.EnumType;
@@ -17,6 +17,7 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
 import net.minecraft.tileentity.TileEntity;
@@ -38,6 +39,8 @@ public class BlockJacarandaLeaves extends BlockLeaves
     	setUnlocalizedName(name);
 		setRegistryName(name);
         setDefaultState(blockState.getBaseState().withProperty(CHECK_DECAY, Boolean.valueOf(true)).withProperty(DECAYABLE, Boolean.valueOf(true)));
+		BlockInit.BLOCKS.add(this);
+		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
     @Override
@@ -132,7 +135,7 @@ public class BlockJacarandaLeaves extends BlockLeaves
     }
   
    
-    
+ 
     @Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		ItemStack mainHandItemStack = playerIn.getHeldItemMainhand();

@@ -2,11 +2,14 @@ package com.maideniles.maidensmaterials.init.blocks.trees.vine;
 
 import javax.annotation.Nullable;
 
+import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 import com.maideniles.maidensmaterials.init.blocks.stained.BlockBaseFacing;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
@@ -23,7 +26,8 @@ public class BlockVineTie extends BlockBaseFacing {
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setSoundType(SoundType.PLANT);
-		// TODO Auto-generated constructor stub
+		BlockInit.BLOCKS.add(this);
+		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
 	

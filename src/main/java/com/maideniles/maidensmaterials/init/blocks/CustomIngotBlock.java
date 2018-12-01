@@ -6,7 +6,7 @@ import java.util.Random;
 import javax.annotation.Nullable;
 
 import com.maideniles.maidensmaterials.init.BlockInit;
-import com.maideniles.maidensmaterials.init.ItemInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -15,6 +15,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
 import net.minecraft.tileentity.TileEntity;
@@ -37,7 +38,8 @@ public class CustomIngotBlock extends Block
 		setHardness(hardness);
 		setResistance(resistance);
 		setHarvestLevel("pickaxe", harvestLevel);
-				
+		BlockInit.BLOCKS.add(this);
+		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
 	

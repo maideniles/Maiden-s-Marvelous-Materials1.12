@@ -3,7 +3,7 @@ package com.maideniles.maidensmaterials.init.blocks.vase;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.init.BlockInit;
-import com.maideniles.maidensmaterials.init.ItemInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -14,6 +14,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
@@ -30,8 +31,8 @@ public class BlockFlowerVaseLime extends Block{
 	protected static final AxisAlignedBB VASE_AABB = new AxisAlignedBB(0.3125D, 0.0D, 0.3125D, 0.6875D, 0.375D, 0.6875D);
 	
 	public static final Item[] FLOWERS = {
-		    ItemInit.crabapple_blossoms, ItemInit.dogwood_blossoms, ItemInit.jacaranda_blossoms, ItemInit.laburnum_blossoms, 
-		    ItemInit.paulownia_blossoms, ItemInit.silverbell_blossoms, ItemInit.wisteria_blossoms};
+		    MaidensItems.crabapple_blossoms, MaidensItems.dogwood_blossoms, MaidensItems.jacaranda_blossoms, MaidensItems.laburnum_blossoms, 
+		    MaidensItems.paulownia_blossoms, MaidensItems.silverbell_blossoms, MaidensItems.wisteria_blossoms};
 	public static final PropertyInteger FLOWER = PropertyInteger.create("flower", 0, FLOWERS.length);
 	
 	public BlockFlowerVaseLime(String name, Material materialIn) {
@@ -39,7 +40,8 @@ public class BlockFlowerVaseLime extends Block{
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		this.setDefaultState(this.getDefaultState().withProperty(FLOWER, 0));
-		
+		BlockInit.BLOCKS.add(this);
+		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)

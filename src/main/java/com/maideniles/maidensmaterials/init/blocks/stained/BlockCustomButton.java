@@ -1,8 +1,12 @@
 package com.maideniles.maidensmaterials.init.blocks.stained;
 
 import com.maideniles.maidensmaterials.Reference;
+import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
+
 import net.minecraft.block.BlockButton;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
@@ -16,6 +20,8 @@ public class BlockCustomButton extends BlockButton{
 		setRegistryName(name);
 		setHardness(2.0F);
 		setResistance(20);
+		BlockInit.BLOCKS.add(this);
+		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
 	

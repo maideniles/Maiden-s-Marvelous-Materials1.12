@@ -1,16 +1,11 @@
 package com.maideniles.maidensmaterials.init.items;
 
-import net.minecraft.item.Item;
+public class ItemPruningShears extends ItemMaiden {
 
-public class ItemPruningShears extends Item{
-
-	
-	public ItemPruningShears(String name){
-		
-		setUnlocalizedName(name);
-		setRegistryName(name);
+	public ItemPruningShears(String name) {
+		super(name);
 		setMaxStackSize(1);
 		setMaxDamage(48);
 	}
-	
+
 }

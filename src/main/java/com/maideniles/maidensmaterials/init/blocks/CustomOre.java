@@ -4,12 +4,13 @@ import java.util.Random;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.init.BlockInit;
-import com.maideniles.maidensmaterials.init.ItemInit;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
@@ -29,7 +30,8 @@ public class CustomOre extends Block
 		setResistance(4.0F);
 		setHarvestLevel("pickaxe", 2);
 		
-	
+		BlockInit.BLOCKS.add(this);
+		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 		 
 		
 		
@@ -50,62 +52,62 @@ public class CustomOre extends Block
 	    if(state.getBlock() == BlockInit.amethyst_ore)
 	    {
 	    	
-	    	drops.add(new ItemStack(ItemInit.amethyst_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
+	    	drops.add(new ItemStack(MaidensItems.amethyst_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 
 	  if(state.getBlock() == BlockInit.chalcopyrite_ore)
 	  {
-		  drops.add(new ItemStack(ItemInit.chalcopyrite_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
+		  drops.add(new ItemStack(MaidensItems.chalcopyrite_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	  }
 	   
 	  if(state.getBlock() == BlockInit.jade_ore)
 	  {
-		  drops.add(new ItemStack(ItemInit.jade_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
+		  drops.add(new ItemStack(MaidensItems.jade_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	  }
 	    
 	  if(state.getBlock() == BlockInit.jasper_ore)
 	  {
-		  drops.add(new ItemStack(ItemInit.jasper_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
+		  drops.add(new ItemStack(MaidensItems.jasper_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	  }
 	  
 	  if(state.getBlock() == BlockInit.labradorite_ore)
 	  {
-		  drops.add(new ItemStack(ItemInit.labradorite_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
+		  drops.add(new ItemStack(MaidensItems.labradorite_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	  }
 	  
 	    if(state.getBlock() == BlockInit.mica_ore)
 	    {
-	    	drops.add(new ItemStack(ItemInit.mica_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
+	    	drops.add(new ItemStack(MaidensItems.mica_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	    
 	    if(state.getBlock() == BlockInit.moonstone_ore)
 	    {
-	    	drops.add(new ItemStack(ItemInit.moonstone_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
+	    	drops.add(new ItemStack(MaidensItems.moonstone_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	    
 	    if(state.getBlock() == BlockInit.rose_quartz_ore)
 	    {
-	    	drops.add(new ItemStack(ItemInit.rose_quartz_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
+	    	drops.add(new ItemStack(MaidensItems.rose_quartz_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	    
 	    if(state.getBlock() == BlockInit.sodalite_ore)
 	    {
-	    	drops.add(new ItemStack(ItemInit.sodalite_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
+	    	drops.add(new ItemStack(MaidensItems.sodalite_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	    
 	    if(state.getBlock() == BlockInit.aventurine_ore)
 	    {
-	    	drops.add(new ItemStack(ItemInit.aventurine_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
+	    	drops.add(new ItemStack(MaidensItems.aventurine_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	    
 	    if(state.getBlock() == BlockInit.carnelian_ore)
 	    {
-	    	drops.add(new ItemStack(ItemInit.carnelian_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
+	    	drops.add(new ItemStack(MaidensItems.carnelian_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	    
 	    if(state.getBlock() == BlockInit.citrine_ore)
 	    {
-	    	drops.add(new ItemStack(ItemInit.citrine_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
+	    	drops.add(new ItemStack(MaidensItems.citrine_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	   
 	}
