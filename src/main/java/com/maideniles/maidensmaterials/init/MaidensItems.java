@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.Reference;
+import com.maideniles.maidensmaterials.handlers.RecipeHandler;
 import com.maideniles.maidensmaterials.init.blocks.item.ItemBlockDoor;
 import com.maideniles.maidensmaterials.init.blocks.stained.CustomBlockHalfSlab;
 import com.maideniles.maidensmaterials.init.blocks.stained.door.CustomBlockDoor;
@@ -255,7 +256,11 @@ public class MaidensItems{
 		}
 		
 		e.getRegistry().registerAll(ITEMS.toArray(new Item[ITEMS.size()]));
+		
+		MaidensBlocks.registerOreDictionary();
 		registerData();
+		
+		RecipeHandler.registerSmelting();
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -265,7 +270,7 @@ public class MaidensItems{
 			if(itm instanceof ItemSlab) {
 				BlockSlab b = (BlockSlab) Block.getBlockFromItem(itm);
 				if(b.isDouble()) {
-					break;
+					continue;
 				}
 			}
 			ModelLoader.setCustomModelResourceLocation(itm, 0, new ModelResourceLocation(itm.getRegistryName(), "inventory"));
