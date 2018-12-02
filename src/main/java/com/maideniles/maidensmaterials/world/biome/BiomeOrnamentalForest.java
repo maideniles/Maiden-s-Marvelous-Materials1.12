@@ -5,7 +5,7 @@ import java.util.Random;
 
 import com.maideniles.maidensmaterials.config.ConfigHandler;
 import com.maideniles.maidensmaterials.init.BiomeInit;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.world.feature.tree.WorldGenSilverBellTreeTallVines;
 import com.maideniles.maidensmaterials.world.feature.tree.WorldGenSilverbellTree;
 import com.maideniles.maidensmaterials.world.feature.tree.WorldGenWisteriaTree;
@@ -52,7 +52,7 @@ public class BiomeOrnamentalForest extends Biome {
         super(new BiomeProperties("ornamental_forest").setBaseHeight(0.125F).setHeightVariation(0.01F).setTemperature(0.7F).setRainfall(0.8F).setWaterColor(65535));
        
  
-    topBlock = BlockInit.ornamental_grass.getDefaultState();
+    topBlock = MaidensBlocks.ornamental_grass.getDefaultState();
     fillerBlock = Blocks.DIRT.getDefaultState();
    
    

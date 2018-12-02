@@ -4,27 +4,22 @@ import java.util.Random;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.Reference;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 import com.maideniles.maidensmaterials.init.items.potions.PotionTypeRegistry;
 import com.maideniles.maidensmaterials.proxy.CommonProxy;
 
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionType;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.world.BlockEvent.BreakEvent;
 import net.minecraftforge.event.world.BlockEvent.HarvestDropsEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Mod.EventBusSubscriber(modid = Reference.MODID)
 public class MaidensEventHandler {
@@ -63,9 +58,9 @@ public class MaidensEventHandler {
 		EntityPlayer player = event.getPlayer();
 		if (!player.capabilities.isCreativeMode && player.isPotionActive(MaidensMaterials.FLORAL_FORTUNE)) {
 
-			if (BlockInit.GRASS.contains(event.getState().getBlock())) {
+			if (MaidensBlocks.GRASS.contains(event.getState().getBlock())) {
 
-				EntityItem item = new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(Item.getItemFromBlock(BlockInit.ornamental_grass), 1));
+				EntityItem item = new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(Item.getItemFromBlock(MaidensBlocks.ornamental_grass), 1));
 
 				if (!event.getWorld().isRemote) {
 					item.setPickupDelay(40); // To Set a Small Pickup Delay

@@ -2,7 +2,7 @@ package com.maideniles.maidensmaterials.world.feature.tree;
 
 import java.util.Random;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 
 import net.minecraft.block.BlockCocoa;
 import net.minecraft.block.BlockLeaves;
@@ -21,8 +21,8 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 
 public class WorldGenCedarTree extends WorldGenAbstractTree
 {
-    private static final IBlockState LOG = BlockInit.cedar_log.getDefaultState();
-    private static final IBlockState LEAF = BlockInit.cedar_leaves.getDefaultState().withProperty(BlockOldLeaf.CHECK_DECAY, Boolean.valueOf(false));
+    private static final IBlockState LOG = MaidensBlocks.cedar_log.getDefaultState();
+    private static final IBlockState LEAF = MaidensBlocks.cedar_leaves.getDefaultState().withProperty(BlockOldLeaf.CHECK_DECAY, Boolean.valueOf(false));
     private final boolean useExtraRandomHeight;
 
     public WorldGenCedarTree(boolean notify, boolean useExtraRandomHeightIn)

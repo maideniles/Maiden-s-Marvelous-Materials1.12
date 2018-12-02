@@ -3,7 +3,7 @@ package com.maideniles.maidensmaterials.init.blocks.trees.sapling;
 
 import java.util.Random;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 import com.maideniles.maidensmaterials.world.feature.tree.WorldGenSilverBellTreeTallVines;
 import com.maideniles.maidensmaterials.world.feature.tree.WorldGenCedarTree;
@@ -43,7 +43,7 @@ public class BlockCedarSapling
 	    setHardness(0.0F);
 	    setTickRandomly(true);
 	    setDefaultState(this.blockState.getBaseState().withProperty(STAGE, Integer.valueOf(0)));
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
   
@@ -81,8 +81,8 @@ public class BlockCedarSapling
     if (!TerrainGen.saplingGrowTree(worldIn, rand, pos)) {
       return;
     }
-    IBlockState LOG = BlockInit.cedar_log.getDefaultState();
-    IBlockState LEAF = BlockInit.cedar_leaves.getDefaultState();
+    IBlockState LOG = MaidensBlocks.cedar_log.getDefaultState();
+    IBlockState LEAF = MaidensBlocks.cedar_leaves.getDefaultState();
     WorldGenerator worldgenerator = new WorldGenCedarTree(true, true);
     
     IBlockState iblockstate2 = Blocks.AIR.getDefaultState();

@@ -1,6 +1,6 @@
 package com.maideniles.maidensmaterials.init.blocks.stained;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.BlockFence;
@@ -18,7 +18,7 @@ public class CustomBlockFence extends BlockFence
 		setResistance(resistance);
 		setHardness(hardness);
 		this.useNeighborBrightness = true;
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 

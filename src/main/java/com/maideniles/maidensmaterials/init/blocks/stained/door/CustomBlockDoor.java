@@ -2,7 +2,7 @@ package com.maideniles.maidensmaterials.init.blocks.stained.door;
 
 import java.util.Random;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 import com.maideniles.maidensmaterials.init.blocks.item.ItemBlockDoor;
 
@@ -38,8 +38,7 @@ public class CustomBlockDoor extends BlockDoor{
 		this.setHardness(3);
 		this.setResistance(20);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(OPEN, Boolean.valueOf(false)).withProperty(HINGE, BlockDoor.EnumHingePosition.LEFT).withProperty(POWERED, Boolean.valueOf(false)).withProperty(HALF, BlockDoor.EnumDoorHalf.LOWER));
-		BlockInit.BLOCKS.add(this);
-		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		MaidensBlocks.BLOCKS.add(this);
 	}
 
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)

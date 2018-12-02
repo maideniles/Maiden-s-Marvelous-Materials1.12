@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.config.ConfigHandler;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 import com.maideniles.maidensmaterials.init.items.potions.PotionFloralFortune;
 import com.maideniles.maidensmaterials.init.items.potions.PotionGatherer;
@@ -41,7 +41,7 @@ public class MaidensMaterials {
 	public static final CreativeTabs blockstab = new CreativeTabs("blocks_tab") {
 		@Override
 		public ItemStack getTabIconItem() {
-			return new ItemStack(Item.getItemFromBlock(BlockInit.cyan_stained_stairs));
+			return new ItemStack(Item.getItemFromBlock(MaidensBlocks.cyan_stained_stairs));
 		}
 	};
 	
@@ -49,7 +49,7 @@ public class MaidensMaterials {
 		
 		@Override
 		public ItemStack getTabIconItem() {
-			return new ItemStack(Items.DIAMOND);
+			return new ItemStack(MaidensItems.mortar_n_pestle);
 		}
 	};
 	

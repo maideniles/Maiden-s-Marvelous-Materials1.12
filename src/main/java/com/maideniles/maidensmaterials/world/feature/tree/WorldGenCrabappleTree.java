@@ -2,7 +2,7 @@ package com.maideniles.maidensmaterials.world.feature.tree;
 
 import java.util.Random;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 
 import net.minecraft.block.BlockCocoa;
 import net.minecraft.block.BlockLeaves;
@@ -21,8 +21,8 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 
 public class WorldGenCrabappleTree extends WorldGenAbstractTree
 {
-    private static final IBlockState LOG = BlockInit.log_crabapple.getDefaultState();
-    private static final IBlockState LEAF = BlockInit.leaves_crabapple.getDefaultState();
+    private static final IBlockState LOG = MaidensBlocks.log_crabapple.getDefaultState();
+    private static final IBlockState LEAF = MaidensBlocks.leaves_crabapple.getDefaultState();
     private final boolean useExtraRandomHeight;
 
     public WorldGenCrabappleTree(boolean notify, boolean useExtraRandomHeightIn)

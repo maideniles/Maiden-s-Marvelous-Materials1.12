@@ -1,7 +1,7 @@
 package com.maideniles.maidensmaterials.handlers;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
-import com.maideniles.maidensmaterials.init.items.gui.GuiGuideBook;
+import com.maideniles.maidensmaterials.init.gui.GuiGuideBook;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;

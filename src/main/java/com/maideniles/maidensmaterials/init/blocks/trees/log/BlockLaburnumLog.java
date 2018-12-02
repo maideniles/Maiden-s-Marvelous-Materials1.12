@@ -1,5 +1,5 @@
 package com.maideniles.maidensmaterials.init.blocks.trees.log;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
@@ -28,7 +28,7 @@ public class BlockLaburnumLog
     setUnlocalizedName(name);
     setRegistryName(name);
     setDefaultState(blockState.getBaseState().withProperty(LOG_AXIS, BlockLog.EnumAxis.Y));
-	BlockInit.BLOCKS.add(this);
+	MaidensBlocks.BLOCKS.add(this);
 	MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));  
   }
 

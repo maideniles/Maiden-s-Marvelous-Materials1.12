@@ -2,7 +2,7 @@ package com.maideniles.maidensmaterials.init.blocks;
 
 import java.util.Random;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
@@ -20,7 +20,7 @@ public class BlockGemTile extends Block{
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setHardness(1.0F);
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 

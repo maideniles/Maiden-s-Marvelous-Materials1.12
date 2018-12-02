@@ -3,7 +3,7 @@ package com.maideniles.maidensmaterials.init.blocks;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
@@ -30,7 +30,7 @@ public class CustomOre extends Block
 		setResistance(4.0F);
 		setHarvestLevel("pickaxe", 2);
 		
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 		 
 		
@@ -49,63 +49,63 @@ public class CustomOre extends Block
 	    
 	    drops.clear();
 	   
-	    if(state.getBlock() == BlockInit.amethyst_ore)
+	    if(state.getBlock() == MaidensBlocks.amethyst_ore)
 	    {
 	    	
 	    	drops.add(new ItemStack(MaidensItems.amethyst_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 
-	  if(state.getBlock() == BlockInit.chalcopyrite_ore)
+	  if(state.getBlock() == MaidensBlocks.chalcopyrite_ore)
 	  {
 		  drops.add(new ItemStack(MaidensItems.chalcopyrite_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	  }
 	   
-	  if(state.getBlock() == BlockInit.jade_ore)
+	  if(state.getBlock() == MaidensBlocks.jade_ore)
 	  {
 		  drops.add(new ItemStack(MaidensItems.jade_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	  }
 	    
-	  if(state.getBlock() == BlockInit.jasper_ore)
+	  if(state.getBlock() == MaidensBlocks.jasper_ore)
 	  {
 		  drops.add(new ItemStack(MaidensItems.jasper_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	  }
 	  
-	  if(state.getBlock() == BlockInit.labradorite_ore)
+	  if(state.getBlock() == MaidensBlocks.labradorite_ore)
 	  {
 		  drops.add(new ItemStack(MaidensItems.labradorite_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	  }
 	  
-	    if(state.getBlock() == BlockInit.mica_ore)
+	    if(state.getBlock() == MaidensBlocks.mica_ore)
 	    {
 	    	drops.add(new ItemStack(MaidensItems.mica_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	    
-	    if(state.getBlock() == BlockInit.moonstone_ore)
+	    if(state.getBlock() == MaidensBlocks.moonstone_ore)
 	    {
 	    	drops.add(new ItemStack(MaidensItems.moonstone_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	    
-	    if(state.getBlock() == BlockInit.rose_quartz_ore)
+	    if(state.getBlock() == MaidensBlocks.rose_quartz_ore)
 	    {
 	    	drops.add(new ItemStack(MaidensItems.rose_quartz_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	    
-	    if(state.getBlock() == BlockInit.sodalite_ore)
+	    if(state.getBlock() == MaidensBlocks.sodalite_ore)
 	    {
 	    	drops.add(new ItemStack(MaidensItems.sodalite_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	    
-	    if(state.getBlock() == BlockInit.aventurine_ore)
+	    if(state.getBlock() == MaidensBlocks.aventurine_ore)
 	    {
 	    	drops.add(new ItemStack(MaidensItems.aventurine_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	    
-	    if(state.getBlock() == BlockInit.carnelian_ore)
+	    if(state.getBlock() == MaidensBlocks.carnelian_ore)
 	    {
 	    	drops.add(new ItemStack(MaidensItems.carnelian_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }
 	    
-	    if(state.getBlock() == BlockInit.citrine_ore)
+	    if(state.getBlock() == MaidensBlocks.citrine_ore)
 	    {
 	    	drops.add(new ItemStack(MaidensItems.citrine_chunk, 3 + MaidensMaterials.RANDOM.nextInt(3)));
 	    }

@@ -2,7 +2,7 @@ package com.maideniles.maidensmaterials.init.blocks.vase;
 
 import java.util.Random;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
@@ -40,7 +40,7 @@ public class BlockFlowerVaseGray extends Block{
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		this.setDefaultState(this.getDefaultState().withProperty(FLOWER, 0));
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
@@ -106,14 +106,14 @@ public class BlockFlowerVaseGray extends Block{
 	 
 	 public Item getItemDropped(IBlockState state, Random rand, int fortune)
 	    {
-	        return Item.getItemFromBlock(BlockInit.vase_gray);
+	        return Item.getItemFromBlock(MaidensBlocks.vase_gray);
 	    }
 	 
 	 @Override
 		public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos,
 				EntityPlayer player) {
 			// TODO Auto-generated method stub
-			return new ItemStack(Item.getItemFromBlock(BlockInit.vase_gray));
+			return new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_gray));
 		}
 	 
 		@Override

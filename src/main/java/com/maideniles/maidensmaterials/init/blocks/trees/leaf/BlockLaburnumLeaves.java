@@ -4,7 +4,7 @@ import java.util.Random;
 import javax.annotation.Nullable;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.BlockLeaves;
@@ -39,7 +39,7 @@ public class BlockLaburnumLeaves extends BlockLeaves
     	setUnlocalizedName(name);
 		setRegistryName(name);
         setDefaultState(blockState.getBaseState().withProperty(CHECK_DECAY, Boolean.valueOf(true)).withProperty(DECAYABLE, Boolean.valueOf(true)));
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
@@ -48,7 +48,7 @@ public class BlockLaburnumLeaves extends BlockLeaves
     {
         if (worldIn.rand.nextInt(chance) == 0)
         {
-            spawnAsEntity(worldIn, pos, new ItemStack(Item.getItemFromBlock(BlockInit.sapling_laburnum_vines)));
+            spawnAsEntity(worldIn, pos, new ItemStack(Item.getItemFromBlock(MaidensBlocks.sapling_laburnum_vines)));
         }
     }
         
@@ -60,7 +60,7 @@ public class BlockLaburnumLeaves extends BlockLeaves
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return Item.getItemFromBlock(BlockInit.sapling_laburnum);
+        return Item.getItemFromBlock(MaidensBlocks.sapling_laburnum);
     }
 
     @Override

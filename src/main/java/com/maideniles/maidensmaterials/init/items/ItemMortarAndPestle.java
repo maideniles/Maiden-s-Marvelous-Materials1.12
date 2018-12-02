@@ -3,16 +3,16 @@ package com.maideniles.maidensmaterials.init.items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class ItemMortarAndPestle extends Item {
+public class ItemMortarAndPestle extends ItemMaiden {
 
 	private Item containerItem;
 
 	public ItemMortarAndPestle(String name) {
-		setUnlocalizedName(name);
-		setRegistryName(name);
+		super(name);
 		setMaxStackSize(1);
 		setMaxDamage(64);
 		setNoRepair();
+		
 	}
 
 	@Override

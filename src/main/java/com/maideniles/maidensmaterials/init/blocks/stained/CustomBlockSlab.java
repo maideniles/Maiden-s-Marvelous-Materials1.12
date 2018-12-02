@@ -2,7 +2,7 @@ package com.maideniles.maidensmaterials.init.blocks.stained;
 
 import java.util.Random;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.BlockPurpurSlab.Variant;
@@ -39,8 +39,8 @@ IBlockState iblockstate = this.blockState.getBaseState().withProperty(VARIANT, V
 		
 		this.setDefaultState(iblockstate);
 		this.useNeighborBrightness = !this.isDouble();
-		BlockInit.BLOCKS.add(this);
-		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		MaidensBlocks.BLOCKS.add(this);
+//		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 	
 	@Override

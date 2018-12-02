@@ -5,7 +5,7 @@ package com.maideniles.maidensmaterials.init.blocks;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
@@ -26,7 +26,7 @@ public class BlockGemStorage extends Block{
 		setRegistryName(name);
 		setHardness(2.0F);
 		
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 	
