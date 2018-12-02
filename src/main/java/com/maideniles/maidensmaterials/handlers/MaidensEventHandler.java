@@ -4,8 +4,8 @@ import java.util.Random;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.Reference;
-import com.maideniles.maidensmaterials.init.BlockInit;
-import com.maideniles.maidensmaterials.init.ItemInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 import com.maideniles.maidensmaterials.proxy.CommonProxy;
 
 import net.minecraft.entity.item.EntityItem;
@@ -26,7 +26,7 @@ public class MaidensEventHandler {
 	public static void onDropBlocksEvent(HarvestDropsEvent event) {
 		if (CommonProxy.validBlocks.contains(event.getState().getBlock())) {
 			if ((rand.nextInt(200) + 1) < 1) {
-				event.getDrops().add(new ItemStack(ItemInit.EARTHEN_ESSENCE, 1));
+				event.getDrops().add(new ItemStack(MaidensItems.EARTHEN_ESSENCE, 1));
 			}
 		}
 	}
@@ -54,9 +54,9 @@ public class MaidensEventHandler {
 		EntityPlayer player = event.getPlayer();
 		if (!player.capabilities.isCreativeMode && player.isPotionActive(MaidensMaterials.FLORAL_FORTUNE)) {
 
-			if (BlockInit.GRASS.contains(event.getState().getBlock())) {
+			if (MaidensBlocks.GRASS.contains(event.getState().getBlock())) {
 
-				EntityItem item = new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(Item.getItemFromBlock(BlockInit.ornamental_grass), 1));
+				EntityItem item = new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(Item.getItemFromBlock(MaidensBlocks.ornamental_grass), 1));
 
 				if (!event.getWorld().isRemote) {
 					item.setPickupDelay(40); // To Set a Small Pickup Delay

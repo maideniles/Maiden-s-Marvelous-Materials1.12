@@ -1,7 +1,7 @@
 package com.maideniles.maidensmaterials.init.blocks.stained;
 
 import com.maideniles.maidensmaterials.Reference;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.BlockPressurePlate;
@@ -29,7 +29,7 @@ public class BlockCustomPressurePlate extends BlockPressurePlateWeighted {
 		setRegistryName(name);
 		setHardness(3);
 		setResistance(20);
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 	

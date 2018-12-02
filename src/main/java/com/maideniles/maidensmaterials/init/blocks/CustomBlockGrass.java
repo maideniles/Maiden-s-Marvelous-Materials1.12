@@ -1,7 +1,7 @@
 package com.maideniles.maidensmaterials.init.blocks;
 import java.util.Random;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
@@ -32,10 +32,9 @@ public class CustomBlockGrass extends BlockGrass
 		setRegistryName(name);
 		setHardness(0.6F);
 		setSoundType(SoundType.GROUND);
-		BlockInit.GRASS.add(BlockInit.ornamental_grass);
-		
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+
 	}
 	
 
@@ -79,7 +78,7 @@ public class CustomBlockGrass extends BlockGrass
 
 	                        if (iblockstate1.getBlock() == Blocks.DIRT && iblockstate1.getValue(BlockDirt.VARIANT) == BlockDirt.DirtType.DIRT && worldIn.getLightFromNeighbors(blockpos.up()) >= 4 && iblockstate.getLightOpacity(worldIn, pos.up()) <= 2)
 	                        {
-	                            worldIn.setBlockState(blockpos, BlockInit.ornamental_grass.getDefaultState());
+	                            worldIn.setBlockState(blockpos, MaidensBlocks.ornamental_grass.getDefaultState());
 	                        }
 	                    }
 	                }

@@ -1,5 +1,5 @@
 package com.maideniles.maidensmaterials.init.blocks.stained;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.BlockStairs;
@@ -16,7 +16,7 @@ public class CustomBlockStairs extends BlockStairs
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		this.useNeighborBrightness = true;
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 

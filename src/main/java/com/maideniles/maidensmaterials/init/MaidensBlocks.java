@@ -3,6 +3,7 @@ package com.maideniles.maidensmaterials.init;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.Reference;
 import com.maideniles.maidensmaterials.init.blocks.BlockCobbleVines;
 import com.maideniles.maidensmaterials.init.blocks.BlockEssenceStorage;
@@ -96,7 +97,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 
 @Mod.EventBusSubscriber(modid = Reference.MODID)
-public class BlockInit
+public class MaidensBlocks
 {
 	public static final int WILDCARD_VALUE = Short.MAX_VALUE;
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
@@ -389,51 +390,51 @@ public class BlockInit
 
 	public static final Block fairy_glow_cup = new FairyGlowCup("fairy_glow_cup");
 	public static final Block mica_ore = new CustomOre("mica_ore");
-	public static final Block mica_ore_end = new CustomOre("mica_ore_end");
-	public static final Block mica_ore_nether = new CustomOre("mica_ore_nether");
+//	public static final Block mica_ore_end = new CustomOre("mica_ore_end");
+//	public static final Block mica_ore_nether = new CustomOre("mica_ore_nether");
 
-	public static final Block amethyst_ore_end = new CustomOre("amethyst_ore_end");
-	public static final Block amethyst_ore_nether = new CustomOre("amethyst_ore_nether");
+//	public static final Block amethyst_ore_end = new CustomOre("amethyst_ore_end");
+//	public static final Block amethyst_ore_nether = new CustomOre("amethyst_ore_nether");
 	public static final Block amethyst_ore = new CustomOre("amethyst_ore");
 
-	public static final Block aventurine_ore_end = new CustomOre("aventurine_ore_end");
-	public static final Block aventurine_ore_nether = new CustomOre("aventurine_ore_nether");
+//	public static final Block aventurine_ore_end = new CustomOre("aventurine_ore_end");
+//	public static final Block aventurine_ore_nether = new CustomOre("aventurine_ore_nether");
 	public static final Block aventurine_ore = new CustomOre("aventurine_ore");
 
-	public static final Block citrine_ore_end = new CustomOre("citrine_ore_end");
-	public static final Block citrine_ore_nether = new CustomOre("citrine_ore_nether");
+//	public static final Block citrine_ore_end = new CustomOre("citrine_ore_end");
+//	public static final Block citrine_ore_nether = new CustomOre("citrine_ore_nether");
 	public static final Block citrine_ore = new CustomOre("citrine_ore");
 
-	public static final Block carnelian_ore_end = new CustomOre("carnelian_ore_end");
-	public static final Block carnelian_ore_nether = new CustomOre("carnelian_ore_nether");
+//	public static final Block carnelian_ore_end = new CustomOre("carnelian_ore_end");
+//	public static final Block carnelian_ore_nether = new CustomOre("carnelian_ore_nether");
 	public static final Block carnelian_ore = new CustomOre("carnelian_ore");
 
-	public static final Block chalcopyrite_ore_end = new CustomOre("chalcopyrite_ore_end");
-	public static final Block chalcopyrite_ore_nether = new CustomOre("chalcopyrite_ore_nether");
+//	public static final Block chalcopyrite_ore_end = new CustomOre("chalcopyrite_ore_end");
+//	public static final Block chalcopyrite_ore_nether = new CustomOre("chalcopyrite_ore_nether");
 	public static final Block chalcopyrite_ore = new CustomOre("chalcopyrite_ore");
 
-	public static final Block jade_ore_end = new CustomOre("jade_ore_end");
-	public static final Block jade_ore_nether = new CustomOre("jade_ore_nether");
+//	public static final Block jade_ore_end = new CustomOre("jade_ore_end");
+//	public static final Block jade_ore_nether = new CustomOre("jade_ore_nether");
 	public static final Block jade_ore = new CustomOre("jade_ore");
 
-	public static final Block jasper_ore_end = new CustomOre("jasper_ore_end");
-	public static final Block jasper_ore_nether = new CustomOre("jasper_ore_nether");
+//	public static final Block jasper_ore_end = new CustomOre("jasper_ore_end");
+//	public static final Block jasper_ore_nether = new CustomOre("jasper_ore_nether");
 	public static final Block jasper_ore = new CustomOre("jasper_ore");
 
-	public static final Block labradorite_ore_end = new CustomOre("labradorite_ore_end");
-	public static final Block labradorite_ore_nether = new CustomOre("labradorite_ore_nether");
+//	public static final Block labradorite_ore_end = new CustomOre("labradorite_ore_end");
+//	public static final Block labradorite_ore_nether = new CustomOre("labradorite_ore_nether");
 	public static final Block labradorite_ore = new CustomOre("labradorite_ore");
 
-	public static final Block moonstone_ore_end = new CustomOre("moonstone_ore_end");
-	public static final Block moonstone_ore_nether = new CustomOre("moonstone_ore_nether");
+//	public static final Block moonstone_ore_end = new CustomOre("moonstone_ore_end");
+//	public static final Block moonstone_ore_nether = new CustomOre("moonstone_ore_nether");
 	public static final Block moonstone_ore = new CustomOre("moonstone_ore");
 
-	public static final Block rose_quartz_ore_end = new CustomOre("rose_quartz_ore_end");
-	public static final Block rose_quartz_ore_nether = new CustomOre("rose_quartz_ore_nether");
+//	public static final Block rose_quartz_ore_end = new CustomOre("rose_quartz_ore_end");
+//	public static final Block rose_quartz_ore_nether = new CustomOre("rose_quartz_ore_nether");
 	public static final Block rose_quartz_ore = new CustomOre("rose_quartz_ore");
 
-	public static final Block sodalite_ore_end = new CustomOre("sodalite_ore_end");
-	public static final Block sodalite_ore_nether = new CustomOre("sodalite_ore_nether");
+//	public static final Block sodalite_ore_end = new CustomOre("sodalite_ore_end");
+//	public static final Block sodalite_ore_nether = new CustomOre("sodalite_ore_nether");
 	public static final Block sodalite_ore = new CustomOre("sodalite_ore");
 
 	public static final Block whitewashed_planks = new CustomWoodPlanks("whitewashed_planks", Material.WOOD);
@@ -449,8 +450,6 @@ public class BlockInit
 
 	public static final Block wisteria_planks = new CustomWoodPlanks("wisteria_planks", Material.WOOD);
 
-	public static final BlockSlab base_slab_half = new CustomBlockHalfSlab("base_slab_half", 2.5F, 4.5F);
-
 	public static final BlockSlab cedar_slab_half = new CustomBlockHalfSlab("cedar_slab_half", 2.5F, 4.5F);
 	public static final BlockSlab silverbell_slab_half = new CustomBlockHalfSlab("silverbell_slab_half", 2.5F, 4.5F);
 	public static final BlockSlab crabapple_slab_half = new CustomBlockHalfSlab("crabapple_slab_half", 2.5F, 4.5F);
@@ -459,8 +458,6 @@ public class BlockInit
 	public static final BlockSlab wisteria_slab_half = new CustomBlockHalfSlab("wisteria_slab_half", 2.5F, 4.5F);
 	public static final BlockSlab laburnum_slab_half = new CustomBlockHalfSlab("laburnum_slab_half", 2.5F, 4.5F);
 	public static final BlockSlab paulownia_slab_half = new CustomBlockHalfSlab("paulownia_slab_half", 2.5F, 4.5F);
-
-	public static final BlockSlab base_slab_double = new CustomBlockDoubleSlab("base_slab_double", 2.5F, 4.5F);
 
 	public static final BlockSlab cedar_slab_double = new CustomBlockDoubleSlab("cedar_slab_double", 2.5F, 4.5F);
 	public static final BlockSlab silverbell_slab_double = new CustomBlockDoubleSlab("silverbell_slab_double", 2.5F, 4.5F);
@@ -1076,7 +1073,12 @@ public class BlockInit
 
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Block> e) {
+		for(Block i : BLOCKS)
+			i.setCreativeTab(MaidensMaterials.blockstab);
+		
 		e.getRegistry().registerAll(BLOCKS.toArray(new Block[BLOCKS.size()]));
+		
+		registerOreDictionary();
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -1124,61 +1126,61 @@ public class BlockInit
 
 		// TODO
 		// logs//
-		OreDictionary.registerOre("logWood", BlockInit.log_silverbell);
-		OreDictionary.registerOre("logWood", BlockInit.log_crabapple);
-		OreDictionary.registerOre("logWood", BlockInit.log_dogwood);
-		OreDictionary.registerOre("logWood", BlockInit.log_jacaranda);
-		OreDictionary.registerOre("logWood", BlockInit.log_wisteria);
-		OreDictionary.registerOre("logWood", BlockInit.log_laburnum);
-		OreDictionary.registerOre("logWood", BlockInit.log_paulownia);
-		OreDictionary.registerOre("logWood", BlockInit.cedar_log);
+		OreDictionary.registerOre("logWood", MaidensBlocks.log_silverbell);
+		OreDictionary.registerOre("logWood", MaidensBlocks.log_crabapple);
+		OreDictionary.registerOre("logWood", MaidensBlocks.log_dogwood);
+		OreDictionary.registerOre("logWood", MaidensBlocks.log_jacaranda);
+		OreDictionary.registerOre("logWood", MaidensBlocks.log_wisteria);
+		OreDictionary.registerOre("logWood", MaidensBlocks.log_laburnum);
+		OreDictionary.registerOre("logWood", MaidensBlocks.log_paulownia);
+		OreDictionary.registerOre("logWood", MaidensBlocks.cedar_log);
 
-		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.cedar_leaves, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.leaves_crabapple, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.leaves_dogwood, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.leaves_jacaranda, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.leaves_laburnum, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.leaves_paulownia, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.leaves_silverbell, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.leaves_wisteria, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeLeaves", new ItemStack(MaidensBlocks.cedar_leaves, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeLeaves", new ItemStack(MaidensBlocks.leaves_crabapple, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeLeaves", new ItemStack(MaidensBlocks.leaves_dogwood, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeLeaves", new ItemStack(MaidensBlocks.leaves_jacaranda, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeLeaves", new ItemStack(MaidensBlocks.leaves_laburnum, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeLeaves", new ItemStack(MaidensBlocks.leaves_paulownia, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeLeaves", new ItemStack(MaidensBlocks.leaves_silverbell, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeLeaves", new ItemStack(MaidensBlocks.leaves_wisteria, 1, WILDCARD_VALUE));
 
-		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.cedar_sapling, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.sapling_crabapple, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.sapling_dogwood, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.sapling_jacaranda, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.sapling_laburnum, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.sapling_paulownia, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.sapling_silverbell, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.sapling_wisteria, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeSapling", new ItemStack(MaidensBlocks.cedar_sapling, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeSapling", new ItemStack(MaidensBlocks.sapling_crabapple, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeSapling", new ItemStack(MaidensBlocks.sapling_dogwood, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeSapling", new ItemStack(MaidensBlocks.sapling_jacaranda, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeSapling", new ItemStack(MaidensBlocks.sapling_laburnum, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeSapling", new ItemStack(MaidensBlocks.sapling_paulownia, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeSapling", new ItemStack(MaidensBlocks.sapling_silverbell, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("treeSapling", new ItemStack(MaidensBlocks.sapling_wisteria, 1, WILDCARD_VALUE));
 
-		OreDictionary.registerOre("vine", BlockInit.vine_crabapple);
-		OreDictionary.registerOre("vine", BlockInit.vine_dogwood);
-		OreDictionary.registerOre("vine", BlockInit.vine_jacaranda);
-		OreDictionary.registerOre("vine", BlockInit.vine_laburnum);
-		OreDictionary.registerOre("vine", BlockInit.vine_paulownia);
-		OreDictionary.registerOre("vine", BlockInit.vine_silverbell);
-		OreDictionary.registerOre("vine", BlockInit.vine_wisteria);
+		OreDictionary.registerOre("vine", MaidensBlocks.vine_crabapple);
+		OreDictionary.registerOre("vine", MaidensBlocks.vine_dogwood);
+		OreDictionary.registerOre("vine", MaidensBlocks.vine_jacaranda);
+		OreDictionary.registerOre("vine", MaidensBlocks.vine_laburnum);
+		OreDictionary.registerOre("vine", MaidensBlocks.vine_paulownia);
+		OreDictionary.registerOre("vine", MaidensBlocks.vine_silverbell);
+		OreDictionary.registerOre("vine", MaidensBlocks.vine_wisteria);
 		// planks
 		OreDictionary.registerOre("plankWood", Blocks.PLANKS);
 
 		// stairs//
-		OreDictionary.registerOre("stairWood", BlockInit.silverbell_stairs);
-		OreDictionary.registerOre("stairWood", BlockInit.crabapple_stairs);
-		OreDictionary.registerOre("stairWood", BlockInit.dogwood_stairs);
-		OreDictionary.registerOre("stairWood", BlockInit.jacaranda_stairs);
-		OreDictionary.registerOre("stairWood", BlockInit.wisteria_stairs);
-		OreDictionary.registerOre("stairWood", BlockInit.laburnum_stairs);
-		OreDictionary.registerOre("stairWood", BlockInit.paulownia_stairs);
-		OreDictionary.registerOre("stairWood", BlockInit.cedar_stairs);
+		OreDictionary.registerOre("stairWood", MaidensBlocks.silverbell_stairs);
+		OreDictionary.registerOre("stairWood", MaidensBlocks.crabapple_stairs);
+		OreDictionary.registerOre("stairWood", MaidensBlocks.dogwood_stairs);
+		OreDictionary.registerOre("stairWood", MaidensBlocks.jacaranda_stairs);
+		OreDictionary.registerOre("stairWood", MaidensBlocks.wisteria_stairs);
+		OreDictionary.registerOre("stairWood", MaidensBlocks.laburnum_stairs);
+		OreDictionary.registerOre("stairWood", MaidensBlocks.paulownia_stairs);
+		OreDictionary.registerOre("stairWood", MaidensBlocks.cedar_stairs);
 		// slabs//
-		OreDictionary.registerOre("slabWood", BlockInit.silverbell_slab_half);
-		OreDictionary.registerOre("slabWood", BlockInit.crabapple_slab_half);
-		OreDictionary.registerOre("slabWood", BlockInit.dogwood_slab_half);
-		OreDictionary.registerOre("slabWood", BlockInit.jacaranda_slab_half);
-		OreDictionary.registerOre("slabWood", BlockInit.wisteria_slab_half);
-		OreDictionary.registerOre("slabWood", BlockInit.laburnum_slab_half);
-		OreDictionary.registerOre("slabWood", BlockInit.paulownia_slab_half);
-		OreDictionary.registerOre("slabWood", BlockInit.cedar_slab_half);
+		OreDictionary.registerOre("slabWood", MaidensBlocks.silverbell_slab_half);
+		OreDictionary.registerOre("slabWood", MaidensBlocks.crabapple_slab_half);
+		OreDictionary.registerOre("slabWood", MaidensBlocks.dogwood_slab_half);
+		OreDictionary.registerOre("slabWood", MaidensBlocks.jacaranda_slab_half);
+		OreDictionary.registerOre("slabWood", MaidensBlocks.wisteria_slab_half);
+		OreDictionary.registerOre("slabWood", MaidensBlocks.laburnum_slab_half);
+		OreDictionary.registerOre("slabWood", MaidensBlocks.paulownia_slab_half);
+		OreDictionary.registerOre("slabWood", MaidensBlocks.cedar_slab_half);
 
 		// fences//
 		// vanilla//
@@ -1189,14 +1191,14 @@ public class BlockInit
 		OreDictionary.registerOre("fenceWood", Blocks.OAK_FENCE);
 		OreDictionary.registerOre("fenceWood", Blocks.SPRUCE_FENCE);
 		// mine//
-		OreDictionary.registerOre("fenceWood", BlockInit.silverbell_fence);
-		OreDictionary.registerOre("fenceWood", BlockInit.crabapple_fence);
-		OreDictionary.registerOre("fenceWood", BlockInit.dogwood_fence);
-		OreDictionary.registerOre("fenceWood", BlockInit.jacaranda_fence);
-		OreDictionary.registerOre("fenceWood", BlockInit.wisteria_fence);
-		OreDictionary.registerOre("fenceWood", BlockInit.laburnum_fence);
-		OreDictionary.registerOre("fenceWood", BlockInit.paulownia_fence);
-		OreDictionary.registerOre("fenceWood", BlockInit.cedar_fence);
+		OreDictionary.registerOre("fenceWood", MaidensBlocks.silverbell_fence);
+		OreDictionary.registerOre("fenceWood", MaidensBlocks.crabapple_fence);
+		OreDictionary.registerOre("fenceWood", MaidensBlocks.dogwood_fence);
+		OreDictionary.registerOre("fenceWood", MaidensBlocks.jacaranda_fence);
+		OreDictionary.registerOre("fenceWood", MaidensBlocks.wisteria_fence);
+		OreDictionary.registerOre("fenceWood", MaidensBlocks.laburnum_fence);
+		OreDictionary.registerOre("fenceWood", MaidensBlocks.paulownia_fence);
+		OreDictionary.registerOre("fenceWood", MaidensBlocks.cedar_fence);
 
 		// gates//
 
@@ -1208,51 +1210,52 @@ public class BlockInit
 		OreDictionary.registerOre("gateWood", Blocks.OAK_FENCE_GATE);
 		OreDictionary.registerOre("gateWood", Blocks.SPRUCE_FENCE_GATE);
 		// mine//
-		OreDictionary.registerOre("gateWood", BlockInit.silverbell_fence_gate);
-		OreDictionary.registerOre("gateWood", BlockInit.crabapple_fence_gate);
-		OreDictionary.registerOre("gateWood", BlockInit.dogwood_fence_gate);
-		OreDictionary.registerOre("gateWood", BlockInit.jacaranda_fence_gate);
-		OreDictionary.registerOre("gateWood", BlockInit.wisteria_fence_gate);
-		OreDictionary.registerOre("gateWood", BlockInit.laburnum_fence_gate);
-		OreDictionary.registerOre("gateWood", BlockInit.paulownia_fence_gate);
-		OreDictionary.registerOre("gateWood", BlockInit.cedar_fence_gate);
+		OreDictionary.registerOre("gateWood", MaidensBlocks.silverbell_fence_gate);
+		OreDictionary.registerOre("gateWood", MaidensBlocks.crabapple_fence_gate);
+		OreDictionary.registerOre("gateWood", MaidensBlocks.dogwood_fence_gate);
+		OreDictionary.registerOre("gateWood", MaidensBlocks.jacaranda_fence_gate);
+		OreDictionary.registerOre("gateWood", MaidensBlocks.wisteria_fence_gate);
+		OreDictionary.registerOre("gateWood", MaidensBlocks.laburnum_fence_gate);
+		OreDictionary.registerOre("gateWood", MaidensBlocks.paulownia_fence_gate);
+		OreDictionary.registerOre("gateWood", MaidensBlocks.cedar_fence_gate);
 
 		OreDictionary.registerOre("blockConcrete", Blocks.CONCRETE);
 
-		OreDictionary.registerOre("coloredPlanks", BlockInit.red_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.orange_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.yellow_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.lime_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.green_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.cyan_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.light_blue_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.blue_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.purple_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.magenta_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.pink_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.white_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.light_gray_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.gray_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.black_stained_planks);
-		OreDictionary.registerOre("coloredPlanks", BlockInit.brown_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.red_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.orange_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.yellow_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.lime_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.green_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.cyan_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.light_blue_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.blue_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.purple_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.magenta_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.pink_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.white_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.light_gray_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.gray_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.black_stained_planks);
+		OreDictionary.registerOre("coloredPlanks", MaidensBlocks.brown_stained_planks);
 
-		OreDictionary.registerOre("oreAmethyst", BlockInit.amethyst_ore);
-		OreDictionary.registerOre("oreAventurine", BlockInit.aventurine_ore);
-		OreDictionary.registerOre("oreCarnelian", BlockInit.carnelian_ore);
-		OreDictionary.registerOre("oreChalcopyrite", BlockInit.chalcopyrite_ore);
-		OreDictionary.registerOre("oreCitrine", BlockInit.citrine_ore);
-		OreDictionary.registerOre("oreJade", BlockInit.jade_ore);
-		OreDictionary.registerOre("oreJasper", BlockInit.jasper_ore);
-		OreDictionary.registerOre("oreLabradorite", BlockInit.labradorite_ore);
-		OreDictionary.registerOre("oreMica", BlockInit.mica_ore);
-		OreDictionary.registerOre("oreMoonstone", BlockInit.moonstone_ore);
-		OreDictionary.registerOre("oreRoseQuartz", BlockInit.rose_quartz_ore);
-		OreDictionary.registerOre("oreSodalite", BlockInit.sodalite_ore);
+		OreDictionary.registerOre("oreAmethyst", MaidensBlocks.amethyst_ore);
+		OreDictionary.registerOre("oreAventurine", MaidensBlocks.aventurine_ore);
+		OreDictionary.registerOre("oreCarnelian", MaidensBlocks.carnelian_ore);
+		OreDictionary.registerOre("oreChalcopyrite", MaidensBlocks.chalcopyrite_ore);
+		OreDictionary.registerOre("oreCitrine", MaidensBlocks.citrine_ore);
+		OreDictionary.registerOre("oreJade", MaidensBlocks.jade_ore);
+		OreDictionary.registerOre("oreJasper", MaidensBlocks.jasper_ore);
+		OreDictionary.registerOre("oreLabradorite", MaidensBlocks.labradorite_ore);
+		OreDictionary.registerOre("oreMica", MaidensBlocks.mica_ore);
+		OreDictionary.registerOre("oreMoonstone", MaidensBlocks.moonstone_ore);
+		OreDictionary.registerOre("oreRoseQuartz", MaidensBlocks.rose_quartz_ore);
+		OreDictionary.registerOre("oreSodalite", MaidensBlocks.sodalite_ore);
+		
+		MaidensBlocks.GRASS.add(MaidensBlocks.ornamental_grass);
 	}
 
 	public static final List<Block> ORES = new ArrayList<Block>();
 	public static final List<Block> GRASS = new ArrayList<Block>();
-
 	public static final List<Item> GEM_DROPS = new ArrayList<Item>();
 
 }

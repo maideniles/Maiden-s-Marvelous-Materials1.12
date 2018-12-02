@@ -2,7 +2,7 @@ package com.maideniles.maidensmaterials.world.feature.tree;
 
 import java.util.Random;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 
 import net.minecraft.block.BlockCocoa;
 import net.minecraft.block.BlockLeaves;
@@ -21,8 +21,8 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 
 public class WorldGenSilverbellTree extends WorldGenAbstractTree
 {
-    private static final IBlockState LOG = BlockInit.log_silverbell.getDefaultState();
-    private static final IBlockState LEAF = BlockInit.leaves_silverbell.getDefaultState();
+    private static final IBlockState LOG = MaidensBlocks.log_silverbell.getDefaultState();
+    private static final IBlockState LEAF = MaidensBlocks.leaves_silverbell.getDefaultState();
     private final boolean useExtraRandomHeight;
 
     public WorldGenSilverbellTree(boolean notify, boolean useExtraRandomHeightIn)

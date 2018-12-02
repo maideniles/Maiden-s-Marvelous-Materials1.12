@@ -2,7 +2,7 @@ package com.maideniles.maidensmaterials.init.blocks.trees.vine;
 
 import javax.annotation.Nullable;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 import com.maideniles.maidensmaterials.init.blocks.stained.BlockBaseFacing;
 
@@ -22,12 +22,8 @@ public class BlockVineTie extends BlockBaseFacing {
 	protected static final AxisAlignedBB AABB = new AxisAlignedBB(0.0D, 0.9D, 0.0D, 1.0D, 1.0D, 1.0D);
 
 	public BlockVineTie(String name, Material materialIn) {
-		super(Material.CLOTH);
-		setUnlocalizedName(name);
-		setRegistryName(name);
+		super(name, Material.CLOTH);
 		setSoundType(SoundType.PLANT);
-		BlockInit.BLOCKS.add(this);
-		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
 	

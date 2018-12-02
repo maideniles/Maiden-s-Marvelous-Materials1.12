@@ -3,7 +3,7 @@ package com.maideniles.maidensmaterials.init.blocks.trees.sapling;
 
 import java.util.Random;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 import com.maideniles.maidensmaterials.world.feature.tree.WorldGenJacarandaTree;
 import com.maideniles.maidensmaterials.world.feature.tree.WorldGenPaulowniaTreeTallVines;
@@ -44,7 +44,7 @@ public class BlockPaulowniaSaplingVines
 	    setHardness(0.0F);
 	    setTickRandomly(true);
 	    setDefaultState(this.blockState.getBaseState().withProperty(STAGE, Integer.valueOf(0)));
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
   
@@ -82,8 +82,8 @@ public class BlockPaulowniaSaplingVines
     if (!TerrainGen.saplingGrowTree(worldIn, rand, pos)) {
       return;
     }
-    IBlockState LOG = BlockInit.log_paulownia.getDefaultState();
-    IBlockState LEAF = BlockInit.leaves_paulownia.getDefaultState();
+    IBlockState LOG = MaidensBlocks.log_paulownia.getDefaultState();
+    IBlockState LEAF = MaidensBlocks.leaves_paulownia.getDefaultState();
     WorldGenerator worldgenerator = new WorldGenPaulowniaTreeVines(false);
     
     IBlockState iblockstate2 = Blocks.AIR.getDefaultState();

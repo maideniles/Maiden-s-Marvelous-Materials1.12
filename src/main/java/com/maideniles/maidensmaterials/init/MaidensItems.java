@@ -5,6 +5,9 @@ import java.util.List;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.Reference;
+import com.maideniles.maidensmaterials.init.blocks.item.ItemBlockDoor;
+import com.maideniles.maidensmaterials.init.blocks.stained.CustomBlockHalfSlab;
+import com.maideniles.maidensmaterials.init.blocks.stained.door.CustomBlockDoor;
 import com.maideniles.maidensmaterials.init.items.CustomIngot;
 import com.maideniles.maidensmaterials.init.items.ItemDoorPlans;
 import com.maideniles.maidensmaterials.init.items.ItemGemBase;
@@ -15,9 +18,12 @@ import com.maideniles.maidensmaterials.init.items.ItemPulverizedMaterials;
 import com.maideniles.maidensmaterials.init.items.ItemTreeBlossoms;
 import com.maideniles.maidensmaterials.init.items.gui.ItemGuideBook;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlab;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemSlab;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -115,14 +121,14 @@ public class MaidensItems{
 
 	public static final Item guide_book = new ItemGuideBook("guide_book");
 
-	public static final Item amethyst_gem = new ItemGemBase("amethyst");
+/*	public static final Item amethyst_gem = new ItemGemBase("amethyst");
 	public static final Item moonstone_gem = new ItemGemBase("moonstone");
 	public static final Item jasper_gem = new ItemGemBase("jasper");
 	public static final Item labradorite_gem = new ItemGemBase("labradorite");
 	public static final Item jade_gem = new ItemGemBase("jade");
 	public static final Item sodalite_gem = new ItemGemBase("sodalite");
 	public static final Item rose_quartz_gem = new ItemGemBase("rose_quartz");
-	public static final Item chalcopyrite_gem = new ItemGemBase("chalcopyrite");
+	public static final Item chalcopyrite_gem = new ItemGemBase("chalcopyrite");*/
 
 	public static final Item amethyst_fragments = new ItemGemBase("amethyst_fragments");
 	public static final Item aventurine_fragments = new ItemGemBase("aventurine_fragments");
@@ -221,20 +227,53 @@ public class MaidensItems{
 
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Item> e) {
-		registerData();
+		for(Item i : ITEMS)
+			i.setCreativeTab(MaidensMaterials.itemstab);
+		
+		for(Block i : MaidensBlocks.BLOCKS) {
+			if(i instanceof CustomBlockHalfSlab) {
+				Block doubleSlab = null;
+				for(Block b : MaidensBlocks.BLOCKS) {
+					if(b != i) {
+						if(b.getUnlocalizedName().contains(i.getUnlocalizedName().split("_half")[0])) {
+							doubleSlab = b;
+							break;
+						}
+					}
+				}
+				if(doubleSlab != null) {
+					MaidensItems.ITEMS.add(new ItemSlab(i, (BlockSlab)i, (BlockSlab)doubleSlab).setRegistryName(i.getRegistryName()));
+				}
+			}
+		}
+		
+		for(Block i : MaidensBlocks.BLOCKS) {
+			if(i instanceof CustomBlockDoor) {
+				if(i != null)
+					MaidensItems.ITEMS.add(new ItemBlockDoor(i).setRegistryName(i.getRegistryName()));
+			}	
+		}
+		
 		e.getRegistry().registerAll(ITEMS.toArray(new Item[ITEMS.size()]));
+		registerData();
 	}
 	
 	@SideOnly(Side.CLIENT)
 	@SubscribeEvent
 	public static void registerRenders(ModelRegistryEvent e) {
 		for (Item itm : ITEMS) {
+			if(itm instanceof ItemSlab) {
+				BlockSlab b = (BlockSlab) Block.getBlockFromItem(itm);
+				if(b.isDouble()) {
+					break;
+				}
+			}
 			ModelLoader.setCustomModelResourceLocation(itm, 0, new ModelResourceLocation(itm.getRegistryName(), "inventory"));
 		}
 	}
 
 	public static void registerData() {
-		Blocks.FIRE.setFireInfo(BlockInit.cedar_log, 5, 20);
+		Blocks.FIRE.setFireInfo(MaidensBlocks.cedar_log, 5, 20);
 
 		OreDictionary.registerOre("mortar_and_pestle",new ItemStack(MaidensItems.mortar_n_pestle, 1, OreDictionary.WILDCARD_VALUE));
 		OreDictionary.registerOre("grout", new ItemStack(MaidensItems.grout, 1, OreDictionary.WILDCARD_VALUE));
@@ -258,22 +297,22 @@ public class MaidensItems{
 		OreDictionary.registerOre("gemRoseQuartz", MaidensItems.rose_quartz_chunk);
 		OreDictionary.registerOre("gemSodalite", MaidensItems.sodalite_chunk);
 
-		OreDictionary.registerOre("dyeRed", new ItemStack(MaidensItems.pulverized_red, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeOrange", new ItemStack(MaidensItems.pulverized_orange, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeYellow", new ItemStack(MaidensItems.pulverized_yellow, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeLime", new ItemStack(MaidensItems.pulverized_lime, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeGreen", new ItemStack(MaidensItems.pulverized_green, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeCyan", new ItemStack(MaidensItems.pulverized_cyan, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeLightBlue", new ItemStack(MaidensItems.pulverized_light_blue, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeBlue", new ItemStack(MaidensItems.pulverized_blue, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyePurple", new ItemStack(MaidensItems.pulverized_purple, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeMagenta", new ItemStack(MaidensItems.pulverized_magenta, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyePink", new ItemStack(MaidensItems.pulverized_pink, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeWhite", new ItemStack(MaidensItems.pulverized_white, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeLightGray", new ItemStack(MaidensItems.pulverized_light_gray, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeRedGray", new ItemStack(MaidensItems.pulverized_gray, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeBlack", new ItemStack(MaidensItems.pulverized_black, 1, WILDCARD_VALUE));
-		OreDictionary.registerOre("dyeBrown", new ItemStack(MaidensItems.pulverized_brown, 1, WILDCARD_VALUE));
+		OreDictionary.registerOre("dyeRed", new ItemStack(MaidensItems.pulverized_red, 1));
+		OreDictionary.registerOre("dyeOrange", new ItemStack(MaidensItems.pulverized_orange, 1));
+		OreDictionary.registerOre("dyeYellow", new ItemStack(MaidensItems.pulverized_yellow, 1));
+		OreDictionary.registerOre("dyeLime", new ItemStack(MaidensItems.pulverized_lime, 1));
+		OreDictionary.registerOre("dyeGreen", new ItemStack(MaidensItems.pulverized_green, 1));
+		OreDictionary.registerOre("dyeCyan", new ItemStack(MaidensItems.pulverized_cyan, 1));
+		OreDictionary.registerOre("dyeLightBlue", new ItemStack(MaidensItems.pulverized_light_blue, 1));
+		OreDictionary.registerOre("dyeBlue", new ItemStack(MaidensItems.pulverized_blue, 1));
+		OreDictionary.registerOre("dyePurple", new ItemStack(MaidensItems.pulverized_purple, 1));
+		OreDictionary.registerOre("dyeMagenta", new ItemStack(MaidensItems.pulverized_magenta, 1));
+		OreDictionary.registerOre("dyePink", new ItemStack(MaidensItems.pulverized_pink, 1));
+		OreDictionary.registerOre("dyeWhite", new ItemStack(MaidensItems.pulverized_white, 1));
+		OreDictionary.registerOre("dyeLightGray", new ItemStack(MaidensItems.pulverized_light_gray, 1));
+		OreDictionary.registerOre("dyeRedGray", new ItemStack(MaidensItems.pulverized_gray, 1));
+		OreDictionary.registerOre("dyeBlack", new ItemStack(MaidensItems.pulverized_black, 1));
+		OreDictionary.registerOre("dyeBrown", new ItemStack(MaidensItems.pulverized_brown, 1));
 	}
 
 }

@@ -4,7 +4,7 @@ import java.util.Random;
 import javax.annotation.Nullable;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.BlockLeaves;
@@ -40,7 +40,7 @@ public class BlockCrabappleLeaves extends BlockLeaves
 		setRegistryName(name);
         setDefaultState(blockState.getBaseState().withProperty(CHECK_DECAY, Boolean.valueOf(true)).withProperty(DECAYABLE, Boolean.valueOf(true)));
         
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
@@ -49,7 +49,7 @@ public class BlockCrabappleLeaves extends BlockLeaves
     {
         if (worldIn.rand.nextInt(chance) == 1)
         {
-            spawnAsEntity(worldIn, pos, new ItemStack(Item.getItemFromBlock(BlockInit.sapling_crabapple_vines)));
+            spawnAsEntity(worldIn, pos, new ItemStack(Item.getItemFromBlock(MaidensBlocks.sapling_crabapple_vines)));
         }
     }
         
@@ -61,7 +61,7 @@ public class BlockCrabappleLeaves extends BlockLeaves
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
     	// TODO Auto-generated method stub
-    	return Item.getItemFromBlock(BlockInit.sapling_crabapple);
+    	return Item.getItemFromBlock(MaidensBlocks.sapling_crabapple);
     }
     
    

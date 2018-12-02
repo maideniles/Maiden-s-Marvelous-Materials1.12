@@ -2,7 +2,7 @@ package com.maideniles.maidensmaterials.world.feature.flower;
 
 import java.util.Random;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCocoa;
@@ -55,7 +55,7 @@ public class FairyGlowCup extends BlockCocoa implements IGrowable
     {
         pos = pos.offset((EnumFacing)state.getValue(FACING));
         IBlockState iblockstate = worldIn.getBlockState(pos);
-        return iblockstate.getBlock() == Blocks.LOG || iblockstate.getBlock()== BlockInit.log_wisteria || iblockstate.getBlock()==BlockInit.log_silverbell || iblockstate.getBlock()==BlockInit.log_paulownia;
+        return iblockstate.getBlock() == Blocks.LOG || iblockstate.getBlock()== MaidensBlocks.log_wisteria || iblockstate.getBlock()==MaidensBlocks.log_silverbell || iblockstate.getBlock()==MaidensBlocks.log_paulownia;
     }
 
     public boolean isFullCube(IBlockState state)
@@ -119,7 +119,7 @@ protected boolean canSilkHarvest() {
 @Override
 protected ItemStack getSilkTouchDrop(IBlockState state) {
 	// TODO Auto-generated method stub
-	return new ItemStack(Item.getItemFromBlock(BlockInit.fairy_glow_cup));
+	return new ItemStack(Item.getItemFromBlock(MaidensBlocks.fairy_glow_cup));
 }
 
 }

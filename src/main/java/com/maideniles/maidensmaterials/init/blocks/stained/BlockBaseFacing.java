@@ -1,6 +1,6 @@
 package com.maideniles.maidensmaterials.init.blocks.stained;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
@@ -21,13 +21,14 @@ public class BlockBaseFacing extends Block
 {
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 	
-	public BlockBaseFacing(Material materialIn)
+	public BlockBaseFacing(String name, Material materialIn)
 	{
 		super(materialIn);
-		
+		setUnlocalizedName(name);
+		setRegistryName(name);
 		
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 	

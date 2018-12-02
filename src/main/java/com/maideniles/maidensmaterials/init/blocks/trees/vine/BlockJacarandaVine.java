@@ -3,7 +3,7 @@ package com.maideniles.maidensmaterials.init.blocks.trees.vine;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.config.ConfigHandler;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.BlockVine;
@@ -20,7 +20,7 @@ public class BlockJacarandaVine extends BlockVine {
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setSoundType(SoundType.PLANT);
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 

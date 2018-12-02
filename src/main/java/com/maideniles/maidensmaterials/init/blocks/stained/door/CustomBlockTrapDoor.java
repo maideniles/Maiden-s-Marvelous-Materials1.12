@@ -2,7 +2,7 @@ package com.maideniles.maidensmaterials.init.blocks.stained.door;
 
 import javax.annotation.Nullable;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
@@ -56,7 +56,7 @@ public class CustomBlockTrapDoor extends Block
 		setResistance(20);
         
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(OPEN, Boolean.valueOf(false)).withProperty(HALF, CustomBlockTrapDoor.DoorHalf.BOTTOM));
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 

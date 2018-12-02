@@ -1,6 +1,6 @@
 package com.maideniles.maidensmaterials.handlers;
 
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.init.Items;
@@ -13,15 +13,15 @@ public class RecipeHandler {
 	public static void registerSmelting(){
 	{
 	
-		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(BlockInit.cedar_log)), new ItemStack(Items.COAL, 1, 1), 10);
-		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(BlockInit.log_crabapple)), new ItemStack(Items.COAL, 1, 1), 10);
-		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(BlockInit.log_dogwood)), new ItemStack(Items.COAL, 1, 1), 10);
-		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(BlockInit.log_dogwood)), new ItemStack(Items.COAL, 1, 1), 10);
-		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(BlockInit.log_jacaranda)), new ItemStack(Items.COAL, 1, 1), 10);
-		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(BlockInit.log_laburnum)), new ItemStack(Items.COAL, 1, 1), 10);
-		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(BlockInit.log_paulownia)), new ItemStack(Items.COAL, 1, 1), 10);
-		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(BlockInit.log_silverbell)), new ItemStack(Items.COAL, 1, 1), 10);
-		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(BlockInit.log_wisteria)), new ItemStack(Items.COAL, 1, 1), 10);
+		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.cedar_log)), new ItemStack(Items.COAL, 1, 1), 10);
+		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_crabapple)), new ItemStack(Items.COAL, 1, 1), 10);
+		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_dogwood)), new ItemStack(Items.COAL, 1, 1), 10);
+		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_dogwood)), new ItemStack(Items.COAL, 1, 1), 10);
+		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_jacaranda)), new ItemStack(Items.COAL, 1, 1), 10);
+		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_laburnum)), new ItemStack(Items.COAL, 1, 1), 10);
+		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_paulownia)), new ItemStack(Items.COAL, 1, 1), 10);
+		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_silverbell)), new ItemStack(Items.COAL, 1, 1), 10);
+		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_wisteria)), new ItemStack(Items.COAL, 1, 1), 10);
 		
 		GameRegistry.addSmelting(new ItemStack(MaidensItems.red_clay), new ItemStack(MaidensItems.red_brick), 10);
 		GameRegistry.addSmelting(new ItemStack(MaidensItems.orange_clay), new ItemStack(MaidensItems.orange_brick), 10);
@@ -40,22 +40,22 @@ public class RecipeHandler {
 		GameRegistry.addSmelting(new ItemStack(MaidensItems.black_clay), new ItemStack(MaidensItems.black_brick), 10);
 		GameRegistry.addSmelting(new ItemStack(MaidensItems.brown_clay), new ItemStack(MaidensItems.brown_brick), 10);
 		
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.red_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.red_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.orange_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.orange_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.yellow_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.yellow_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.lime_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.lime_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.green_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.green_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.cyan_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.cyan_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.light_blue_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.light_blue_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.blue_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.blue_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.purple_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.purple_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.magenta_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.magenta_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.pink_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.pink_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.white_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.white_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.light_gray_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.light_gray_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.gray_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.gray_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.black_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.black_clay_block)), 20);
-		GameRegistry.addSmelting(new ItemStack(MaidensItems.brown_clay_mix), new ItemStack(Item.getItemFromBlock(BlockInit.brown_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.red_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.red_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.orange_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.orange_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.yellow_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.yellow_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.lime_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.lime_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.green_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.green_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.cyan_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.cyan_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.light_blue_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.light_blue_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.blue_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.blue_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.purple_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.purple_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.magenta_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.magenta_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.pink_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.pink_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.white_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.white_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.light_gray_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.light_gray_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.gray_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.gray_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.black_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.black_clay_block)), 20);
+		GameRegistry.addSmelting(new ItemStack(MaidensItems.brown_clay_mix), new ItemStack(Item.getItemFromBlock(MaidensBlocks.brown_clay_block)), 20);
 		
 			GameRegistry.addSmelting(new ItemStack(MaidensItems.dark_iron_mix), new ItemStack(MaidensItems.dark_iron_ingot), 20);
 			GameRegistry.addSmelting(new ItemStack(MaidensItems.dye_bath_red), new ItemStack(MaidensItems.stain_red), 20);		
@@ -75,22 +75,22 @@ public class RecipeHandler {
 			GameRegistry.addSmelting(new ItemStack(MaidensItems.dye_bath_black), new ItemStack(MaidensItems.stain_black), 20);
 			GameRegistry.addSmelting(new ItemStack(MaidensItems.dye_bath_brown), new ItemStack(MaidensItems.stain_brown), 20);
 			
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_red), new ItemStack(Item.getItemFromBlock(BlockInit.vase_red)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_orange), new ItemStack(Item.getItemFromBlock(BlockInit.vase_orange)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_yellow), new ItemStack(Item.getItemFromBlock(BlockInit.vase_yellow)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_lime), new ItemStack(Item.getItemFromBlock(BlockInit.vase_lime)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_green), new ItemStack(Item.getItemFromBlock(BlockInit.vase_green)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_cyan), new ItemStack(Item.getItemFromBlock(BlockInit.vase_cyan)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_light_blue), new ItemStack(Item.getItemFromBlock(BlockInit.vase_light_blue)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_blue), new ItemStack(Item.getItemFromBlock(BlockInit.vase_blue)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_purple), new ItemStack(Item.getItemFromBlock(BlockInit.vase_purple)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_magenta), new ItemStack(Item.getItemFromBlock(BlockInit.vase_magenta)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_pink), new ItemStack(Item.getItemFromBlock(BlockInit.vase_pink)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_white), new ItemStack(Item.getItemFromBlock(BlockInit.vase)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_light_gray), new ItemStack(Item.getItemFromBlock(BlockInit.vase_light_gray)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_gray), new ItemStack(Item.getItemFromBlock(BlockInit.vase_gray)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_black), new ItemStack(Item.getItemFromBlock(BlockInit.vase_black)), 20);
-			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_brown), new ItemStack(Item.getItemFromBlock(BlockInit.vase_brown)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_red), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_red)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_orange), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_orange)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_yellow), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_yellow)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_lime), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_lime)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_green), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_green)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_cyan), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_cyan)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_light_blue), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_light_blue)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_blue), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_blue)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_purple), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_purple)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_magenta), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_magenta)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_pink), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_pink)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_white), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_light_gray), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_light_gray)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_gray), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_gray)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_black), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_black)), 20);
+			GameRegistry.addSmelting(new ItemStack(MaidensItems.clay_vase_brown), new ItemStack(Item.getItemFromBlock(MaidensBlocks.vase_brown)), 20);
 		}
 	}
 }

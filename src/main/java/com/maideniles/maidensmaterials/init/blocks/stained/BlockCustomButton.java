@@ -1,7 +1,7 @@
 package com.maideniles.maidensmaterials.init.blocks.stained;
 
 import com.maideniles.maidensmaterials.Reference;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.BlockButton;
@@ -20,7 +20,7 @@ public class BlockCustomButton extends BlockButton{
 		setRegistryName(name);
 		setHardness(2.0F);
 		setResistance(20);
-		BlockInit.BLOCKS.add(this);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 

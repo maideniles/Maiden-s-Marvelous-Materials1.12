@@ -2,7 +2,7 @@ package com.maideniles.maidensmaterials.world.feature.tree;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.config.ConfigHandler;
-import com.maideniles.maidensmaterials.init.BlockInit;
+import com.maideniles.maidensmaterials.init.MaidensBlocks;
 
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.BlockLeaves;
@@ -26,8 +26,8 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class WorldGenPaulowniaTreeTallVines extends WorldGenAbstractTree
 {
-    private static final IBlockState LOG = BlockInit.log_paulownia.getDefaultState();
-    private static final IBlockState LEAF = BlockInit.leaves_paulownia.getDefaultState().withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
+    private static final IBlockState LOG = MaidensBlocks.log_paulownia.getDefaultState();
+    private static final IBlockState LEAF = MaidensBlocks.leaves_paulownia.getDefaultState().withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
     private final boolean useExtraRandomHeight;
     /** The minimum height of a generated tree. */
     private final int minTreeHeight;
@@ -257,7 +257,7 @@ public class WorldGenPaulowniaTreeTallVines extends WorldGenAbstractTree
 
     private void addVine(World worldIn, BlockPos pos, PropertyBool prop)
     {
-        this.setBlockAndNotifyAdequately(worldIn, pos, BlockInit.vine_paulownia.getDefaultState().withProperty(prop, Boolean.valueOf(true)));
+        this.setBlockAndNotifyAdequately(worldIn, pos, MaidensBlocks.vine_paulownia.getDefaultState().withProperty(prop, Boolean.valueOf(true)));
     }
 
     private void addHangingVine(World worldIn, BlockPos pos, PropertyBool prop)
@@ -274,6 +274,6 @@ public class WorldGenPaulowniaTreeTallVines extends WorldGenAbstractTree
     
     private void placeCocoa(World worldIn, int p_181652_2_, BlockPos pos, EnumFacing side)
     {
-       this.setBlockAndNotifyAdequately(worldIn, pos, BlockInit.fairy_glow_cup.getDefaultState().withProperty(BlockHorizontal.FACING, side));
+       this.setBlockAndNotifyAdequately(worldIn, pos, MaidensBlocks.fairy_glow_cup.getDefaultState().withProperty(BlockHorizontal.FACING, side));
     }
 }

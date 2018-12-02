@@ -1,4 +1,4 @@
-package com.maideniles.maidensmaterials.init.items.gui;
+package com.maideniles.maidensmaterials.init.gui;
 
 import java.io.IOException;
 
