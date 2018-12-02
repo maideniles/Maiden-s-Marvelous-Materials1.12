@@ -38,7 +38,6 @@ public class CommonProxy
 	{
 		NetworkRegistry.INSTANCE.registerGuiHandler(MaidensMaterials.INSTANCE, new GuiHandler());
 		
-		RecipeHandler.registerSmelting();
 		
 		MaidensWorldGeneration.register();
 		BiomeInit.registerBiomes();

@@ -1077,14 +1077,18 @@ public class MaidensBlocks
 			i.setCreativeTab(MaidensMaterials.blockstab);
 		
 		e.getRegistry().registerAll(BLOCKS.toArray(new Block[BLOCKS.size()]));
-		
-		registerOreDictionary();
+
 	}
 	
 	@SideOnly(Side.CLIENT)
 	@SubscribeEvent
 	public static void registerRenders(ModelRegistryEvent e) {
 		for (Block itm : BLOCKS) {
+			if(itm instanceof BlockSlab) {
+				if(((BlockSlab)itm).isDouble()) {
+					continue;
+				}
+			}
 			ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(itm), 0, new ModelResourceLocation(itm.getRegistryName(), "inventory"));
 		}
 	}
