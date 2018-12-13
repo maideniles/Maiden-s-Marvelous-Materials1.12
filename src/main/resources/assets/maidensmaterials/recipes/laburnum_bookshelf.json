@@ -15,7 +15,7 @@
         
 		"P":
 		{
-			"item": "maidensmaterials:laburnum_planks"
+			"item": "maidensmaterials:laburnum_slab_half", "data": 0
 		},
 		
 		"B":

@@ -1,0 +1,30 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"P"
+    ],
+    
+    "key":
+    {
+        
+		"P":
+		{
+			"item": "minecraft:wooden_slab", "data": 3
+		}
+		
+		
+	
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:jungle_button",
+        "count": 1
+    }
+}

@@ -15,7 +15,7 @@
         
 		"P":
 		{
-			"item": "maidensmaterials:paulownia_planks"
+			"item": "maidensmaterials:paulownia_slab_half", "data": 0
 		},
 		
 		"B":

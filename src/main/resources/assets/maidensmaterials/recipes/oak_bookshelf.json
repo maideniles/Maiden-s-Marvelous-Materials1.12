@@ -1,0 +1,33 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"PPP", "BBB", "PPP"
+    ],
+    
+    "key":
+    {
+        
+		"P":
+		{
+			"item": "minecraft:wooden_slab", "data": 0
+		},
+		
+		"B":
+		{
+			"item": "minecraft:book"
+		}
+	
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:oak_bookshelf",
+        "count": 1
+    }
+}

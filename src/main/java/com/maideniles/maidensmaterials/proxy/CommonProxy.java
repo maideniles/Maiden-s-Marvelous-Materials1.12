@@ -8,6 +8,7 @@ import com.maideniles.maidensmaterials.handlers.GuiHandler;
 import com.maideniles.maidensmaterials.handlers.RecipeHandler;
 import com.maideniles.maidensmaterials.init.BiomeInit;
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
+import com.maideniles.maidensmaterials.init.MaidensEnchantments;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 import com.maideniles.maidensmaterials.world.gen.ores.MaidensWorldGeneration;
 
@@ -43,6 +44,7 @@ public class CommonProxy
 		BiomeInit.registerBiomes();
 /*		MaidensItems.registerData();
 		BlockInit.registerOreDictionary();*/
+		
 	}
 
 	public void postInit(FMLPostInitializationEvent event) {

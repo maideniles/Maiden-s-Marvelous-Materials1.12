@@ -1,7 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"14": "maidensmaterials:blocks/dark_oak_trapdoor_3"
+		"1": "maidensmaterials:blocks/dark_oak_trapdoor_3",
+		"particle": "maidensmaterials:blocks/dark_oak_trapdoor_3"
 	},
 		"elements": [
 		{

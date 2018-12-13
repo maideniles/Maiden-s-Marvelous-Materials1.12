@@ -1,0 +1,30 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"P"
+    ],
+    
+    "key":
+    {
+        
+		"P":
+		{
+			"item": "minecraft:wooden_slab", "data": 1
+		}
+		
+		
+	
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:spruce_button",
+        "count": 1
+    }
+}

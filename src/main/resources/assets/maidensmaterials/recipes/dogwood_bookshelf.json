@@ -15,7 +15,7 @@
         
 		"P":
 		{
-			"item": "maidensmaterials:dogwood_planks"
+			"item": "maidensmaterials:dogwood_slab_half", "data": 0
 		},
 		
 		"B":

@@ -15,7 +15,7 @@
         
 		"P":
 		{
-			"item": "maidensmaterials:green_stained_planks"
+			"item": "maidensmaterials:green_stained_slab_half", "data": 0
 		},
 		
 		"B":

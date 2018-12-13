@@ -46,7 +46,7 @@ public class BlockSilverBellLeaves extends BlockLeaves
     @Override
     protected void dropApple(World worldIn, BlockPos pos, IBlockState state, int chance)
     {
-        if (worldIn.rand.nextInt(chance) == 0)
+        if (worldIn.rand.nextInt(chance) == 3)
         {
             spawnAsEntity(worldIn, pos, new ItemStack(Item.getItemFromBlock(MaidensBlocks.sapling_silverbell_vines)));
         }

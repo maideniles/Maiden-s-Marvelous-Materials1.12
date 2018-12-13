@@ -1,0 +1,20 @@
+{
+  "variants": {
+   "normal": [
+    { "model": "maidensmaterials:flower_grass" },
+	{ "model": "maidensmaterials:flower_grass_1" },
+	{ "model": "maidensmaterials:flower_grass_2" },
+	{ "model": "maidensmaterials:flower_grass_3" },
+	{ "model": "maidensmaterials:flower_grass_4" },
+	{ "model": "maidensmaterials:flower_grass_5" },
+	{ "model": "maidensmaterials:flower_grass_4" },
+	{ "model": "maidensmaterials:flower_grass_3" },
+	{ "model": "maidensmaterials:flower_grass_2" },
+	{ "model": "maidensmaterials:flower_grass_1" },
+	{ "model": "maidensmaterials:flower_grass_5" },
+	{ "model": "maidensmaterials:flower_grass_5" },
+	{ "model": "maidensmaterials:flower_grass_5" }]
+	
+
+    }
+}

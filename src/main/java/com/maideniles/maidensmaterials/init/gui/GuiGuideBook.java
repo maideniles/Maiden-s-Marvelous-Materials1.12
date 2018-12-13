@@ -190,7 +190,7 @@ public static final String[] PAGE35_P2_TEXT = {"","","","","","","","","","","",
 
 public static final String[] PAGE36_P1_TEXT = {"","","","","","","","","","","","","","","","","","","","","","","","","","",
 
-"The bookshelves, pressure plates and buttons all use the same recipe template as their vanilla countereparts. \n\n","","","",""};
+"The bookshelves, pressure plates and buttons all use the same recipe template as their vanilla countereparts, but with slabs, instead of planks. \n\n","","","",""};
 
 public static final String[] PAGE36_P2_TEXT = {"","","","","","","","","","","","","","","","","","","","","","","","","","","",
 

@@ -2,6 +2,7 @@ package com.maideniles.maidensmaterials.init.blocks;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
+import com.maideniles.maidensmaterials.init.MaidensEnchantments;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
@@ -10,13 +11,19 @@ import net.minecraft.block.BlockGrass;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.IBlockAccess;
@@ -31,12 +38,33 @@ public class CustomBlockGrass extends BlockGrass
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setHardness(0.6F);
+		setHarvestLevel("shovel", 0);
 		setSoundType(SoundType.GROUND);
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-
+		
+		
 	}
 	
+	@Override
+	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
+			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+		// TODO Auto-generated method stub
+		if(playerIn.getHeldItem(hand).toString().toLowerCase().contains("hoe")) {
+			worldIn.setBlockState(pos, Blocks.FARMLAND.getDefaultState());
+			worldIn.playSound(playerIn, pos, SoundEvents.ITEM_HOE_TILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
+		}
+		
+		int howextraisthis = EnchantmentHelper.getEnchantmentLevel(
+		        MaidensEnchantments.FANCY_FEET,
+		        playerIn.getHeldItem(hand));
+		if (howextraisthis > 0) {
+			
+			worldIn.setBlockState(pos, MaidensBlocks.ORNAMENTAL_PATH.getDefaultState());
+		}
+		
+		return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
+	}
 
 	@Override
 	public boolean canSustainPlant(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing direction,
@@ -93,7 +121,10 @@ public class CustomBlockGrass extends BlockGrass
     
     drops.clear();
     drops.add(new ItemStack(Item.getItemFromBlock(Blocks.DIRT)));
+    
     }
+    
+   
 	
 	@Override
 	protected boolean canSilkHarvest() {

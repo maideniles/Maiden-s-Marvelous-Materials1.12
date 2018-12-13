@@ -15,7 +15,7 @@
         
 		"P":
 		{
-			"item": "maidensmaterials:crabapple_planks"
+			"item": "maidensmaterials:crabapple_slab_half", "data": 0
 		},
 		
 		"B":

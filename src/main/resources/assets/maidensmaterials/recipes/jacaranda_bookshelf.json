@@ -15,7 +15,7 @@
         
 		"P":
 		{
-			"item": "maidensmaterials:jacaranda_planks"
+			"item": "maidensmaterials:jacaranda_slab_half", "data": 0
 		},
 		
 		"B":

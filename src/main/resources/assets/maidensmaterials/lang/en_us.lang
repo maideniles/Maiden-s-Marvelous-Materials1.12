@@ -20,6 +20,10 @@ lingering_potion.effect.floral_fortune=Lingering Potion of Floral Fortune
 tipped_arrow.effect.gatherer=Arrow of Gatherer's Glee
 tipped_arrow.effect.floral_fortune=Arrow of Floral Fortune
 
+		#Enchantments
+enchantment.fancy_feet=Fancy Feet
+enchantment.flower_power=Flower Power
+
 		#Items
 item.guide_book.name=Marvelous Materials Manual
 item.pruning_shears.name=Pruning Shears
@@ -197,6 +201,7 @@ item.clay_vase_black.name=Black Clay Vase
 item.clay_vase_brown.name=Brown Clay Vase
 
 		#Blocks
+tile.ornamental_path.name=Ornamental Grass Path
 tile.ornamental_grass_normal.name=Ornamental Grass
 tile.ornamental_grass.name=Ornamental Grass with Flowers
 tile.ornamental_dirt.name=Ornamental Dirt
@@ -480,6 +485,13 @@ tile.crabapple_bookshelf.name=Crabapple Bookshelf
 tile.silverbell_bookshelf.name=SilverBell Bookshelf
 tile.cedar_bookshelf.name=Cedar Bookshelf
 
+tile.acacia_bookshelf.name=Acacia Bookshelf
+tile.birch_bookshelf.name=Birch Bookshelf
+tile.oak_bookshelf.name=Oak Bookshelf
+tile.spruce_bookshelf.name=Spruce Bookshelf
+tile.dark_oak_bookshelf.name=Dark Oak Bookshelf
+tile.jungle_bookshelf.name=Jungle Bookshelf
+
 tile.paulownia_pressure_plate.name=Paulownia Pressure Plate
 tile.laburnum_pressure_plate.name=Laburnum Pressure Plate
 tile.wisteria_pressure_plate.name=Wisteria Pressure Plate
@@ -489,6 +501,13 @@ tile.crabapple_pressure_plate.name=Crabapple Pressure Plate
 tile.silverbell_pressure_plate.name=SilverBell Pressure Plate
 tile.cedar_pressure_plate.name=Cedar Pressure Plate
 
+tile.acacia_pressure_plate.name=Acacia Pressure Plate
+tile.birch_pressure_plate.name=Birch Pressure Plate
+tile.oak_pressure_plate.name=Oak Pressure Plate
+tile.spruce_pressure_plate.name=Spruce Pressure Plate
+tile.dark_oak_pressure_plate.name=Dark Oak Pressure Plate
+tile.jungle_pressure plate.name=Jungle Pressure_Plate
+
 tile.paulownia_button.name=Paulownia button
 tile.laburnum_button.name=Laburnum button
 tile.wisteria_button.name=Wisteria button
@@ -497,6 +516,13 @@ tile.dogwood_button.name=Dogwood button
 tile.crabapple_button.name=Crabapple button
 tile.silverbell_button.name=SilverBell button
 tile.cedar_button.name=Cedar button
+
+tile.acacia_button.name=Acacia Button
+tile.birch_button.name=Birch Button
+tile.oak_button.name=Oak Button
+tile.spruce_button.name=Spruce Button
+tile.dark_oak_button.name=Dark Oak Button
+tile.jungle_pressure plate.name=Jungle 
 
 tile.paulownia_slab_half.name=Paulownia Slab
 tile.crabapple_slab_half.name=Crabapple Slab
@@ -1032,3 +1058,8 @@ tile.laburnum_trapdoor_4.name=Laburnum Trapdoor Style 4
 tile.jacaranda_trapdoor_4.name=Jacaranda Trapdoor Style 4
 tile.wisteria_trapdoor_4.name=Wisteria Trapdoor Style 4
 tile.silverbell_trapdoor_4.name=SilverBell Trapdoor Style 4
+
+	#ToolTipInfo
+info.maidens.flower_power=Harness the power of the Ornamental Forest with your mighty...shovel. This enchantment grants the ability to harvest Ornamental Grass. Right click on an Ornamental Grass block with your enchanted shovel to reveal the Ornamental Pathway.
+
+info.maidens.fancy_feet=There is no reason to have this enchant, except to be Extra. This enchant leaves flowers in your wake whenever you walk across grass or dirt.

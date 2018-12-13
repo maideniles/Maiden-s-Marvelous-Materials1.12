@@ -1,0 +1,30 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        
+		
+		"PP"
+    ],
+    
+    "key":
+    {
+        
+		"P":
+		{
+			"item": "minecraft:wooden_slab", "data": 4
+		}
+		
+		
+	
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:acacia_pressure_plate",
+        "count": 1
+    }
+}

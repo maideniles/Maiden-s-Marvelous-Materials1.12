@@ -16,7 +16,6 @@ public class RecipeHandler {
 		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.cedar_log)), new ItemStack(Items.COAL, 1, 1), 10);
 		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_crabapple)), new ItemStack(Items.COAL, 1, 1), 10);
 		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_dogwood)), new ItemStack(Items.COAL, 1, 1), 10);
-		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_dogwood)), new ItemStack(Items.COAL, 1, 1), 10);
 		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_jacaranda)), new ItemStack(Items.COAL, 1, 1), 10);
 		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_laburnum)), new ItemStack(Items.COAL, 1, 1), 10);
 		GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MaidensBlocks.log_paulownia)), new ItemStack(Items.COAL, 1, 1), 10);
