@@ -16,12 +16,12 @@ lingering_potion.effect.gatherer=Poción persistente de júbilo de recolector
 lingering_potion.effect.floral_fortune=Poción persistente de fortuna floral
 
 		#Flechas
-tipped_arrow.effect.gatherer=Arrow of Gatherer's Glee
-tipped_arrow.effect.floral_fortune=Arrow of Floral Fortune
+tipped_arrow.effect.gatherer=Flecha de la alegría del recolector
+tipped_arrow.effect.floral_fortune=Flecha de la fortuna floral
 
 		#Encantamientos
-enchantment.fancy_feet=Fancy Feet
-enchantment.flower_power=Flower Power
+enchantment.fancy_feet=Pies de lujo
+enchantment.flower_power=Poder de la flor
 
 		#Artículos
 item.guide_book.name=Marvelous Materials Manual
