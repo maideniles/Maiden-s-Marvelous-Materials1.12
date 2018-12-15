@@ -8,6 +8,10 @@ import com.maideniles.maidensmaterials.init.MaidensItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.BlockDirt;
+import net.minecraft.block.BlockGrass;
+import net.minecraft.block.BlockLiquid;
+import net.minecraft.block.BlockMycelium;
+import net.minecraft.block.BlockSand;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockFaceShape;
@@ -62,18 +66,24 @@ public class BlockFlowerGrass extends BlockBush {
 	@Override
 	public boolean canBlockStay(World world, BlockPos pos, IBlockState state) {
 		IBlockState soil = world.getBlockState(pos.down());
-		return soil.getBlock().canSustainPlant(soil, world, pos.down(), EnumFacing.UP, this);
+		if (world.getBlockState(pos.down()) instanceof BlockGrass || world.getBlockState(pos.down()) instanceof BlockDirt)
+				{
+			return true;
+		}
+		if(world.getBlockState(pos.down().add(0,1,0)) instanceof BlockLiquid) {
+			return false;
+		}
+		return super.canBlockStay(world, pos, state);
 	}
 
 	@Override
 	public boolean canPlaceBlockOnSide(World worldIn, BlockPos pos, EnumFacing side) {
-		if (worldIn.getBlockState(pos.down()) == Blocks.GRASS || worldIn.getBlockState(pos.down()) == Blocks.DIRT) {
-			return true;
-		}
+		
 		return super.canPlaceBlockOnSide(worldIn, pos, side);
-
 	}
 
+	
+	
 	public int tickRate(World worldIn) {
 		return 30;
 	}
