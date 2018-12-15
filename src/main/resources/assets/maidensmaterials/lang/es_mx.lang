@@ -1,19 +1,19 @@
 # Pestañas
-itemGroup.mmblocks_tab=Maiden's Materials Blocks
-itemGroup.mmitems_tab=Maiden's Materials Items
+itemGroup.mmblocks_tab=Bloques de materiales de la doncella
+itemGroup.mmitems_tab=Materiales de la doncella
 
 		# Pociones              
-effect.gatherer=Gatherer's Glee
-effect.floral_fortune=Floral Fortune
+effect.gatherer=Glee del recolector
+effect.floral_fortune=Fortuna floral
 
-potion.effect.gatherer=Potion of Gatherer's Glee
-potion.effect.floral_fortune=Potion of Floral Fortune
+potion.effect.gatherer=Poción de júbilo de recolector
+potion.effect.floral_fortune=Poción de fortuna floral
 
-splash_potion.effect.gatherer=Splash Potion of Gatherer's Glee
-splash_potion.effect.floral_fortune=Splash Potion of Floral Fortune
+splash_potion.effect.gatherer=Poción de salpicadura de júbilo de recolector
+splash_potion.effect.floral_fortune=Poción de salpicadura de fortuna floral
 
-lingering_potion.effect.gatherer=Lingering Potion of Gatherer's Glee
-lingering_potion.effect.floral_fortune=Lingering Potion of Floral Fortune
+lingering_potion.effect.gatherer=Poción persistente de júbilo de recolector
+lingering_potion.effect.floral_fortune=Poción persistente de fortuna floral
 
 		#Flechas
 tipped_arrow.effect.gatherer=Arrow of Gatherer's Glee
