@@ -1,4 +1,4 @@
-package com.maideniles.maidensmaterials.init.blocks;
+package com.maideniles.maidensmaterials.init.blocks.grass;
 
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
@@ -61,7 +61,7 @@ public class BlockPrettyPath extends Block {
     super.getDrops(drops, world, pos, state, 3);
     
     drops.clear();
-    drops.add(new ItemStack(Item.getItemFromBlock(MaidensBlocks.ornamental_dirt)));
+    drops.add(new ItemStack(Item.getItemFromBlock(Blocks.DIRT)));
     }
 	
 	@Override

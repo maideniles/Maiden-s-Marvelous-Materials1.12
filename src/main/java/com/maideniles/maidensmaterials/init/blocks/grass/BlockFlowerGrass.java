@@ -5,8 +5,13 @@ import java.util.Random;
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
+import net.minecraft.block.BlockDirt;
+import net.minecraft.block.BlockGrass;
 import net.minecraft.block.BlockLiquid;
+import net.minecraft.block.BlockMycelium;
+import net.minecraft.block.BlockSand;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockFaceShape;
@@ -14,6 +19,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -60,7 +66,7 @@ public class BlockFlowerGrass extends BlockBush {
 	@Override
 	public boolean canBlockStay(World world, BlockPos pos, IBlockState state) {
 		IBlockState soil = world.getBlockState(pos.down());
-		if (world.getBlockState(pos.down()).toString().toLowerCase().contains("grass"))
+		if (world.getBlockState(pos.down()) instanceof BlockGrass || world.getBlockState(pos.down()) instanceof BlockDirt)
 				{
 			return true;
 		}

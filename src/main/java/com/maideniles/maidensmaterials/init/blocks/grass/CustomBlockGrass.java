@@ -1,4 +1,4 @@
-package com.maideniles.maidensmaterials.init.blocks;
+package com.maideniles.maidensmaterials.init.blocks.grass;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
@@ -55,10 +55,10 @@ public class CustomBlockGrass extends BlockGrass
 			worldIn.playSound(playerIn, pos, SoundEvents.ITEM_HOE_TILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
 		}
 		
-		int howextraisthis = EnchantmentHelper.getEnchantmentLevel(
+		int hasflowerpower = EnchantmentHelper.getEnchantmentLevel(
 		        MaidensEnchantments.FLOWER_POWER,
 		        playerIn.getHeldItem(hand));
-		if (howextraisthis > 0) {
+		if (hasflowerpower > 0) {
 			
 			worldIn.setBlockState(pos, MaidensBlocks.ORNAMENTAL_PATH.getDefaultState());
 		}
@@ -66,12 +66,7 @@ public class CustomBlockGrass extends BlockGrass
 		return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
 	}
 
-	@Override
-	public boolean canSustainPlant(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing direction,
-			IPlantable plantable) {
-		// TODO Auto-generated method stub
-		return true;
-	}
+	
 	
 	 public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
 	    {
