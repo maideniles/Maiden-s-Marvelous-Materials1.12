@@ -1,6 +1,5 @@
 package com.maideniles.maidensmaterials.init.blocks;
 
-import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
@@ -15,8 +14,6 @@ public class CustomBrickBlock extends Block{
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setHardness(1.0F);
-		setHarvestLevel("pickaxe", 1);
-		
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}

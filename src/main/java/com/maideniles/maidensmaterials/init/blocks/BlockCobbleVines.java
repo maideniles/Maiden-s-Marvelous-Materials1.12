@@ -1,4 +1,4 @@
-package com.maideniles.maidensmaterials.init.blocks.trees.vine;
+package com.maideniles.maidensmaterials.init.blocks;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;

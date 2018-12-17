@@ -1,4 +1,4 @@
-package com.maideniles.maidensmaterials.init.blocks.grass;
+package com.maideniles.maidensmaterials.init.blocks;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
@@ -14,9 +14,11 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -26,6 +28,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.IPlantable;
 
 public class CustomBlockGrass extends BlockGrass
 {
@@ -37,7 +40,6 @@ public class CustomBlockGrass extends BlockGrass
 		setHardness(0.6F);
 		setHarvestLevel("shovel", 0);
 		setSoundType(SoundType.GROUND);
-		
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 		
@@ -53,10 +55,10 @@ public class CustomBlockGrass extends BlockGrass
 			worldIn.playSound(playerIn, pos, SoundEvents.ITEM_HOE_TILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
 		}
 		
-		int hasflowerpower = EnchantmentHelper.getEnchantmentLevel(
+		int howextraisthis = EnchantmentHelper.getEnchantmentLevel(
 		        MaidensEnchantments.FLOWER_POWER,
 		        playerIn.getHeldItem(hand));
-		if (hasflowerpower > 0) {
+		if (howextraisthis > 0) {
 			
 			worldIn.setBlockState(pos, MaidensBlocks.ORNAMENTAL_PATH.getDefaultState());
 		}
@@ -64,7 +66,12 @@ public class CustomBlockGrass extends BlockGrass
 		return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
 	}
 
-	
+	@Override
+	public boolean canSustainPlant(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing direction,
+			IPlantable plantable) {
+		// TODO Auto-generated method stub
+		return true;
+	}
 	
 	 public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
 	    {
@@ -97,7 +104,7 @@ public class CustomBlockGrass extends BlockGrass
 	                        IBlockState iblockstate = worldIn.getBlockState(blockpos.up());
 	                        IBlockState iblockstate1 = worldIn.getBlockState(blockpos);
 
-	                        if (iblockstate1.getBlock() instanceof BlockDirt && worldIn.getLightFromNeighbors(blockpos.up()) >= 4 && iblockstate.getLightOpacity(worldIn, pos.up()) <= 2)
+	                        if (iblockstate1.getBlock() == Blocks.DIRT && iblockstate1.getValue(BlockDirt.VARIANT) == BlockDirt.DirtType.DIRT && worldIn.getLightFromNeighbors(blockpos.up()) >= 4 && iblockstate.getLightOpacity(worldIn, pos.up()) <= 2)
 	                        {
 	                            worldIn.setBlockState(blockpos, MaidensBlocks.ornamental_grass.getDefaultState());
 	                        }
@@ -107,11 +114,6 @@ public class CustomBlockGrass extends BlockGrass
 	        }
 	    }
 	
-	    public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, IBlockState state)
-	    {
-	        return false;
-	    }
-	    
 	@Override
     public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
     {
