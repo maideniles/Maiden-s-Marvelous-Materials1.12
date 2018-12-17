@@ -2,6 +2,7 @@ package com.maideniles.maidensmaterials.init.blocks.vase;
 
 import java.util.Random;
 
+import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 

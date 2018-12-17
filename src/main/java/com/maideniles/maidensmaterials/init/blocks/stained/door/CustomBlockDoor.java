@@ -2,6 +2,7 @@ package com.maideniles.maidensmaterials.init.blocks.stained.door;
 
 import java.util.Random;
 
+import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 import com.maideniles.maidensmaterials.init.blocks.item.ItemBlockDoor;
@@ -37,6 +38,7 @@ public class CustomBlockDoor extends BlockDoor{
 		this.setRegistryName(name);
 		this.setHardness(3);
 		this.setResistance(20);
+	
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(OPEN, Boolean.valueOf(false)).withProperty(HINGE, BlockDoor.EnumHingePosition.LEFT).withProperty(POWERED, Boolean.valueOf(false)).withProperty(HALF, BlockDoor.EnumDoorHalf.LOWER));
 		MaidensBlocks.BLOCKS.add(this);
 	}
@@ -79,6 +81,12 @@ public class CustomBlockDoor extends BlockDoor{
     {
         return Item.getItemFromBlock(this);
     }
+	
+	@Override
+	public int quantityDropped(IBlockState state, int fortune, Random random) {
+		// TODO Auto-generated method stub
+		return 1;
+	}
 	
 	@Override
 	public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos,

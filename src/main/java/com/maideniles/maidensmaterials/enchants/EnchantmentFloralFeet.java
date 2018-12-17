@@ -79,10 +79,9 @@ public class EnchantmentFloralFeet extends Enchantment {
 
 						IBlockState iblockstate = w.getBlockState(blockpos);
 					
-						if (iblockstate.getBlock() == Blocks.DIRT
-								&& iblockstate.getValue(BlockDirt.VARIANT) == BlockDirt.DirtType.DIRT
-								|| iblockstate.getBlock().toString().toLowerCase().contains("grass")
-								|| iblockstate.getBlock().toString().toLowerCase().contains("dirt")){
+						if (iblockstate.getBlock() == Blocks.GRASS
+								
+								|| iblockstate.getBlock().toString().toLowerCase().contains("grass")){
 							
 							if(MaidensBlocks.WALK_FLOWERS.canPlaceBlockAt(w, pos)) {
 								w.setBlockState(pos, MaidensBlocks.WALK_FLOWERS.getDefaultState());

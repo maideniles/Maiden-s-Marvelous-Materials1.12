@@ -2,6 +2,7 @@ package com.maideniles.maidensmaterials.init.blocks;
 
 import java.util.Random;
 
+import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 
@@ -23,6 +24,7 @@ public class BlockEssenceStorage extends Block {
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setHardness(1.0F);
+		
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}

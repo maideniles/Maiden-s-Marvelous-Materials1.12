@@ -1,4 +1,4 @@
-package com.maideniles.maidensmaterials.init.blocks;
+package com.maideniles.maidensmaterials.init.blocks.grass;
 
 import java.util.Random;
 
@@ -40,7 +40,8 @@ public class BlockFlowerGrass extends BlockBush {
 		setHardness(0.2F);
 		setSoundType(SoundType.PLANT);
 		this.setTickRandomly(true);
-		MaidensBlocks.BLOCKS.add(this);
+		
+		MaidensBlocks.BLOCKS_NO_TAB.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
@@ -70,16 +71,16 @@ public class BlockFlowerGrass extends BlockBush {
 				{
 			return true;
 		}
-		if(world.getBlockState(pos.down().add(0,1,0)) instanceof BlockLiquid) {
-			return false;
-		}
+		
 		return super.canBlockStay(world, pos, state);
 	}
 
 	@Override
 	public boolean canPlaceBlockOnSide(World worldIn, BlockPos pos, EnumFacing side) {
-		
-		return super.canPlaceBlockOnSide(worldIn, pos, side);
+		if(worldIn.getBlockState(pos.add(0,1,0)) instanceof BlockLiquid) {
+			return false;
+			}
+		return true;
 	}
 
 	

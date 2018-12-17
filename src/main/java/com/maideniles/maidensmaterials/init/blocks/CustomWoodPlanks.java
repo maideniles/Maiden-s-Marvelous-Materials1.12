@@ -1,5 +1,6 @@
 package com.maideniles.maidensmaterials.init.blocks;
 
+import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensItems;
 

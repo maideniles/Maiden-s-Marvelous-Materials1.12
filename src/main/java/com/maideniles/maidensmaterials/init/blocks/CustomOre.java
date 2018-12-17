@@ -29,7 +29,6 @@ public class CustomOre extends Block
 		setHardness(2.0F);
 		setResistance(4.0F);
 		setHarvestLevel("pickaxe", 2);
-		
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 		 
