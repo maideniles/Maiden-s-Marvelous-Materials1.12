@@ -20,3 +20,7 @@ build
 # other
 eclipse
 run
+*.java
+*.java
+src/main/java/com/maideniles/maidensmaterials/init/blocks/CustomBrickBlock.java
+src/main/java/com/maideniles/maidensmaterials/init/blocks/gem/BlockGemStorage.java
