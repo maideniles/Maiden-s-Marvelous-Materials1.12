@@ -24,11 +24,12 @@ enchantment.fancy_feet=Schöne Füße
 enchantment.flower_power=Flower-Power
 
 # Items
-item.guide_book.name=Marvelous Materials Handbuch
+item.guide_book.name=Maiden's Marvelous Materials Handbuch
 item.pruning_shears.name=Gartenschere
 item.mortar_and_pestle.name=Mörser und Stößel
 item.mica_powder.name=Mikapuder
 item.grout.name=Mörtel
+# Unused?
 item.new_book.name=Leitbuch
 
 item.door_plans_1.name=Türentwurf Typ 1
@@ -199,12 +200,13 @@ item.clay_vase_gray.name=Graue Tonvase
 item.clay_vase_black.name=Schwarze Tonvase
 item.clay_vase_brown.name=Braune Tonvase
 
-		# Blöcke
+# Blöcke
 tile.ornamental_path.name=Geschmückter Pfad
 tile.ornamental_grass_normal.name=Geschmücktes Gras
 tile.ornamental_grass.name=Geschmücktes Gras mit Blumen
 tile.ornamental_dirt.name=Geschmückte Erde
-tile.fairy_glow_cup.name=Fairy Glow Cup # doesn't exist?
+# unused?
+tile.fairy_glow_cup.name=leuchtender Feenkelch
 tile.vine_tie.name=Rankenband
 
 tile.floral_block.name=Blumenessenzblock
@@ -583,22 +585,22 @@ tile.crabapple_leaves.name=Holzapfelblätter
 tile.dogwood_leaves.name=Hartriegelblätter
 tile.cedar_leaves.name=Zedernblätter
 
-tile.paulownia_setzling.name=Blauglockenbaumsetzling
-tile.laburnum_setzling.name=Goldregensetzling
-tile.jacaranda_setzling.name=Palisandersetzling
-tile.wisteria_setzling.name=Blauregensetzling
-tile.silverbell_setzling.name=Schneeglöckchenbaumsetzling
-tile.crabapple_setzling.name=Holzapfelsetzling
-tile.dogwood_setzling.name=Hartriegelsetzling
-tile.cedar_setzling.name=Zedernsetzling
+tile.paulownia_sapling.name=Blauglockenbaumsetzling
+tile.laburnum_sapling.name=Goldregensetzling
+tile.jacaranda_sapling.name=Palisandersetzling
+tile.wisteria_sapling.name=Blauregensetzling
+tile.silverbell_sapling.name=Schneeglöckchenbaumsetzling
+tile.crabapple_sapling.name=Holzapfelsetzling
+tile.dogwood_sapling.name=Hartriegelsetzling
+tile.cedar_sapling.name=Zedernsetzling
 
-tile.paulownia_setzling_vines.name=Blauglockenbaumsetzling mit Ranken
-tile.jacaranda_setzling_vines.name=Palisandersetzling mit Ranken
-tile.wisteria_setzling_vines.name=Blauregensetzling mit Ranken
-tile.silverbell_setzling_vines.name=Schneeglöckchenbaumsetzling mit Ranken
-tile.crabapple_setzling_vines.name=Holzapfelsetzling mit Ranken
-tile.dogwood_setzling_vines.name=Hartriegelsetzling mit Ranken
-tile.laburnum_setzling_vines.name=Goldregensetzling mit Ranken
+tile.paulownia_sapling_vines.name=Blauglockenbaumsetzling mit Ranken
+tile.jacaranda_sapling_vines.name=Palisandersetzling mit Ranken
+tile.wisteria_sapling_vines.name=Blauregensetzling mit Ranken
+tile.silverbell_sapling_vines.name=Schneeglöckchenbaumsetzling mit Ranken
+tile.crabapple_sapling_vines.name=Holzapfelsetzling mit Ranken
+tile.dogwood_sapling_vines.name=Hartriegelsetzling mit Ranken
+tile.laburnum_sapling_vines.name=Goldregensetzling mit Ranken
 
 tile.jacaranda_vine.name=Palisanderranken
 tile.silverbell_vine.name=Schneeglöckchenbaumranken
@@ -733,13 +735,13 @@ tile.red_stained_button.name=Rotgefärbter Knopf
 tile.orange_stained_button.name=Orangegefärbter Knopf
 tile.yellow_stained_button.name=Gelbgefärbter Knopf
 tile.lime_stained_button.name=Hellgrüngefärbter Knopf
-tile.green_stained_button.name=Grüngefärbte button
+tile.green_stained_button.name=Grüngefärbter Knopf
 tile.cyan_stained_button.name=Türkisgefärbter Knopf
 tile.light_blue_stained_button.name=Hellblaugefärbter Knopf
 tile.blue_stained_button.name=Blaugefärbter Knopf
 tile.purple_stained_button.name=Purplgefärbter Knopf
-tile.magenta_stained_button.name=Magentagefärbte button
-tile.pink_stained_button.name=Rosagefärbte button
+tile.magenta_stained_button.name=Magentagefärbter Knopf
+tile.pink_stained_button.name=Rosagefärbter Knopf
 tile.white_stained_button.name=Weißgefärbter Knopf
 tile.light_gray_stained_button.name=Hellgraugefärbter Knopf
 tile.gray_stained_button.name=Graugefärbter Knopf
