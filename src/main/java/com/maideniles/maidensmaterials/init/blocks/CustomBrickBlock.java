@@ -14,6 +14,9 @@ public class CustomBrickBlock extends Block{
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setHardness(1.0F);
+
+		setHarvestLevel("pickaxe", 1);
+
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}

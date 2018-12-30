@@ -16,6 +16,8 @@ public class CustomBlockStairs extends BlockStairs
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		this.useNeighborBrightness = true;
+		setHardness(1.0F);
+		setHarvestLevel("axe", 0);
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}

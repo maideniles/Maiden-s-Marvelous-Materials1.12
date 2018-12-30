@@ -27,6 +27,7 @@ public class BlockPaulowniaLog
     
     setUnlocalizedName(name);
     setRegistryName(name);
+    setHarvestLevel("axe", 0);
     setDefaultState(blockState.getBaseState().withProperty(LOG_AXIS, BlockLog.EnumAxis.Y));
 	MaidensBlocks.BLOCKS.add(this);
 	MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

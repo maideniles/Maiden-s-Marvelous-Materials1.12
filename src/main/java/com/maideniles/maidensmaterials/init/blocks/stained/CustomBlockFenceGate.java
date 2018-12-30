@@ -48,8 +48,9 @@ public class CustomBlockFenceGate extends BlockHorizontal
         super(Material.IRON, Material.IRON.getMaterialMapColor());
         setUnlocalizedName(name);
         setRegistryName(name);
-        setHardness(hardness);
-        setResistance(resistance);
+        setHardness(1.0F);
+        setResistance(10);
+        setHarvestLevel("axe", 0);
         
         this.setDefaultState(this.blockState.getBaseState().withProperty(OPEN, Boolean.valueOf(false)).withProperty(POWERED, Boolean.valueOf(false)).withProperty(IN_WALL, Boolean.valueOf(false)));
 		MaidensBlocks.BLOCKS.add(this);

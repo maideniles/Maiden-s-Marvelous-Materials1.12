@@ -34,6 +34,7 @@ import net.minecraft.util.EnumFacing;
         
         setUnlocalizedName(name);
         setRegistryName(name);
+        setHarvestLevel("axe", 0);
         setDefaultState(blockState.getBaseState().withProperty(LOG_AXIS, BlockLog.EnumAxis.Y));
 
 		MaidensBlocks.BLOCKS.add(this);

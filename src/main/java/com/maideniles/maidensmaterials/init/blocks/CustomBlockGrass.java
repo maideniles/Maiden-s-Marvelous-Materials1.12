@@ -56,7 +56,7 @@ public class CustomBlockGrass extends BlockGrass
 		}
 		
 		int howextraisthis = EnchantmentHelper.getEnchantmentLevel(
-		        MaidensEnchantments.FANCY_FEET,
+		        MaidensEnchantments.FLOWER_POWER,
 		        playerIn.getHeldItem(hand));
 		if (howextraisthis > 0) {
 			
@@ -70,7 +70,7 @@ public class CustomBlockGrass extends BlockGrass
 	public boolean canSustainPlant(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing direction,
 			IPlantable plantable) {
 		// TODO Auto-generated method stub
-		return true;
+		return false;
 	}
 	
 	 public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
@@ -104,7 +104,7 @@ public class CustomBlockGrass extends BlockGrass
 	                        IBlockState iblockstate = worldIn.getBlockState(blockpos.up());
 	                        IBlockState iblockstate1 = worldIn.getBlockState(blockpos);
 
-	                        if (iblockstate1.getBlock() == Blocks.DIRT && iblockstate1.getValue(BlockDirt.VARIANT) == BlockDirt.DirtType.DIRT && worldIn.getLightFromNeighbors(blockpos.up()) >= 4 && iblockstate.getLightOpacity(worldIn, pos.up()) <= 2)
+	                        if (iblockstate1.getBlock() instanceof BlockDirt && worldIn.getLightFromNeighbors(blockpos.up()) >= 4 && iblockstate.getLightOpacity(worldIn, pos.up()) <= 2)
 	                        {
 	                            worldIn.setBlockState(blockpos, MaidensBlocks.ornamental_grass.getDefaultState());
 	                        }

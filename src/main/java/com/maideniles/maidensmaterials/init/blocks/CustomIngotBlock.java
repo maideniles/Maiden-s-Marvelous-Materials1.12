@@ -37,7 +37,7 @@ public class CustomIngotBlock extends Block
 		setUnlocalizedName(name);
 		setHardness(hardness);
 		setResistance(resistance);
-		setHarvestLevel("pickaxe", harvestLevel);
+		setHarvestLevel("pickaxe", 1);
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}

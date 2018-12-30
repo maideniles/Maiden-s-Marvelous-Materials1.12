@@ -28,8 +28,9 @@ public abstract class CustomBlockSlab extends BlockSlab
 		super(Material.WOOD);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setHardness(hardness);
-		setResistance(resistance);
+		setHardness(1.0F);
+		setHarvestLevel("axe", 0);
+		setResistance(10);
 		
 IBlockState iblockstate = this.blockState.getBaseState().withProperty(VARIANT, Variant.DEFAULT);
 		

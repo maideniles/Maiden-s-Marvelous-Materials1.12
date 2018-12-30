@@ -77,7 +77,7 @@ item.jasper_fragments.name=Jasper Fragments
 item.labradorite_fragments.name=Labradorite Fragments
 item.mica_fragments.name=Mica Fragments
 item.moonstone_fragments.name=Moonstone Fragments
-item.rose_quartz_fragments.name=Rose Quarz Fragments
+item.rose_quartz_fragments.name=Rose Quartz Fragments
 item.sodalite_fragments.name=Sodalite Fragments
 
 
@@ -506,7 +506,7 @@ tile.birch_pressure_plate.name=Birch Pressure Plate
 tile.oak_pressure_plate.name=Oak Pressure Plate
 tile.spruce_pressure_plate.name=Spruce Pressure Plate
 tile.dark_oak_pressure_plate.name=Dark Oak Pressure Plate
-tile.jungle_pressure plate.name=Jungle Pressure_Plate
+tile.jungle_pressure_plate.name=Jungle Pressure Plate
 
 tile.paulownia_button.name=Paulownia button
 tile.laburnum_button.name=Laburnum button
@@ -522,7 +522,7 @@ tile.birch_button.name=Birch Button
 tile.oak_button.name=Oak Button
 tile.spruce_button.name=Spruce Button
 tile.dark_oak_button.name=Dark Oak Button
-tile.jungle_pressure plate.name=Jungle 
+tile.jungle_button.name=Jungle Button
 
 tile.paulownia_slab_half.name=Paulownia Slab
 tile.crabapple_slab_half.name=Crabapple Slab
@@ -1062,4 +1062,4 @@ tile.silverbell_trapdoor_4.name=SilverBell Trapdoor Style 4
 	#ToolTipInfo
 info.maidens.flower_power=Harness the power of the Ornamental Forest with your mighty...shovel. This enchantment grants the ability to harvest Ornamental Grass. Right click on an Ornamental Grass block with your enchanted shovel to reveal the Ornamental Pathway.
 
-info.maidens.fancy_feet=There is no reason to have this enchant, except to be Extra. This enchant leaves flowers in your wake whenever you walk across grass.
+info.maidens.fancy_feet=There is no reason to have this enchant, except to be Extra. This enchant leaves flowers in your wake whenever you walk across grass or dirt.

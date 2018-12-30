@@ -18,8 +18,9 @@ public class BlockCustomButton extends BlockButton{
 		super(false);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setHardness(2.0F);
+		setHardness(1.0F);
 		setResistance(20);
+		setHarvestLevel("axe", 0);
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}

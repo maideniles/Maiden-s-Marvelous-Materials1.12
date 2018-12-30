@@ -35,7 +35,8 @@ public class BlockCobbleVines extends Block
 		
 		setRegistryName(name);
 		setUnlocalizedName(name);
-		setHardness(hardness);
+		setHardness(1.0F);
+		setHarvestLevel("pickaxe", 1);
 		setResistance(resistance);
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

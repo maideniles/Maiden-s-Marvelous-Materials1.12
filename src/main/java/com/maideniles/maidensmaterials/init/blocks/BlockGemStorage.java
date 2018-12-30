@@ -25,7 +25,7 @@ public class BlockGemStorage extends Block{
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setHardness(2.0F);
-		
+		setHarvestLevel("pickaxe", 2);
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}

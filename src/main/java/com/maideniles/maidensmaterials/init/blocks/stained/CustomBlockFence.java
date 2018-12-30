@@ -15,8 +15,9 @@ public class CustomBlockFence extends BlockFence
 		super(Material.IRON, Material.IRON.getMaterialMapColor());
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setResistance(resistance);
-		setHardness(hardness);
+		setResistance(10);
+		setHardness(1.0F);
+		setHarvestLevel("axe", 0);
 		this.useNeighborBrightness = true;
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

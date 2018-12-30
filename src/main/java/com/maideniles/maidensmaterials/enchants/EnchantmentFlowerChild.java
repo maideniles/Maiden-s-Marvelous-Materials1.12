@@ -1,5 +1,7 @@
 package com.maideniles.maidensmaterials.enchants;
 
+import java.util.Set;
+
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensEnchantments;
 
@@ -13,7 +15,10 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Enchantments;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemTool;
 import net.minecraft.util.EnumHand;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
 import net.minecraftforge.event.world.BlockEvent.BreakEvent;
@@ -36,10 +41,19 @@ public class EnchantmentFlowerChild extends Enchantment {
 	}
 
 	@Override
-	public boolean canApplyAtEnchantingTable(ItemStack stack) {
-		return true;
+	public boolean canApply(ItemStack stack) {
+		Item i = stack.getItem();
+		if (i instanceof ItemSpade) {
+			return true;
+		}
+		return false;
 	}
 
+	@Override
+	public boolean canApplyAtEnchantingTable(ItemStack stack) {
+		return canApply(stack);
+	}
+	
 	@Override
 	public boolean isAllowedOnBooks() {
 		return true;
@@ -57,7 +71,7 @@ public class EnchantmentFlowerChild extends Enchantment {
 
 	@Override
 	public int getMaxEnchantability(int enchantmentLevel) {
-		return super.getMinEnchantability(enchantmentLevel) + 50;
+		return super.getMinEnchantability(enchantmentLevel) + 15;
 	}
 
 	

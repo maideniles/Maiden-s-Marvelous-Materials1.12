@@ -27,7 +27,8 @@ public class BlockCustomPressurePlate extends BlockPressurePlateWeighted {
 		super(Material.WOOD, 10);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setHardness(3);
+		setHardness(1.0F);
+		setHarvestLevel("axe", 0);
 		setResistance(20);
 		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

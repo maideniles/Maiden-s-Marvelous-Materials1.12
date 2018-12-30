@@ -3,16 +3,13 @@ package com.maideniles.maidensmaterials.enchants;
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
 import com.maideniles.maidensmaterials.init.MaidensEnchantments;
 
-import net.minecraft.block.BlockDirt;
-import net.minecraft.block.BlockLiquid;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnumEnchantmentType;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Blocks;
-import net.minecraft.enchantment.Enchantment.Rarity;
+import net.minecraft.init.Enchantments;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
@@ -27,31 +24,57 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class EnchantmentFloralFeet extends Enchantment {
 
 	public EnchantmentFloralFeet() {
-		super(Rarity.VERY_RARE, EnumEnchantmentType.ARMOR_FEET, new EntityEquipmentSlot[] { EntityEquipmentSlot.FEET });
+		super(Rarity.COMMON, EnumEnchantmentType.ARMOR_FEET, new EntityEquipmentSlot[] { EntityEquipmentSlot.FEET });
 		this.setName("fancy_feet");
 		this.setRegistryName("fancy_feet");
+		
 
 	}
 
 	@Override
 	public int getMaxLevel() {
-		return 1;
+		return 3;
+	}
+		
+		
+	@Override
+	public int getMinEnchantability(int enchantmentLevel) {
+		return 1 + 10 * (enchantmentLevel - 1);
 	}
 
 	@Override
-	public boolean canApply(ItemStack stack) {
-		return stack.getItem() instanceof ItemArmor
-				&& ((ItemArmor) stack.getItem()).armorType == EntityEquipmentSlot.FEET;
-	}
-
-	@Override
-	public boolean isTreasureEnchantment() {
-		return true;
+	public int getMaxEnchantability(int enchantmentLevel) {
+		return super.getMinEnchantability(enchantmentLevel) + 15;
 	}
 	
 	@Override
+	public boolean canApply(ItemStack stack) {
+		return stack.getItem() instanceof ItemArmor && ((ItemArmor)stack.getItem()).armorType == EntityEquipmentSlot.FEET;
+	}
+
+	/*@Override
+	public boolean isTreasureEnchantment() {
+		return true;
+	}*/
+	
+	@Override
+    public boolean canApplyTogether(Enchantment ench)
+    {
+        return super.canApplyTogether(ench) 
+               || ench == Enchantments.DEPTH_STRIDER 
+                || ench == Enchantments.FROST_WALKER
+                || ench == Enchantments.FEATHER_FALLING
+                || ench == Enchantments.PROTECTION
+                || ench == Enchantments.FIRE_PROTECTION
+                || ench == Enchantments.THORNS
+                || ench == Enchantments.MENDING
+        		|| ench == Enchantments.BLAST_PROTECTION;
+    }
+	
+	
+	
+	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
-		
 		return true;
 	}
 
@@ -79,9 +102,10 @@ public class EnchantmentFloralFeet extends Enchantment {
 
 						IBlockState iblockstate = w.getBlockState(blockpos);
 					
-						if (iblockstate.getBlock() == Blocks.DIRT
-								&& iblockstate.getValue(BlockDirt.VARIANT) == BlockDirt.DirtType.DIRT
-								|| iblockstate.getBlock() == Blocks.GRASS) {
+						if (iblockstate.getBlock() == Blocks.GRASS
+
+								|| iblockstate.getBlock().toString().toLowerCase().contains("grass")){
+							
 							if(MaidensBlocks.WALK_FLOWERS.canPlaceBlockAt(w, pos)) {
 								w.setBlockState(pos, MaidensBlocks.WALK_FLOWERS.getDefaultState());
 							}

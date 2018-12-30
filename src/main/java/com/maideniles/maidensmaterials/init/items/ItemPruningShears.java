@@ -1,5 +1,6 @@
 package com.maideniles.maidensmaterials.init.items;
 
+
 public class ItemPruningShears extends ItemMaiden {
 
 	public ItemPruningShears(String name) {
@@ -8,4 +9,6 @@ public class ItemPruningShears extends ItemMaiden {
 		setMaxDamage(48);
 	}
 
+	
+	
 }

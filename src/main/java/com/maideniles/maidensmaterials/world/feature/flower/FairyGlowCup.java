@@ -3,6 +3,7 @@ package com.maideniles.maidensmaterials.world.feature.flower;
 import java.util.Random;
 
 import com.maideniles.maidensmaterials.init.MaidensBlocks;
+import com.maideniles.maidensmaterials.init.MaidensItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCocoa;
@@ -20,6 +21,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
@@ -48,6 +50,8 @@ public class FairyGlowCup extends BlockCocoa implements IGrowable
         setLightLevel(1.0F);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(AGE, Integer.valueOf(0)));
         this.setTickRandomly(true);
+        MaidensBlocks.BLOCKS_NO_TAB.add(this);
+		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
 @Override

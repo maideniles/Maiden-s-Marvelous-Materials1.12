@@ -105,10 +105,11 @@ public class MaidensBlocks
 {
 	public static final int WILDCARD_VALUE = Short.MAX_VALUE;
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
+	public static final List<Block> BLOCKS_NO_TAB = new ArrayList<Block>();
 	public static final Block vine_tie = new BlockVineTie("vine_tie", Material.CLOTH);
 
-	public static final Block ORNAMENTAL_PATH = new BlockPrettyPath("ornamental_path", Material.GROUND);
-	public static final Block WALK_FLOWERS = new BlockFlowerGrass("flower_grass", Material.PLANTS);
+	public static final Block ORNAMENTAL_PATH = new BlockPrettyPath("ornamental_path", Material.GROUND).setCreativeTab(null);
+	public static final Block WALK_FLOWERS = new BlockFlowerGrass("flower_grass", Material.PLANTS).setCreativeTab(null);
 	public static final Block earthen_block = new BlockEssenceStorage("earthen_block", Material.ROCK);
 	public static final Block floral_block = new BlockEssenceStorage("floral_block", Material.ROCK);
 	public static final Block crabapple_cobblestone = new BlockCobbleVines("crabapple_cobblestone", 2.0f, 4.5F);
@@ -387,8 +388,7 @@ public class MaidensBlocks
 	public static final Block vase_brown = new BlockFlowerVaseBrown("vase_brown", Material.CLAY);
 
 	public static final Block ornamental_grass = new CustomBlockGrass("ornamental_grass", Material.GRASS);
-	public static final Block ornamental_dirt = new CustomBlockGrass("ornamental_dirt", Material.GROUND);
-
+	
 	public static final Block cedar_log = new BlockCedarLog("cedar_log");
 	public static final Block cedar_leaves = new BlockCedarLeaves("cedar_leaves");
 	public static final Block cedar_sapling = new BlockCedarSapling("cedar_sapling");
@@ -1083,7 +1083,12 @@ public class MaidensBlocks
 			i.setCreativeTab(MaidensMaterials.blockstab);
 		
 		e.getRegistry().registerAll(BLOCKS.toArray(new Block[BLOCKS.size()]));
-
+	}
+	
+	@SubscribeEvent
+	public static void registerItemsNoTab(RegistryEvent.Register<Block> e) {
+		
+		e.getRegistry().registerAll(BLOCKS_NO_TAB.toArray(new Block[BLOCKS_NO_TAB.size()]));
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -1099,39 +1104,6 @@ public class MaidensBlocks
 		}
 	}
 
-/*	public static void registerBlock(Block block) {
-		ForgeRegistries.BLOCKS.register(block);
-		block.setCreativeTab(MaidensMaterials.blockstab);
-		ItemBlock item = new ItemBlock(block);
-		item.setRegistryName(block.getRegistryName());
-		ForgeRegistries.ITEMS.register(item);
-
-		MaidensMaterials.proxy.registerModelResourceLocation(Item.getItemFromBlock(block));
-	}
-
-	public static void registerBlock(Block block, ItemBlock itemblock) {
-		ForgeRegistries.BLOCKS.register(block);
-		block.setCreativeTab(MaidensMaterials.blockstab);
-		itemblock.setRegistryName(block.getRegistryName());
-		ForgeRegistries.ITEMS.register(itemblock);
-
-		MaidensMaterials.proxy.registerModelResourceLocation(Item.getItemFromBlock(block));
-	}
-
-	public static void registerRender(Block block, int meta, String filename) {
-		MaidensMaterials.proxy.registerModelResourceLocation(Item.getItemFromBlock(block));
-	}
-
-	public static void registerBlockWithoutTab(Block block) {
-		ForgeRegistries.BLOCKS.register(block);
-
-		ItemBlock item = new ItemBlock(block);
-		item.setRegistryName(block.getRegistryName());
-		ForgeRegistries.ITEMS.register(item);
-
-		MaidensMaterials.proxy.registerModelResourceLocation(Item.getItemFromBlock(block));
-	}
-*/
 	public static void registerOreDictionary() {
 
 		// TODO
@@ -1399,21 +1371,17 @@ public class MaidensBlocks
 		OreDictionary.registerOre("oreSodalite", MaidensBlocks.sodalite_ore);
 		
 		OreDictionary.registerOre("grass", MaidensBlocks.ornamental_grass);
-		OreDictionary.registerOre("dirt", MaidensBlocks.ornamental_dirt);
+	
 		
 		MaidensBlocks.GRASS.add(MaidensBlocks.ornamental_grass);
-		MaidensBlocks.TOOL_HOES.add(Items.WOODEN_HOE);
-		MaidensBlocks.TOOL_HOES.add(Items.STONE_HOE);
-		MaidensBlocks.TOOL_HOES.add(Items.IRON_HOE);
-		MaidensBlocks.TOOL_HOES.add(Items.GOLDEN_HOE);
-		MaidensBlocks.TOOL_HOES.add(Items.DIAMOND_HOE);
+	
 		
 	}
 
 	public static final List<Block> ORES = new ArrayList<Block>();
 	public static final List<Block> GRASS = new ArrayList<Block>();
 	public static final List<Item> GEM_DROPS = new ArrayList<Item>();
-	public static final List<Item> TOOL_HOES = new ArrayList<Item>();
+
 	
 			
 }

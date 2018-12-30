@@ -27,6 +27,7 @@ public class BlockStainedBookshelf extends BlockBookshelf{
 	setRegistryName(name);
 	setSoundType(SoundType.WOOD);
 	setHardness(2.0F);
+	setHarvestLevel("axe", 0);
 	MaidensBlocks.BLOCKS.add(this);
 	MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}

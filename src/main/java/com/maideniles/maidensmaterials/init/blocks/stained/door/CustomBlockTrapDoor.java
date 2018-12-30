@@ -52,8 +52,9 @@ public class CustomBlockTrapDoor extends Block
 		
 		setRegistryName(name);
 		setUnlocalizedName(name);
-		setHardness(2.0F);
+		setHardness(1.0F);
 		setResistance(20);
+		setHarvestLevel("axe", 0);
         
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(OPEN, Boolean.valueOf(false)).withProperty(HALF, CustomBlockTrapDoor.DoorHalf.BOTTOM));
 		MaidensBlocks.BLOCKS.add(this);
