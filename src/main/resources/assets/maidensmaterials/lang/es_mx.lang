@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Pestañas
 itemGroup.mmblocks_tab=Bloques de materiales de la doncella
 itemGroup.mmitems_tab=Materiales de la doncella
@@ -1065,7 +1062,7 @@ tile.silverbell_trapdoor_4.name=SilverBell Trapdoor Style 4
 info.maidens.flower_power=Harness the power of the Ornamental Forest with your mighty...shovel. This enchantment grants the ability to harvest Ornamental Grass. Right click on an Ornamental Grass block with your enchanted shovel to reveal the Ornamental Pathway.
 
 info.maidens.fancy_feet=There is no reason to have this enchant, except to be Extra. This enchant leaves flowers in your wake whenever you walk across grass.
-=======
+
 # Pestañas
 itemGroup.mmblocks_tab=Bloques de materiales de la doncella
 itemGroup.mmitems_tab=Materiales de la doncella
@@ -2130,8 +2127,3 @@ tile.silverbell_trapdoor_4.name=SilverBell Trapdoor Style 4
 info.maidens.flower_power=Harness the power of the Ornamental Forest with your mighty...shovel. This enchantment grants the ability to harvest Ornamental Grass. Right click on an Ornamental Grass block with your enchanted shovel to reveal the Ornamental Pathway.
 
 info.maidens.fancy_feet=There is no reason to have this enchant, except to be Extra. This enchant leaves flowers in your wake whenever you walk across grass or dirt.
->>>>>>> f3716fc81d981f1ada9d28e2113168bdbaa0a1ac
-=======
->>>>>>> parent of c7cc503... bug fixing, request implementations
-=======
->>>>>>> parent of c7cc503... bug fixing, request implementations
