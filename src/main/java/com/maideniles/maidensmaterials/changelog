@@ -1,0 +1,15 @@
+3.1
+
+Added:
+    -Spanish translation file (in progress by SteveBeebleBrox)
+    -German translation file (translated by RedstoneTim)
+    
+Changed:
+    -changed max level for fancy_feet back to 1.
+    -changed the tickRate for flower_grass down to 2.
+    -
+
+Fixed:
+    -Adjusted the random math to correctly reflect drop rate for earthen_essence.
+    -corrected typos in English lang file
+    -fixed bugs in both enchants that were allowing them to be applied to any item whatsoever.

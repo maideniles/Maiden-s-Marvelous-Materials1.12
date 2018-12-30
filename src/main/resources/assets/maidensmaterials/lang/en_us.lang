@@ -183,22 +183,22 @@ item.dye_bath_gray.name=Gray Dye Bath
 item.dye_bath_black.name=Black Dye Bath
 item.dye_bath_brown.name=Brown Dye Bath
 
-item.clay_vase_red.name=Red Clay Vase
-item.clay_vase_orange.name=Orange Clay Vase
-item.clay_vase_yellow.name=Yellow Clay Vase
-item.clay_vase_lime.name=Lime Clay Vase
-item.clay_vase_green.name=Green Clay Vase
-item.clay_vase_cyan.name=Cyan Clay Vase
-item.clay_vase_light_blue.name=Light Blue Clay Vase
-item.clay_vase_blue.name=Blue Clay Vase
-item.clay_vase_purple.name=Purple Clay Vase
-item.clay_vase_magenta.name=Magenta Clay Vase
-item.clay_vase_pink.name=Pink Clay Vase
-item.clay_vase_white.name=White Clay Vase
-item.clay_vase_light_gray.name=Light Gray Clay Vase
-item.clay_vase_gray.name=Gray Clay Vase
-item.clay_vase_black.name=Black Clay Vase
-item.clay_vase_brown.name=Brown Clay Vase
+item.clay_vase_red.name=Red Clay Vase (Unfired)
+item.clay_vase_orange.name=Orange Clay Vase (Unfired)
+item.clay_vase_yellow.name=Yellow Clay Vase (Unfired)
+item.clay_vase_lime.name=Lime Clay Vase (Unfired)
+item.clay_vase_green.name=Green Clay Vase (Unfired)
+item.clay_vase_cyan.name=Cyan Clay Vase (Unfired)
+item.clay_vase_light_blue.name=Light Blue Clay Vase (Unfired)
+item.clay_vase_blue.name=Blue Clay Vase (Unfired)
+item.clay_vase_purple.name=Purple Clay Vase (Unfired)
+item.clay_vase_magenta.name=Magenta Clay Vase (Unfired)
+item.clay_vase_pink.name=Pink Clay Vase (Unfired)
+item.clay_vase_white.name=White Clay Vase (Unfired)
+item.clay_vase_light_gray.name=Light Gray Clay Vase (Unfired)
+item.clay_vase_gray.name=Gray Clay Vase (Unfired)
+item.clay_vase_black.name=Black Clay Vase (Unfired)
+item.clay_vase_brown.name=Brown Clay Vase (Unfired)
 
 		#Blocks
 tile.ornamental_path.name=Ornamental Grass Path
@@ -207,6 +207,7 @@ tile.ornamental_grass.name=Ornamental Grass with Flowers
 tile.ornamental_dirt.name=Ornamental Dirt
 tile.fairy_glow_cup.name=Fairy Glow Cup
 tile.vine_tie.name=Vine Tie
+tile.flower_grass.name=Vanishing Flowers
 
 tile.floral_block.name=Floral Essence Block
 tile.earthen_block.name=Earthen Essence Block

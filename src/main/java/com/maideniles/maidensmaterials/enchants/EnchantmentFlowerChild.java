@@ -29,7 +29,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class EnchantmentFlowerChild extends Enchantment {
 
 	public EnchantmentFlowerChild() {
-		super(Rarity.UNCOMMON, MaidensEnchantments.TOOL,
+		super(Rarity.VERY_RARE, MaidensEnchantments.TOOL,
 				new EntityEquipmentSlot[] { EntityEquipmentSlot.MAINHAND, EntityEquipmentSlot.OFFHAND });
 		setName("flower_power");
 		setRegistryName("flower_power");
@@ -42,12 +42,10 @@ public class EnchantmentFlowerChild extends Enchantment {
 
 	@Override
 	public boolean canApply(ItemStack stack) {
-		Item i = stack.getItem();
-		if (i instanceof ItemSpade) {
-			return true;
-		}
-		return false;
+		return stack.getItem().getToolClasses(stack).contains("shovel");
 	}
+	
+
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {

@@ -24,7 +24,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class EnchantmentFloralFeet extends Enchantment {
 
 	public EnchantmentFloralFeet() {
-		super(Rarity.COMMON, EnumEnchantmentType.ARMOR_FEET, new EntityEquipmentSlot[] { EntityEquipmentSlot.FEET });
+		super(Rarity.VERY_RARE, EnumEnchantmentType.ARMOR_FEET, new EntityEquipmentSlot[] { EntityEquipmentSlot.FEET });
 		this.setName("fancy_feet");
 		this.setRegistryName("fancy_feet");
 		
@@ -33,7 +33,7 @@ public class EnchantmentFloralFeet extends Enchantment {
 
 	@Override
 	public int getMaxLevel() {
-		return 3;
+		return 1;
 	}
 		
 		
@@ -51,12 +51,7 @@ public class EnchantmentFloralFeet extends Enchantment {
 	public boolean canApply(ItemStack stack) {
 		return stack.getItem() instanceof ItemArmor && ((ItemArmor)stack.getItem()).armorType == EntityEquipmentSlot.FEET;
 	}
-
-	/*@Override
-	public boolean isTreasureEnchantment() {
-		return true;
-	}*/
-	
+		
 	@Override
     public boolean canApplyTogether(Enchantment ench)
     {
@@ -75,7 +70,7 @@ public class EnchantmentFloralFeet extends Enchantment {
 	
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
-		return true;
+		return canApply(stack);
 	}
 
 	@SubscribeEvent

@@ -85,7 +85,7 @@ public class BlockFlowerGrass extends BlockBush {
 	
 	
 	public int tickRate(World worldIn) {
-		return 30;
+		return 2;
 	}
 
 	public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {

@@ -15,6 +15,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionType;
+import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.world.BlockEvent.BreakEvent;
 import net.minecraftforge.event.world.BlockEvent.HarvestDropsEvent;
@@ -29,7 +30,7 @@ public class MaidensEventHandler {
 	@SubscribeEvent
 	public static void onDropBlocksEvent(HarvestDropsEvent event) {
 		if (CommonProxy.validBlocks.contains(event.getState().getBlock())) {
-			if ((rand.nextInt(200) + 1) < 20) {
+			if (rand.nextInt(200) ==0) {
 				event.getDrops().add(new ItemStack(MaidensItems.EARTHEN_ESSENCE, 1));
 			}
 		}
@@ -82,4 +83,7 @@ public class MaidensEventHandler {
 		PotionTypeRegistry.registerPotionTypes(event);
 	}
 
+	
+	
+	
 }
