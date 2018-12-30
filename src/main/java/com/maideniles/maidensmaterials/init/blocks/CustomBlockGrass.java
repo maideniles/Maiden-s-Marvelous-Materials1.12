@@ -56,7 +56,7 @@ public class CustomBlockGrass extends BlockGrass
 		}
 		
 		int howextraisthis = EnchantmentHelper.getEnchantmentLevel(
-		        MaidensEnchantments.FLOWER_POWER,
+		        MaidensEnchantments.FANCY_FEET,
 		        playerIn.getHeldItem(hand));
 		if (howextraisthis > 0) {
 			

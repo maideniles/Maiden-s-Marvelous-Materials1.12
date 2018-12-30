@@ -1,7 +1,7 @@
 
 		# Tabs
-itemGroup.mmblocks_tab=Maiden's Materials Blocks
-itemGroup.mmitems_tab=Maiden's Materials Items
+itemGroup.blocks_tab=Maiden's Materials Blocks
+itemGroup.items_tab=Maiden's Materials Items
 
 		# Potions              
 effect.gatherer=Gatherer's Glee
@@ -1062,4 +1062,4 @@ tile.silverbell_trapdoor_4.name=SilverBell Trapdoor Style 4
 	#ToolTipInfo
 info.maidens.flower_power=Harness the power of the Ornamental Forest with your mighty...shovel. This enchantment grants the ability to harvest Ornamental Grass. Right click on an Ornamental Grass block with your enchanted shovel to reveal the Ornamental Pathway.
 
-info.maidens.fancy_feet=There is no reason to have this enchant, except to be Extra. This enchant leaves flowers in your wake whenever you walk across grass or dirt.
+info.maidens.fancy_feet=There is no reason to have this enchant, except to be Extra. This enchant leaves flowers in your wake whenever you walk across grass.

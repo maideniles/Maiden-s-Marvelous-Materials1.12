@@ -81,12 +81,6 @@ public class CustomBlockDoor extends BlockDoor{
     }
 	
 	@Override
-	public int quantityDropped(Random random) {
-		// TODO Auto-generated method stub
-		return 1;
-	}
-	
-	@Override
 	public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos,
 			EntityPlayer player) {
 		// TODO Auto-generated method stub

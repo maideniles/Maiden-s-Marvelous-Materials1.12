@@ -107,8 +107,8 @@ public class MaidensBlocks
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	public static final Block vine_tie = new BlockVineTie("vine_tie", Material.CLOTH);
 
-	public static final Block ORNAMENTAL_PATH = new BlockPrettyPath("ornamental_path", Material.GROUND).setCreativeTab(null);
-	public static final Block WALK_FLOWERS = new BlockFlowerGrass("flower_grass", Material.PLANTS).setCreativeTab(null);
+	public static final Block ORNAMENTAL_PATH = new BlockPrettyPath("ornamental_path", Material.GROUND);
+	public static final Block WALK_FLOWERS = new BlockFlowerGrass("flower_grass", Material.PLANTS);
 	public static final Block earthen_block = new BlockEssenceStorage("earthen_block", Material.ROCK);
 	public static final Block floral_block = new BlockEssenceStorage("floral_block", Material.ROCK);
 	public static final Block crabapple_cobblestone = new BlockCobbleVines("crabapple_cobblestone", 2.0f, 4.5F);
