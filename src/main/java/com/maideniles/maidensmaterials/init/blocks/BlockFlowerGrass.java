@@ -12,6 +12,7 @@ import net.minecraft.block.BlockGrass;
 import net.minecraft.block.BlockLiquid;
 import net.minecraft.block.BlockMycelium;
 import net.minecraft.block.BlockSand;
+import net.minecraft.block.BlockSnow;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockFaceShape;
@@ -70,7 +71,7 @@ public class BlockFlowerGrass extends BlockBush {
 				{
 			return true;
 		}
-		if(world.getBlockState(pos.down().add(0,1,0)) instanceof BlockLiquid) {
+		if(world.getBlockState(pos.down().add(0,1,0)) instanceof BlockLiquid || world.getBlockState(pos.add(0,1,0)) instanceof BlockSnow) {
 			return false;
 		}
 		return super.canBlockStay(world, pos, state);

@@ -70,7 +70,7 @@ public class CustomBlockGrass extends BlockGrass
 	public boolean canSustainPlant(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing direction,
 			IPlantable plantable) {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 	
 	 public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
