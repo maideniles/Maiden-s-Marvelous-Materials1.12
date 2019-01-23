@@ -76,9 +76,9 @@ public class CustomBlockDoor extends BlockDoor{
 		return false;
 	}
 	
-	public Item getItemDropped(IBlockState state, Random rand, int fortune)
+    public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return Item.getItemFromBlock(this);
+        return state.getValue(HALF) == BlockDoor.EnumDoorHalf.UPPER ? Items.AIR : Item.getItemFromBlock(this);
     }
 	
 	@Override
