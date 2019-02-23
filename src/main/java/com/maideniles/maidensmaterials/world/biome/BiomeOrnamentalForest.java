@@ -49,7 +49,7 @@ public class BiomeOrnamentalForest extends Biome {
     private int WaterColorMultiplier;
  
     public BiomeOrnamentalForest() {
-        super(new BiomeProperties("ornamental_forest").setBaseHeight(0.125F).setHeightVariation(0.01F).setTemperature(0.7F).setRainfall(0.8F).setWaterColor(65535));
+        super(new BiomeProperties("Ornamental Forest").setBaseHeight(0.125F).setHeightVariation(0.01F).setTemperature(0.7F).setRainfall(0.8F).setWaterColor(65535));
        
  
     topBlock = MaidensBlocks.ornamental_grass.getDefaultState();
