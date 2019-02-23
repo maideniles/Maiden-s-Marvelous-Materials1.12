@@ -53,22 +53,6 @@ public class EnchantmentFloralFeet extends Enchantment {
 	}
 		
 	@Override
-    public boolean canApplyTogether(Enchantment ench)
-    {
-        return super.canApplyTogether(ench) 
-               || ench == Enchantments.DEPTH_STRIDER 
-                || ench == Enchantments.FROST_WALKER
-                || ench == Enchantments.FEATHER_FALLING
-                || ench == Enchantments.PROTECTION
-                || ench == Enchantments.FIRE_PROTECTION
-                || ench == Enchantments.THORNS
-                || ench == Enchantments.MENDING
-        		|| ench == Enchantments.BLAST_PROTECTION;
-    }
-	
-	
-	
-	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
 		return canApply(stack);
 	}
