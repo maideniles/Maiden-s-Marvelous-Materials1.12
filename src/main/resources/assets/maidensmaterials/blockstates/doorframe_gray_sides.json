@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "normal": { "model": "maidensmaterials:doorframe_gray_sides" },
+        "facing=north": {"model": "maidensmaterials:doorframe_gray_sides"},
+        "facing=south": {"model": "maidensmaterials:doorframe_gray_sides", "y": 180},
+        "facing=west": {"model": "maidensmaterials:doorframe_gray_sides", "y": 270},
+        "facing=east": {"model": "maidensmaterials:doorframe_gray_sides", "y": 90 }
+        
+        
+   }
+}

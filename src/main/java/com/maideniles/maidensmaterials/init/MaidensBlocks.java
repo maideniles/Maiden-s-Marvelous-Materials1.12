@@ -26,6 +26,8 @@ import com.maideniles.maidensmaterials.init.blocks.stained.CustomBlockHalfSlab;
 import com.maideniles.maidensmaterials.init.blocks.stained.CustomBlockStairs;
 import com.maideniles.maidensmaterials.init.blocks.stained.door.CustomBlockDoor;
 import com.maideniles.maidensmaterials.init.blocks.stained.door.CustomBlockTrapDoor;
+import com.maideniles.maidensmaterials.init.blocks.stained.door.frames.BlockDoorFrame;
+import com.maideniles.maidensmaterials.init.blocks.stained.door.frames.BlockDoorFrameTop;
 import com.maideniles.maidensmaterials.init.blocks.trees.leaf.BlockCedarLeaves;
 import com.maideniles.maidensmaterials.init.blocks.trees.leaf.BlockCrabappleLeaves;
 import com.maideniles.maidensmaterials.init.blocks.trees.leaf.BlockDogwoodLeaves;
@@ -65,6 +67,7 @@ import com.maideniles.maidensmaterials.init.blocks.trees.vine.BlockPaulowniaVine
 import com.maideniles.maidensmaterials.init.blocks.trees.vine.BlockSilverBellVine;
 import com.maideniles.maidensmaterials.init.blocks.trees.vine.BlockVineTie;
 import com.maideniles.maidensmaterials.init.blocks.trees.vine.BlockWisteriaVine;
+import com.maideniles.maidensmaterials.init.blocks.trim.BlockWainscot;
 import com.maideniles.maidensmaterials.init.blocks.vase.BlockFlowerVase;
 import com.maideniles.maidensmaterials.init.blocks.vase.BlockFlowerVaseBlack;
 import com.maideniles.maidensmaterials.init.blocks.vase.BlockFlowerVaseBlue;
@@ -107,11 +110,78 @@ public class MaidensBlocks
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	public static final List<Block> BLOCKS_NO_TAB = new ArrayList<Block>();
 	public static final Block vine_tie = new BlockVineTie("vine_tie", Material.CLOTH);
+	
+	
+/*	public static final Block doorframe_cedar_top = new BlockDoorFrameTop("doorframe_cedar_top", Material.WOOD);
+	public static final Block doorframe_crabapple_top = new BlockDoorFrameTop("doorframe_crabapple_top", Material.WOOD);
+	public static final Block doorframe_dogwood_top = new BlockDoorFrameTop("doorframe_dogwood_top", Material.WOOD);
+	public static final Block doorframe_jacaranda_top = new BlockDoorFrameTop("doorframe_jacaranda_top", Material.WOOD);
+	public static final Block doorframe_laburnum_top = new BlockDoorFrameTop("doorframe_laburnum_top", Material.WOOD);
+	public static final Block doorframe_paulownia_top = new BlockDoorFrameTop("doorframe_paulownia_top", Material.WOOD);
+	public static final Block doorframe_wisteria_top = new BlockDoorFrameTop("doorframe_wisteria_top", Material.WOOD);
 
+	public static final Block doorframe_acacia_top = new BlockDoorFrameTop("doorframe_acacia_top", Material.WOOD);
+	public static final Block doorframe_birch_top = new BlockDoorFrameTop("doorframe_birch_top", Material.WOOD);
+	public static final Block doorframe_dark_oak_top = new BlockDoorFrameTop("doorframe_dark_oak_top", Material.WOOD);
+	public static final Block doorframe_jungle_top = new BlockDoorFrameTop("doorframe_jungle_top", Material.WOOD);
+	public static final Block doorframe_oak_top = new BlockDoorFrameTop("doorframe_oak_top", Material.WOOD);
+	public static final Block doorframe_spruce_top = new BlockDoorFrameTop("doorframe_spruce_top", Material.WOOD);
+	
+	public static final Block doorframe_red_top = new BlockDoorFrameTop("doorframe_red_top", Material.WOOD);
+	public static final Block doorframe_orange_top = new BlockDoorFrameTop("doorframe_orange_top", Material.WOOD);
+	public static final Block doorframe_yellow_top = new BlockDoorFrameTop("doorframe_yellow_top", Material.WOOD);
+	public static final Block doorframe_lime_top = new BlockDoorFrameTop("doorframe_lime_top", Material.WOOD);
+	public static final Block doorframe_green_top = new BlockDoorFrameTop("doorframe_green_top", Material.WOOD);
+	public static final Block doorframe_cyan_top = new BlockDoorFrameTop("doorframe_cyan_top", Material.WOOD);
+	public static final Block doorframe_light_blue_top = new BlockDoorFrameTop("doorframe_light_blue_top", Material.WOOD);
+	public static final Block doorframe_blue_top = new BlockDoorFrameTop("doorframe_blue_top", Material.WOOD);
+	public static final Block doorframe_purple_top = new BlockDoorFrameTop("doorframe_purple_top", Material.WOOD);
+	public static final Block doorframe_magenta_top = new BlockDoorFrameTop("doorframe_magenta_top", Material.WOOD);
+	public static final Block doorframe_pink_top = new BlockDoorFrameTop("doorframe_pink_top", Material.WOOD);
+	public static final Block doorframe_white_top = new BlockDoorFrameTop("doorframe_white_top", Material.WOOD);
+	public static final Block doorframe_light_gray_top = new BlockDoorFrameTop("doorframe_light_gray_top", Material.WOOD);
+	public static final Block doorframe_gray_top = new BlockDoorFrameTop("doorframe_gray_top", Material.WOOD);
+	public static final Block doorframe_black_top = new BlockDoorFrameTop("doorframe_black_top", Material.WOOD);
+	public static final Block doorframe_brown_top = new BlockDoorFrameTop("doorframe_brown_top", Material.WOOD);
+	
+	public static final Block doorframe_cedar_sides = new BlockDoorFrame("doorframe_cedar_sides", Material.WOOD);
+	public static final Block doorframe_crabapple_sides = new BlockDoorFrame("doorframe_crabapple_sides", Material.WOOD);
+	public static final Block doorframe_dogwood_sides = new BlockDoorFrame("doorframe_dogwood_sides", Material.WOOD);
+	public static final Block doorframe_jacaranda_sides = new BlockDoorFrame("doorframe_jacaranda_sides", Material.WOOD);
+	public static final Block doorframe_laburnum_sides = new BlockDoorFrame("doorframe_laburnum_sides", Material.WOOD);
+	public static final Block doorframe_paulownia_sides = new BlockDoorFrame("doorframe_paulownia_sides", Material.WOOD);
+	public static final Block doorframe_wisteria_sides = new BlockDoorFrame("doorframe_wisteria_sides", Material.WOOD);
+
+	public static final Block doorframe_acacia_sides = new BlockDoorFrame("doorframe_acacia_sides", Material.WOOD);
+	public static final Block doorframe_birch_sides = new BlockDoorFrame("doorframe_birch_sides", Material.WOOD);
+	public static final Block doorframe_dark_oak_sides = new BlockDoorFrame("doorframe_dark_oak_sides", Material.WOOD);
+	public static final Block doorframe_jungle_sides = new BlockDoorFrame("doorframe_jungle_sides", Material.WOOD);
+	public static final Block doorframe_oak_sides = new BlockDoorFrame("doorframe_oak_sides", Material.WOOD);
+	public static final Block doorframe_spruce_sides = new BlockDoorFrame("doorframe_spruce_sides", Material.WOOD);
+	
+	public static final Block doorframe_red_sides = new BlockDoorFrame("doorframe_red_sides", Material.WOOD);
+	public static final Block doorframe_orange_sides = new BlockDoorFrame("doorframe_orange_sides", Material.WOOD);
+	public static final Block doorframe_yellow_sides = new BlockDoorFrame("doorframe_yellow_sides", Material.WOOD);
+	public static final Block doorframe_lime_sides = new BlockDoorFrame("doorframe_lime_sides", Material.WOOD);
+	public static final Block doorframe_green_sides = new BlockDoorFrame("doorframe_green_sides", Material.WOOD);
+	public static final Block doorframe_cyan_sides = new BlockDoorFrame("doorframe_cyan_sides", Material.WOOD);
+	public static final Block doorframe_light_blue_sides = new BlockDoorFrame("doorframe_light_blue_sides", Material.WOOD);
+	public static final Block doorframe_blue_sides = new BlockDoorFrame("doorframe_blue_sides", Material.WOOD);
+	public static final Block doorframe_purple_sides = new BlockDoorFrame("doorframe_purple_sides", Material.WOOD);
+	public static final Block doorframe_magenta_sides = new BlockDoorFrame("doorframe_magenta_sides", Material.WOOD);
+	public static final Block doorframe_pink_sides = new BlockDoorFrame("doorframe_pink_sides", Material.WOOD);
+	public static final Block doorframe_white_sides = new BlockDoorFrame("doorframe_white_sides", Material.WOOD);
+	public static final Block doorframe_light_gray_sides = new BlockDoorFrame("doorframe_light_gray_sides", Material.WOOD);
+	public static final Block doorframe_gray_sides = new BlockDoorFrame("doorframe_gray_sides", Material.WOOD);
+	public static final Block doorframe_black_sides = new BlockDoorFrame("doorframe_black_sides", Material.WOOD);
+	public static final Block doorframe_brown_sides = new BlockDoorFrame("doorframe_brown_sides", Material.WOOD);
+*/
 	public static final Block ORNAMENTAL_PATH = new BlockPrettyPath("ornamental_path", Material.GROUND).setCreativeTab(null);
 	public static final Block WALK_FLOWERS = new BlockFlowerGrass("flower_grass", Material.PLANTS).setCreativeTab(null);
 	public static final Block earthen_block = new BlockEssenceStorage("earthen_block", Material.ROCK);
 	public static final Block floral_block = new BlockEssenceStorage("floral_block", Material.ROCK);
+//	public static final Block multi_cobble = new BlockCobbleVines("multi_cobble", 2.0f, 4.5F);
+//	public static final Block multi_Brick = new BlockCobbleVines("multi_brick", 2.0F, 4.5F);
 	public static final Block crabapple_cobblestone = new BlockCobbleVines("crabapple_cobblestone", 2.0f, 4.5F);
 	public static final Block dogwood_cobblestone = new BlockCobbleVines("dogwood_cobblestone", 2.0f, 4.5F);
 	public static final Block jacaranda_cobblestone = new BlockCobbleVines("jacaranda_cobblestone", 2.0f, 4.5F);
@@ -250,6 +320,8 @@ public class MaidensBlocks
 	public static final Block gray_brick_block = new CustomBrickBlock("gray_brick_block", Material.CLAY);
 	public static final Block black_brick_block = new CustomBrickBlock("black_brick_block", Material.CLAY);
 	public static final Block brown_brick_block = new CustomBrickBlock("brown_brick_block", Material.CLAY);
+	
+	//public static final Block wainscoting_red = new BlockWainscot("wainscoting_red", Material.WOOD);
 
 	public static final Block red_brick_stairs = new CustomBlockStairs("red_brick_stairs", white_brick_block.getDefaultState());
 	public static final Block orange_brick_stairs = new CustomBlockStairs("orange_brick_stairs", white_brick_block.getDefaultState());

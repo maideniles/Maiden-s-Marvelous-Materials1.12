@@ -9,6 +9,7 @@ import com.maideniles.maidensmaterials.init.MaidensItems;
 import com.maideniles.maidensmaterials.init.items.potions.PotionFloralFortune;
 import com.maideniles.maidensmaterials.init.items.potions.PotionGatherer;
 import com.maideniles.maidensmaterials.proxy.CommonProxy;
+//import com.maideniles.maidensmaterials.tinkers.TinkerCompat;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
@@ -53,10 +54,12 @@ public class MaidensMaterials {
 		}
 	};
 	
-	@EventHandler
+/*	@EventHandler
 	public static void preInit(FMLPreInitializationEvent event) {
 		proxy.preInit(event);
+		TinkerCompat.stackDryingRecipiesItem(new ItemStack(MaidensItems.crabapple_blossoms), new ItemStack(MaidensItems.pulverized_red), 1);
 	}
+	*/
 
 	@EventHandler
 	public static void init(FMLInitializationEvent event) {

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
+//import com.maideniles.maidensmaterials.entity.MaidensEntities;
 import com.maideniles.maidensmaterials.handlers.GuiHandler;
 import com.maideniles.maidensmaterials.handlers.RecipeHandler;
 import com.maideniles.maidensmaterials.init.BiomeInit;
@@ -33,6 +34,7 @@ public class CommonProxy
 	
 	public void preInit(FMLPreInitializationEvent event)
 	{
+//		MaidensEntities.registerEntities();
 	}
 	
 	public void init(FMLInitializationEvent event)

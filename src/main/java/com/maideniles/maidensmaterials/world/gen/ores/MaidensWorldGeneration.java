@@ -31,6 +31,7 @@ public class MaidensWorldGeneration implements IWorldGenerator{
 		ores.add(new MaidensGeneratedOre(MaidensBlocks.labradorite_ore, ConfigHandler.LABRADORITE_ORE_GEN_CHANCE, ConfigHandler.LABRADORITE_ORE_Y_MIN, ConfigHandler.LABRADORITE_ORE_Y_MAX, ConfigHandler.LABRADORITE_ORE_SIZE));
 		ores.add(new MaidensGeneratedOre(MaidensBlocks.jasper_ore, ConfigHandler.JASPER_ORE_GEN_CHANCE, ConfigHandler.JASPER_ORE_Y_MIN, ConfigHandler.JASPER_ORE_Y_MAX, ConfigHandler.JASPER_ORE_SIZE));
 		ores.add(new MaidensGeneratedOre(MaidensBlocks.jade_ore, ConfigHandler.JADE_ORE_GEN_CHANCE, ConfigHandler.JADE_ORE_Y_MIN, ConfigHandler.JADE_ORE_Y_MAX, ConfigHandler.JADE_ORE_SIZE));
+		ores.add(new MaidensGeneratedOre(MaidensBlocks.rose_quartz_ore, ConfigHandler.ROSE_QUARTZ_ORE_GEN_CHANCE, ConfigHandler.ROSE_QUARTZ_ORE_Y_MIN, ConfigHandler.ROSE_QUARTZ_ORE_Y_MAX, ConfigHandler.ROSE_QUARTZ_ORE_SIZE));
 	}
 	
 	@Override

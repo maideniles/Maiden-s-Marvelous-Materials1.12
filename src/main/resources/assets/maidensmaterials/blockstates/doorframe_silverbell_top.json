@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "normal": { "model": "maidensmaterials:doorframe_paulownia_top" },
+        "facing=north": {"model": "maidensmaterials:doorframe_paulownia_top"},
+        "facing=south": {"model": "maidensmaterials:doorframe_paulownia_top", "y": 180},
+        "facing=west": {"model": "maidensmaterials:doorframe_paulownia_top", "y": 270},
+        "facing=east": {"model": "maidensmaterials:doorframe_paulownia_top", "y": 90 }
+        
+        
+   }
+}
