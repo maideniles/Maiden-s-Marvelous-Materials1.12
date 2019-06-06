@@ -1,0 +1,117 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "blocks/glass_white"
+	},
+	"elements": [
+		{
+			"name": "glass w",
+			"from": [3, 12, 3],
+			"to": [4, 14, 13],
+			"faces": {
+				"north": {"uv": [12, 2, 13, 4], "texture": "#1"},
+				"east": {"uv": [0, 0, 10, 2], "texture": "#1"},
+				"south": {"uv": [3, 2, 4, 4], "texture": "#1"},
+				"west": {"uv": [3, 2, 13, 4], "texture": "#1"},
+				"up": {"uv": [0, 0, 1, 10], "texture": "#1"},
+				"down": {"uv": [0, 0, 1, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "glass e",
+			"from": [12, 12, 3],
+			"to": [13, 14, 13],
+			"faces": {
+				"north": {"uv": [3, 2, 4, 4], "texture": "#1"},
+				"east": {"uv": [3, 2, 13, 4], "texture": "#1"},
+				"south": {"uv": [12, 2, 13, 4], "texture": "#1"},
+				"west": {"uv": [3, 2, 13, 4], "texture": "#1"},
+				"up": {"uv": [0, 0, 1, 10], "texture": "#1"},
+				"down": {"uv": [0, 0, 1, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "glass n",
+			"from": [4, 12, 3],
+			"to": [12, 14, 4],
+			"faces": {
+				"north": {"uv": [4, 2, 12, 4], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 2], "texture": "#1"},
+				"south": {"uv": [0, 0, 8, 2], "texture": "#1"},
+				"west": {"uv": [3, 2, 4, 4], "texture": "#1"},
+				"up": {"uv": [0, 0, 8, 1], "texture": "#1"},
+				"down": {"uv": [0, 0, 8, 1], "texture": "#1"}
+			}
+		},
+		{
+			"name": "glass s",
+			"from": [4, 12, 12],
+			"to": [12, 14, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 2], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 2], "texture": "#1"},
+				"south": {"uv": [4, 2, 12, 4], "texture": "#1"},
+				"west": {"uv": [12, 2, 13, 4], "texture": "#1"},
+				"up": {"uv": [0, 0, 8, 1], "texture": "#1"},
+				"down": {"uv": [0, 0, 8, 1], "texture": "#1"}
+			}
+		},
+		{
+			"name": "glass w2",
+			"from": [4, 11, 5],
+			"to": [5, 12, 11],
+			"faces": {
+				"east": {"uv": [0, 0, 6, 1], "texture": "#1"},
+				"west": {"uv": [5, 4, 11, 5], "texture": "#1"},
+				"up": {"uv": [0, 0, 1, 6], "texture": "#1"},
+				"down": {"uv": [0, 0, 1, 6], "texture": "#1"}
+			}
+		},
+		{
+			"name": "glass e2",
+			"from": [11, 11, 5],
+			"to": [12, 12, 11],
+			"faces": {
+				"east": {"uv": [5, 4, 11, 5], "texture": "#1"},
+				"west": {"uv": [5, 4, 11, 5], "texture": "#1"},
+				"up": {"uv": [0, 0, 1, 6], "texture": "#1"},
+				"down": {"uv": [0, 0, 1, 6], "texture": "#1"}
+			}
+		},
+		{
+			"name": "glass n2",
+			"from": [4, 11, 4],
+			"to": [12, 12, 5],
+			"faces": {
+				"north": {"uv": [4, 4, 12, 5], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#1"},
+				"south": {"uv": [0, 0, 8, 1], "texture": "#1"},
+				"west": {"uv": [4, 4, 5, 5], "texture": "#1"},
+				"up": {"uv": [0, 0, 8, 1], "texture": "#1"},
+				"down": {"uv": [0, 0, 8, 1], "texture": "#1"}
+			}
+		},
+		{
+			"name": "glass s2",
+			"from": [4, 11, 11],
+			"to": [12, 12, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 1], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#1"},
+				"south": {"uv": [4, 4, 12, 5], "texture": "#1"},
+				"west": {"uv": [11, 4, 12, 5], "texture": "#1"},
+				"up": {"uv": [0, 0, 8, 1], "texture": "#1"},
+				"down": {"uv": [0, 0, 8, 1], "texture": "#1"}
+			}
+		},
+		{
+			"name": "glass bottom",
+			"from": [5, 11, 5],
+			"to": [11, 12, 11],
+			"faces": {
+				"up": {"uv": [0, 0, 6, 6], "texture": "#1"},
+				"down": {"uv": [5, 5, 11, 11], "texture": "#1"}
+			}
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "normal": { "model": "maidensmaterials:windowsill_white" },
+        "facing=north": {"model": "maidensmaterials:windowsill_white"},
+        "facing=south": {"model": "maidensmaterials:windowsill_white", "y": 180},
+        "facing=west": {"model": "maidensmaterials:windowsill_white", "y": 270},
+        "facing=east": {"model": "maidensmaterials:windowsill_white", "y": 90 }
+        
+        
+   }
+}

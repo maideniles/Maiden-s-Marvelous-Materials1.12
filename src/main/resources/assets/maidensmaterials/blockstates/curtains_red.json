@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "normal": { "model": "maidensmaterials:curtains_red" },
+        "facing=north": {"model": "maidensmaterials:curtains_red"},
+        "facing=south": {"model": "maidensmaterials:curtains_red", "y": 180},
+        "facing=west": {"model": "maidensmaterials:curtains_red", "y": 270, "uvlock": true},
+        "facing=east": {"model": "maidensmaterials:curtains_red", "y": 90 , "uvlock": true}
+        
+        
+   }
+}

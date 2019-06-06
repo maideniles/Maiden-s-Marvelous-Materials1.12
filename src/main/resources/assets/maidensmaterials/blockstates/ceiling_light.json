@@ -1,0 +1,40 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "forge:multi-layer",
+		
+		"custom": {
+		
+			"base": "maidensmaterials:ceiling_light#base",
+			"Solid": "maidensmaterials:ceiling_light#base",
+			"Translucent": "maidensmaterials:ceiling_light#glass"
+					},
+					
+        "transform": "forge:default-block"
+                 },
+				 
+		"variants": {
+		
+		 "normal": [{}],
+		 
+		 		 
+		 	
+		 
+	
+		 
+		 "base": [{
+		 
+				"model": "maidensmaterials:ceiling_light_base", "textures": { "particle": "maidensmaterials:blocks/gray_clay" }
+				 }],
+				 
+			"glass":  [{
+			
+							"model": "maidensmaterials:ceiling_light_glass",  "textures": { "particle": "blocks/glass_white" }
+                      
+					  }]
+					  
+		
+		
+		
+	}
+}

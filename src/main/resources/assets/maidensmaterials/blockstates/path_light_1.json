@@ -1,0 +1,40 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "forge:multi-layer",
+		
+		"custom": {
+		
+			"base": "maidensmaterials:path_light_1#base",
+			"Solid": "maidensmaterials:path_light_1#base",
+			"Translucent": "maidensmaterials:path_light_1#glass"
+					},
+					
+        "transform": "forge:default-block"
+                 },
+				 
+		"variants": {
+		
+		 "normal": [{}],
+		 
+		 		 
+		 	
+		 
+	
+		 
+		 "base": [{
+		 
+				"model": "maidensmaterials:path_light_base", "textures": { "particle": "maidensmaterials:blocks/gray_clay" }
+				 }],
+				 
+			"glass":  [{
+			
+							"model": "maidensmaterials:path_light_glass",  "textures": { "particle": "blocks/glass_white" }
+                      
+					  }]
+					  
+		
+		
+		
+	}
+}

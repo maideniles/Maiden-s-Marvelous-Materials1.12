@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"2": "maidensmaterials:blocks/brown_roof1",
-		"particle": "maidensmaterials:blocks/brown_roof1"
+		"2": "maidensmaterials:blocks/brown_roof1_up",
+		"particle": "maidensmaterials:blocks/brown_roof1_up"
 	},
 	"elements": [
 		{

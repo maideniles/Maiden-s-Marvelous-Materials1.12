@@ -1,0 +1,27 @@
+{
+    "variants": {
+        "facing=north,type=normal": {"model": "maidensmaterials:rails_red_flat", "y": 270 },
+        "facing=north,type=corner_left": {"model": "maidensmaterials:rails_red_inner_flat", "y": 270 },
+        "facing=north,type=corner_right": {"model": "maidensmaterials:rails_red_inner_flat"},
+        "facing=north,type=inner_left": {"model": "maidensmaterials:rails_red_corner_flat", "y": 270 },
+        "facing=north,type=inner_right": {"model": "maidensmaterials:rails_red_corner_flat", "y": 180 },
+        
+        "facing=east,type=normal": {"model": "maidensmaterials:rails_red_flat" },
+        "facing=east,type=corner_left": {"model": "maidensmaterials:rails_red_inner_flat"},
+        "facing=east,type=corner_right": {"model": "maidensmaterials:rails_red_inner_flat", "y": 90 },
+        "facing=east,type=inner_left": {"model": "maidensmaterials:rails_red_corner_flat" },
+        "facing=east,type=inner_right": {"model": "maidensmaterials:rails_red_corner_flat", "y": 270 },
+        
+        "facing=south,type=normal": {"model": "maidensmaterials:rails_red_flat", "y": 90 },
+        "facing=south,type=corner_left": {"model": "maidensmaterials:rails_red_inner_flat", "y": 90 },
+        "facing=south,type=corner_right": {"model": "maidensmaterials:rails_red_inner_flat", "y": 180 },
+        "facing=south,type=inner_left": {"model": "maidensmaterials:rails_red_corner_flat", "y": 90 },
+        "facing=south,type=inner_right": {"model": "maidensmaterials:rails_red_corner_flat" },
+        
+        "facing=west,type=normal": {"model": "maidensmaterials:rails_red_flat", "y": 180 },
+        "facing=west,type=corner_left": {"model": "maidensmaterials:rails_red_inner_flat", "y": 180 },
+        "facing=west,type=corner_right": {"model": "maidensmaterials:rails_red_inner_flat", "y": 270 },
+        "facing=west,type=inner_left": {"model": "maidensmaterials:rails_red_corner_flat", "y": 180 },
+        "facing=west,type=inner_right": {"model": "maidensmaterials:rails_red_corner_flat", "y": 90 }
+    }
+}

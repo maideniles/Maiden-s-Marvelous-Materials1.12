@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "facing=north,type=top": {"model": "maidensmaterials:curtains_top"},
+		"facing=east,type=top":{"model": "maidensmaterials:curtains_top", "y": 90},
+		"facing=south,type=top":{"model": "maidensmaterials:curtains_top", "y": 180},
+		"facing=west,type=top":{"model": "maidensmaterials:curtains_top", "y": 270},
+		
+		"facing=north,type=bottom": {"model": "maidensmaterials:curtains_bottom"},
+		"facing=east,type=bottom": {"model": "maidensmaterials:curtains_bottom", "y": 90},
+		"facing=south,type=bottom": {"model": "maidensmaterials:curtains_bottom", "y": 180},
+		"facing=west,type=bottom": {"model": "maidensmaterials:curtains_bottom", "y": 270}
+    }
+}

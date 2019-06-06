@@ -6,12 +6,17 @@ import java.util.List;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
 import com.maideniles.maidensmaterials.Reference;
+import com.maideniles.maidensmaterials.init.blocks.BlockCarpetStairs;
 import com.maideniles.maidensmaterials.init.blocks.BlockCobbleVines;
+import com.maideniles.maidensmaterials.init.blocks.BlockCurtains;
+import com.maideniles.maidensmaterials.init.blocks.BlockCustomFacing;
 import com.maideniles.maidensmaterials.init.blocks.BlockEssenceStorage;
 import com.maideniles.maidensmaterials.init.blocks.BlockFlowerGrass;
 import com.maideniles.maidensmaterials.init.blocks.BlockGemStorage;
 import com.maideniles.maidensmaterials.init.blocks.BlockGemTile;
+import com.maideniles.maidensmaterials.init.blocks.BlockPathLight;
 import com.maideniles.maidensmaterials.init.blocks.BlockPrettyPath;
+import com.maideniles.maidensmaterials.init.blocks.BlockVerticalConnect;
 import com.maideniles.maidensmaterials.init.blocks.CustomBlockGrass;
 import com.maideniles.maidensmaterials.init.blocks.CustomBrickBlock;
 import com.maideniles.maidensmaterials.init.blocks.CustomOre;
@@ -19,6 +24,7 @@ import com.maideniles.maidensmaterials.init.blocks.CustomWoodPlanks;
 import com.maideniles.maidensmaterials.init.blocks.stained.BlockCustomButton;
 import com.maideniles.maidensmaterials.init.blocks.stained.BlockCustomPressurePlate;
 import com.maideniles.maidensmaterials.init.blocks.stained.BlockStainedBookshelf;
+import com.maideniles.maidensmaterials.init.blocks.stained.BlockStairRails;
 import com.maideniles.maidensmaterials.init.blocks.stained.CustomBlockDoubleSlab;
 import com.maideniles.maidensmaterials.init.blocks.stained.CustomBlockFence;
 import com.maideniles.maidensmaterials.init.blocks.stained.CustomBlockFenceGate;
@@ -67,6 +73,7 @@ import com.maideniles.maidensmaterials.init.blocks.trees.vine.BlockPaulowniaVine
 import com.maideniles.maidensmaterials.init.blocks.trees.vine.BlockSilverBellVine;
 import com.maideniles.maidensmaterials.init.blocks.trees.vine.BlockVineTie;
 import com.maideniles.maidensmaterials.init.blocks.trees.vine.BlockWisteriaVine;
+import com.maideniles.maidensmaterials.init.blocks.trim.BlockMoulding;
 import com.maideniles.maidensmaterials.init.blocks.trim.BlockWainscot;
 import com.maideniles.maidensmaterials.init.blocks.vase.BlockFlowerVase;
 import com.maideniles.maidensmaterials.init.blocks.vase.BlockFlowerVaseBlack;
@@ -321,8 +328,22 @@ public class MaidensBlocks
 	public static final Block black_brick_block = new CustomBrickBlock("black_brick_block", Material.CLAY);
 	public static final Block brown_brick_block = new CustomBrickBlock("brown_brick_block", Material.CLAY);
 	
-	//public static final Block wainscoting_red = new BlockWainscot("wainscoting_red", Material.WOOD);
-
+	public static final Block wainscoting_red = new BlockWainscot("wainscoting_red", Material.WOOD);
+	//public static final Block windowsill_white = new BlockMoulding("windowsill_white", Material.WOOD);
+	public static final Block moulding_red_top = new BlockMoulding("moulding_red_top", Material.WOOD);
+	public static final Block moulding_red_bottom = new BlockMoulding("base_moulding_red",Material.WOOD);
+	public static final Block rails_red = new BlockStairRails("rails_red", Material.WOOD);
+	public static final Block rails_red_top_stair = new BlockStairRails("rails_red_top_stair", Material.WOOD);
+	public static final Block rails_red_bottom_stair = new BlockStairRails("rails_red_bottom_stair", Material.WOOD);
+	public static final Block rails_red_flat = new BlockMoulding("rails_red_flat", Material.WOOD);
+	public static final Block carpeted_stairs_red = new BlockCarpetStairs("carpeted_stairs_red", Material.WOOD);
+	public static final Block curtains_red = new BlockCurtains("curtains_red", Material.WOOD);
+	public static final Block curtains_vert = new BlockVerticalConnect("curtains_vert", Material.CLOTH);
+	public static final Block path_light1 = new BlockPathLight("path_light_1", Material.GLASS);
+	public static final Block lamp_test = new BlockVerticalConnect("lamp_test", Material.ANVIL);
+	
+	
+	
 	public static final Block red_brick_stairs = new CustomBlockStairs("red_brick_stairs", white_brick_block.getDefaultState());
 	public static final Block orange_brick_stairs = new CustomBlockStairs("orange_brick_stairs", white_brick_block.getDefaultState());
 	public static final Block yellow_brick_stairs = new CustomBlockStairs("yellow_brick_stairs", white_brick_block.getDefaultState());

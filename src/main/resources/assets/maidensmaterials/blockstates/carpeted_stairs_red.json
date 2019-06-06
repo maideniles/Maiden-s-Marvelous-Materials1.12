@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "normal": { "model": "maidensmaterials:carpeted_stairs_red" },
+        "facing=north": {"model": "maidensmaterials:carpeted_stairs_red"},
+        "facing=south": {"model": "maidensmaterials:carpeted_stairs_red", "y": 180},
+        "facing=west": {"model": "maidensmaterials:carpeted_stairs_red", "y": 270, "uvlock": true},
+        "facing=east": {"model": "maidensmaterials:carpeted_stairs_red", "y": 90 , "uvlock": true}
+        
+        
+   }
+}
