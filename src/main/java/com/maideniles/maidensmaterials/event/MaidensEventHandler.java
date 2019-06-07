@@ -38,22 +38,23 @@ public class MaidensEventHandler {
 		}
 	}
 
-	@SubscribeEvent
-	public static void onBlockBreak(BreakEvent event) {
-		EntityPlayer player = event.getPlayer();
+	   @SubscribeEvent
+	    public static void onBlockBreak(BreakEvent event) {
+	        EntityPlayer player = event.getPlayer();
 
-		if (!player.capabilities.isCreativeMode && player.isPotionActive(MaidensMaterials.GATHERER)) {
+	        if (!player.capabilities.isCreativeMode && player.isPotionActive(MaidensMaterials.GATHERER)) {
 
-			if (CommonProxy.validBlocks.contains(event.getState().getBlock())) {
+	            if (CommonProxy.validBlocks.contains(event.getState().getBlock())) {
 
-		
-				int x = event.getPos().getX();
-				int y = event.getPos().getY(); 
-				int z = event.getPos().getZ();
-				FMLClientHandler.instance().getServer().getWorld(dimension ).destroyBlock(x, y, z, false);
-				}
-			}
-		}
+	                EntityItem item = new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(event.getState().getBlock(), 1));
+
+	                if (!event.getWorld().isRemote) {
+	                    item.setPickupDelay(40); // To Set a Small Pickup Delay
+	                    event.getWorld().spawnEntity(item);
+	                }
+	            }
+	        }
+	    }
 
 	
 	@SubscribeEvent
