@@ -12,6 +12,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
@@ -19,23 +20,22 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockPrettyPath extends Block {
+public class BlockPathLight extends Block {
 	
 	protected static final AxisAlignedBB ORNAMENTAL_PATH_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.9375D, 1.0D);
 
-	public BlockPrettyPath(String name, Material materialIn) {
+	public BlockPathLight(String name, Material materialIn) {
 		super(Material.GROUND);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setSoundType(SoundType.GROUND);
-		setHardness(.06F);
-		setLightLevel(0.6F);
-		setHarvestLevel("shovel", 0);
-		MaidensBlocks.BLOCKS_NO_TAB.add(this);
+		setLightLevel(1.0F);
+		MaidensBlocks.BLOCKS.add(this);
 		MaidensItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 		
 		// TODO Auto-generated constructor stub
 	}
+	
+	
 
 	 public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
 	    {
@@ -55,25 +55,11 @@ public class BlockPrettyPath extends Block {
 	        return false;
 	    }
 	
-	@Override
-    public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
-    {
-    super.getDrops(drops, world, pos, state, 3);
-    
-    drops.clear();
-    drops.add(new ItemStack(Item.getItemFromBlock(Blocks.DIRT)));
-    }
+	    @Override
+	    public boolean canRenderInLayer(IBlockState state, BlockRenderLayer layer)
+	    {
+		return layer == BlockRenderLayer.TRANSLUCENT || layer == BlockRenderLayer.SOLID;
+	    }
 	
-	@Override
-	protected boolean canSilkHarvest() {
-		// TODO Auto-generated method stub
-		return true;
-	}
-	
-	@Override
-	public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos,
-			EntityPlayer player) {
-		// TODO Auto-generated method stub
-		return new ItemStack(Item.getItemFromBlock(this));
-	}
+	    
 }
