@@ -340,6 +340,7 @@ public class MaidensBlocks
 	public static final Block curtains_red = new BlockCurtains("curtains_red", Material.WOOD);
 	public static final Block curtains_vert = new BlockVerticalConnect("curtains_vert", Material.CLOTH);
 	public static final Block path_light1 = new BlockPathLight("path_light_1", Material.GLASS);
+	public static final Block ceiling_light = new BlockPathLight("ceiling_light", Material.GLASS);
 	public static final Block lamp_test = new BlockVerticalConnect("lamp_test", Material.ANVIL);
 	
 	

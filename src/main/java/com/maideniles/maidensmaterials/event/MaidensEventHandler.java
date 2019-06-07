@@ -15,10 +15,12 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionType;
+import net.minecraft.world.World;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.world.BlockEvent.BreakEvent;
 import net.minecraftforge.event.world.BlockEvent.HarvestDropsEvent;
+import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -44,15 +46,15 @@ public class MaidensEventHandler {
 
 			if (CommonProxy.validBlocks.contains(event.getState().getBlock())) {
 
-				EntityItem item = new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(event.getState().getBlock(), 1));
-
-				if (!event.getWorld().isRemote) {
-					item.setPickupDelay(40); // To Set a Small Pickup Delay
-					event.getWorld().spawnEntity(item);
+		
+				int x = event.getPos().getX();
+				int y = event.getPos().getY(); 
+				int z = event.getPos().getZ();
+				FMLClientHandler.instance().getServer().getWorld(dimension ).destroyBlock(x, y, z, false);
 				}
 			}
 		}
-	}
+
 	
 	@SubscribeEvent
 	public static void onBlockBreak2(BreakEvent event) {
