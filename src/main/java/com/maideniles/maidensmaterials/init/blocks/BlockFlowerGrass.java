@@ -38,7 +38,7 @@ public class BlockFlowerGrass extends BlockBush {
 		super(Material.PLANTS);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setHardness(0.2F);
+		
 		setSoundType(SoundType.PLANT);
 		this.setTickRandomly(true);
 		MaidensBlocks.BLOCKS_NO_TAB.add(this);
